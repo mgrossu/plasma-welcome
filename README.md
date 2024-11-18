@@ -3,10 +3,8 @@
     SPDX-FileCopyrightText: 2022-Nate Graham <nate@kde.org>
 -->
 
-# Plasma Welcome App
-Friendly onboarding wizard for Plasma
-
-Welcome Center is the perfect introduction to KDE Plasma! It can help you learn how to connect to the internet, install apps, customize the system, and more!
+# Plasma openSUSE Welcome App
+This is a fork of https://github.com/KDE/plasma-welcome to customize the application for openSUSE distributions.
 
 There are five mutually exclusive usage modes:
 - Run the app normally and it will show a welcome/onboarding wizard.
