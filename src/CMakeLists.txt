@@ -73,6 +73,7 @@ ecm_target_qml_sources(plasma-welcome
     assets/konqi-default.png
     assets/krita.png
     assets/endlesssky.png
+    assets/sinking.png
 )
 
 target_compile_definitions(plasma-welcome PRIVATE "DISTRO_CUSTOM_PAGE_FOLDER=\"${DISTRO_CUSTOM_PAGE_FOLDER}\"")
