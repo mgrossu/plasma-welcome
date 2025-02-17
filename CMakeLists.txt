@@ -2,14 +2,14 @@
 # SPDX-FileCopyrightText: 2021 Felipe Kinoshita <kinofhek@gmail.com>
 # SPDX-FileCopyrightText: 2022 Nate Graham <nate@kde.org>
 
-project(welcome)
-set(PROJECT_VERSION "6.2.80")
-
 cmake_minimum_required(VERSION 3.16)
+project(welcome)
+set(PROJECT_VERSION "6.3.80")
 
-set(PROJECT_DEP_VERSION "6.2.0")
+
+set(PROJECT_DEP_VERSION "6.2.90")
 set(QT_MIN_VERSION "6.7.0")
-set(KF6_MIN_VERSION "6.5.0")
+set(KF6_MIN_VERSION "6.10.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 set(CMAKE_CXX_STANDARD 20)
@@ -62,8 +62,8 @@ set_package_properties(KUserFeedback PROPERTIES
     TYPE RUNTIME
 )
 
-ecm_set_disabled_deprecation_versions(QT 6.7
-    KF 6.4.0
+ecm_set_disabled_deprecation_versions(QT 6.8.1
+    KF 6.9.0
 )
 
 add_subdirectory(src)
