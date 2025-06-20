@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the plasma-welcome package.
 #
 # SPDX-FileCopyrightText: 2023, 2024, 2025 giovanni <g.sora@tiscali.it>
-# giovanni <g.sora@tiscali.it>, 2023, 2024.
+# giovanni <g.sora@tiscali.it>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:44+0000\n"
-"PO-Revision-Date: 2025-02-07 12:49+0100\n"
+"POT-Creation-Date: 2025-04-28 00:43+0000\n"
+"PO-Revision-Date: 2025-04-02 17:12+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -85,14 +85,14 @@ msgstr "MOnstra le pagine vivente intendite per ambiente in vivo de distro."
 msgid ""
 "Specify comma-delimited list of page(s) (by internal name) to be displayed."
 msgstr ""
-"Specifica le lista de pagina(s) delimitate per commas(per nomine interne) "
+"Specifica le lista de pagina(s) delimitate per commas (per nomine interne) "
 "que sea monstrate."
 
 #: src/public/configModule.cpp:72
 #, kde-format
 msgctxt "%1 is the filesystem path to a settings module"
 msgid "Unknown module %1 requested"
-msgstr "Modulo incogniute %1 demandate"
+msgstr "Modulo incognite %1 demandate"
 
 #: src/public/controller.cpp:43 src/public/utils.cpp:40
 #, kde-kuit-format
@@ -161,13 +161,13 @@ msgctxt "@action:button"
 msgid "&Back"
 msgstr "&Retro"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Finish"
 msgstr "&Termina"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Next"
@@ -232,13 +232,13 @@ msgstr "Crea activitate…"
 msgid "Search…"
 msgstr "Cerca…"
 
-#: src/qml/mock/MockOverview.qml:98
+#: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
 msgid "Desktop 1"
 msgstr "Scriptorio 1"
 
-#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:206
+#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:210
 #, kde-format
 msgctxt "@info:placeholder Shown when there is insufficent width"
 msgid "Expand the window"
@@ -250,7 +250,7 @@ msgctxt "@info:window"
 msgid "Error loading page"
 msgstr "Error a cargar le pagina"
 
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:80
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Report Bug…"
@@ -282,25 +282,27 @@ msgstr ""
 "Iste pagina fornite per le WelcomCenter (Centro de Benvenite) non poteva "
 "esser cargate"
 
-#: src/qml/pages/Discover.qml:22
+#: src/qml/pages/Discover.qml:20
 #, kde-format
 msgctxt "@title:window"
-msgid "Manage Software"
-msgstr "Gere Software"
+msgid "Find Great Apps"
+msgstr "Trova Grande Apps"
 
-#: src/qml/pages/Discover.qml:23
+#: src/qml/pages/Discover.qml:21
 #, kde-kuit-format
 msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
+"%2 is the distro name."
 msgid ""
-"The <application>%1</application> app helps you find and install "
-"applications, games, and tools. You can search or browse by category, look "
-"at screenshots, and read reviews to help you find the perfect app."
+"There’s no need to search the web to download app installers or use a "
+"command-line package manager; KDE’s app store <application>%1</application> "
+"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
+"try!"
 msgstr ""
-"Le app <application>%1</application> te adjuta a trovar e installar "
-"applicationes, jocos, e intrumentos. Tu pote cercar o navigar per categoria, "
-"observar capturas de schermo, e leger revisiones per adjutar te a trovar le "
-"app perfecte."
+"Il non ha necessitate a cercar in le web per discargar installatores de app "
+"o per usar un gerente de pacchetto de linea de commando; le magasin de app "
+"de KDE <application>%1</application> face toto illo per te!<nl/><nl/>Clicca "
+"su ulle del icones a basso per essayar!"
 
 #: src/qml/pages/Discover.qml:107
 #, kde-format
@@ -322,7 +324,7 @@ msgid ""
 "to jump right in. Explore its features, install your favorite apps and "
 "games, and get busy doing what makes you you!"
 msgstr ""
-"Nos spere que tu ama Plasma tan quanto nos ama facer lo pro te! Nunc il es "
+"Nos spera que tu ama Plasma tan quanto nos ama facer lo pro te! Nunc il es "
 "tempore pro intervenir. Explora su characteristicas, installa tu apps e "
 "jocos favorite, e es occupate facente lo que face te te!"
 
@@ -396,13 +398,13 @@ msgctxt "@action:inmenu An option to sort a list in reverse order"
 msgid "Reverse"
 msgstr "Revertite"
 
-#: src/qml/pages/Feedback.qml:15
+#: src/qml/pages/Feedback.qml:16
 #, kde-format
 msgctxt "@title: window"
 msgid "Share Anonymous Usage Information"
 msgstr "Comparti Information de Uso Anonyme "
 
-#: src/qml/pages/Feedback.qml:16
+#: src/qml/pages/Feedback.qml:17
 #, kde-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -410,7 +412,7 @@ msgid ""
 "choose how much to share in System Settings, and here too."
 msgstr ""
 "Nostre disveloppatores usara iste datos anonyme per ameliorar le software de "
-"KDE. Tu pote seliger quanto compartir inPreferentias de Systema, e anque ci."
+"KDE. Tu pote seliger quanto compartir in Preferentias de Systema, e anque ci."
 
 #: src/qml/pages/Live.qml:21
 #, kde-format
@@ -446,13 +448,13 @@ msgctxt "@action:button"
 msgid "Visit home page"
 msgstr "Visita Pagina Domo o Initio"
 
-#: src/qml/pages/Network.qml:20
+#: src/qml/pages/Network.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Access the Internet"
 msgstr "Accede a Internet"
 
-#: src/qml/pages/Network.qml:21
+#: src/qml/pages/Network.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -461,19 +463,20 @@ msgid ""
 "<interface>Networks</interface> icon in your <interface>System Tray</"
 "interface>, which lives in the bottom-right corner of the screen."
 msgstr ""
-"Tu pte connecter al internet e gerer tu connexiones con le <interface>applet "
-"de Retes (Networks)</interface>. Pro acceder a illo, clicca sur le icone de "
-"<interface>Retes (Networks)</interface>  in tu <interface>Tabuliero de "
-"Systema </interface>, que habita in le angule a dextera a basso del schermo."
+"Tu pote connecter al internet e gerer tu connexiones con le "
+"<interface>applet de Retes (Networks)</interface>. Pro acceder a illo, "
+"clicca sur le icone de <interface>Retes (Networks)</interface>  in tu "
+"<interface>Tabuliero de Systema </interface>, que habita in le angulo a "
+"dextera a basso del schermo."
 
-#: src/qml/pages/Network.qml:75
+#: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Networking support for Plasma is not currently installed"
 msgstr ""
 "Supporto per actuar in rete per Plasma non es currentemente installate "
 
-#: src/qml/pages/Network.qml:76
+#: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
 msgid ""
@@ -483,19 +486,19 @@ msgstr ""
 "Per gerer connexiones de rete, Plasma require que <icode>plasma-nm</icode> "
 "es installate. Pro favor tu reporta iste omission a %1."
 
-#: src/qml/pages/Network.qml:245
+#: src/qml/pages/Network.qml:211
 #, kde-format
 msgctxt "@info:placeholder Shown when connected to the internet"
 msgid "You’re connected"
 msgstr "Tu es connectite"
 
-#: src/qml/pages/Network.qml:246
+#: src/qml/pages/Network.qml:212
 #, kde-format
 msgctxt "@info:usagetip Shown when connected to the internet"
 msgid "All good to go!"
 msgstr "Toto es preste!"
 
-#: src/qml/pages/Network.qml:253
+#: src/qml/pages/Network.qml:219
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -505,9 +508,9 @@ msgid ""
 msgstr ""
 "Iste pagina es essite monstrate sin regardo de connectivitate de rete proque "
 "tu es usante un version de disveloppamento. Per vider preliminarmente le "
-"differente statos delpagina, tu pote usar le button."
+"differente statos del pagina, tu pote usar le button."
 
-#: src/qml/pages/Network.qml:258
+#: src/qml/pages/Network.qml:224
 #, kde-format
 msgctxt "@action:button"
 msgid "Change state"
@@ -538,7 +541,7 @@ msgid ""
 "KDE contributors have spent the last four months hard at work on this "
 "release. We hope you enjoy using Plasma as much as we enjoyed making it!"
 msgstr ""
-"Collaborators de KDE ha expendite le ultime quatro mense in dur labor sur "
+"Collaboratores de KDE ha expendite le ultime quatro mense in dur labor sur "
 "iste version. Nos spera que tu gaude uar Plasma tanto como nos  a gaudite "
 "facente lo! "
 
@@ -563,7 +566,7 @@ msgid ""
 "The preview has not been automatically downloaded because you are using a "
 "metered network connection."
 msgstr ""
-"Le vista preliminar nonha esite discargate automaticamente perque tu es "
+"Le vista preliminar non ha essite discargate automaticamente perque tu es "
 "usante un connexion de rete a contator."
 
 #: src/qml/pages/PlasmaUpdate.qml:157
@@ -579,7 +582,7 @@ msgstr ""
 msgctxt "@info"
 msgid "The preview could not be loaded — a parse error occurred."
 msgstr ""
-"Levista preliminar nonpoiteva esser incargate -- un error de analyse "
+"Le vista preliminar non poteva esser incargate -- un error de analyse "
 "syntactic  occurreva."
 
 #: src/qml/pages/PlasmaUpdate.qml:176
@@ -620,8 +623,8 @@ msgid ""
 "Plasma updates, except when using a metered network connection."
 msgstr ""
 "Le vista preliminar essera cargate automaticamente quando iste pagina es "
-"monstrate per actualisatione future de Plasma, excepte quando on usa "
-"connexion de rte a contator."
+"monstrate per actualisationes future de Plasma, excepte quando on usa "
+"connexion de rete a contator."
 
 #: src/qml/pages/PlasmaUpdate.qml:421
 #, kde-format
@@ -640,55 +643,54 @@ msgstr "Potente quando necessitate"
 msgctxt "@info:usagetip"
 msgid ""
 "Plasma is an extremely feature-rich environment, designed to super-charge "
-"your productivity! Here is just a smattering of the things it can do for you:"
+"your productivity!<nl/><nl/>"
 msgstr ""
 "Plasma es un ambiente extrememente ric de characteristicas, designate per "
-"super-cargar tu productivitate. Ci il ha solmente un cognoscentia "
-"approximative del cosas que illo pote facer per te:"
+"super-cargar tu productivitate!<nl/><nl/>"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:56
+#: src/qml/pages/PowerfulWhenNeeded.qml:47
 #, kde-format
 msgctxt "@title:row Name of the 'Overview' KWin effect"
 msgid "Overview"
 msgstr "Vista de insimul"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:57
+#: src/qml/pages/PowerfulWhenNeeded.qml:48
 #, kde-format
 msgctxt "@info Caption for Overview button"
 msgid "Your system command center"
 msgstr "Centro de commando de tu systema"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:67
+#: src/qml/pages/PowerfulWhenNeeded.qml:53
 #, kde-format
 msgctxt "@title:row"
 msgid "KRunner"
 msgstr "KRunner"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:68
+#: src/qml/pages/PowerfulWhenNeeded.qml:54
 #, kde-format
 msgctxt "@info Caption for KRunner button"
 msgid "Search for anything"
 msgstr "Cerca alique"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:78
+#: src/qml/pages/PowerfulWhenNeeded.qml:59
 #, kde-format
 msgctxt "@title:row Name of the 'KDE Connect' feature"
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:79
+#: src/qml/pages/PowerfulWhenNeeded.qml:60
 #, kde-format
 msgctxt "@info Caption for KDE Connect button"
 msgid "Connect your phone and your computer"
 msgstr "Connecte tu telephono e tu computator"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:90
+#: src/qml/pages/PowerfulWhenNeeded.qml:65
 #, kde-format
 msgctxt "@title:row Name of the 'Activities' Plasma feature"
 msgid "Activities"
 msgstr "Activitates"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:91
+#: src/qml/pages/PowerfulWhenNeeded.qml:66
 #, kde-format
 msgctxt ""
 "@info Caption for Activities button. Note that 'Separate' is being used as "
@@ -696,31 +698,31 @@ msgctxt ""
 msgid "Separate work, school, or home tasks"
 msgstr "Separa cargas de travalio, schola o casa"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:101
+#: src/qml/pages/PowerfulWhenNeeded.qml:71
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
 msgstr "Cellarios (Vaults)"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:102
+#: src/qml/pages/PowerfulWhenNeeded.qml:72
 #, kde-format
 msgctxt "@info Caption for Plasma Vaults button"
 msgid "Store sensitive files securely"
 msgstr "Immagazina files sensibile securmente"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:112
+#: src/qml/pages/PowerfulWhenNeeded.qml:77
 #, kde-format
 msgctxt "@title:row"
 msgid "System Settings"
 msgstr "Preferentias de systema"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:113
+#: src/qml/pages/PowerfulWhenNeeded.qml:78
 #, kde-format
 msgctxt "@info Caption for Get System Settings button"
 msgid "Configure the system"
 msgstr "Configura le systema"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:120
+#: src/qml/pages/PowerfulWhenNeeded.qml:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Learn about more Plasma features"
@@ -960,30 +962,30 @@ msgstr ""
 "synchronsate a servicios de immagazinage de cloud, delivrante intimitate "
 "extra per ille contento."
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:93
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
 msgctxt "@title:window Title of the Plasma Vaults popup"
 msgid "Vaults"
 msgstr "Cellarios (Vaults)"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:108
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:112
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "Important Documents"
 msgstr "Documentos Importante"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:109
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:113
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "Mi Photos"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:117
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
 #, kde-format
 msgid "Unlock and Open"
 msgstr "Disbloca e aperi"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:129
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -994,13 +996,13 @@ msgstr ""
 "interface> per monstrar elementos celate, e postea clicca le icone de "
 "<interface>Cellarios</interface> ."
 
-#: src/qml/pages/SimpleByDefault.qml:22
+#: src/qml/pages/SimpleByDefault.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Simple by Default"
 msgstr "Simplice per Definition"
 
-#: src/qml/pages/SimpleByDefault.qml:23
+#: src/qml/pages/SimpleByDefault.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -1016,7 +1018,7 @@ msgstr ""
 "basso es un representation visual de un typic scriptorio dePlasma: move le "
 "punctator supra o clicca sur per apprehender re illo!"
 
-#: src/qml/pages/SimpleByDefault.qml:34
+#: src/qml/pages/SimpleByDefault.qml:33
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1033,7 +1035,7 @@ msgstr ""
 "<interface>Inserta Modo de Editar</interface> per adder, remover o modificar "
 "widgets."
 
-#: src/qml/pages/SimpleByDefault.qml:37
+#: src/qml/pages/SimpleByDefault.qml:36
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1046,19 +1048,19 @@ msgstr ""
 "interface> per cambiar como illo se comporta, qual es su bordos de schermo, "
 "e adder, remover o modificar widgets."
 
-#: src/qml/pages/SimpleByDefault.qml:40
+#: src/qml/pages/SimpleByDefault.qml:39
 #, kde-format
 msgctxt "@info"
 msgid ""
-"This is the “Kickoff” widget, a multipurpose launcher. Here you can launch "
-"apps, shut down or restart the system, access recent files, and more. Click "
-"on it to get started!"
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
 msgstr ""
-"Isto es le widget \"Kickoff\"(Comenciamento), un lanceator universal. Hic tu "
-"pote lancear apps, arrestar o restartar le systema, acceder a files recente, "
-"e plus. Clicca sur illo e initia! "
+"Isto es le widget \"Lanceator de Application\", un lanceator universal. Hic "
+"tu pote lancear apps, arrestar o restartar le systema, acceder a files "
+"recente, e plus. Clicca sur illo per initiar! "
 
-#: src/qml/pages/SimpleByDefault.qml:43
+#: src/qml/pages/SimpleByDefault.qml:42
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1068,7 +1070,7 @@ msgstr ""
 "Isto es le widget de \"Gestion de Carga\", ubi tu pote commutar inter apps "
 "aperite e anque lancear de noves. Trahe icone de app per re-disponer los."
 
-#: src/qml/pages/SimpleByDefault.qml:46
+#: src/qml/pages/SimpleByDefault.qml:45
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1082,7 +1084,7 @@ msgstr ""
 "Elementos devenira visibile hic solmente quando pertinente. Per vider omne "
 "elementos disponibile, clicca le flecha ⌃ proxime al horologio."
 
-#: src/qml/pages/SimpleByDefault.qml:49
+#: src/qml/pages/SimpleByDefault.qml:48
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1094,7 +1096,7 @@ msgstr ""
 "calendario. Illo pote anque esser configurate per monstrar altere fusos "
 "horari e eventos ex tu calendarios digital."
 
-#: src/qml/pages/SimpleByDefault.qml:52
+#: src/qml/pages/SimpleByDefault.qml:51
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1212,6 +1214,22 @@ msgstr "%1 Beta"
 msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 Beta %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Manage Software"
+#~ msgstr "Gere Software"
+
+#~ msgctxt ""
+#~ "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+#~ msgid ""
+#~ "The <application>%1</application> app helps you find and install "
+#~ "applications, games, and tools. You can search or browse by category, "
+#~ "look at screenshots, and read reviews to help you find the perfect app."
+#~ msgstr ""
+#~ "Le app <application>%1</application> te adjuta a trovar e installar "
+#~ "applicationes, jocos, e intrumentos. Tu pote cercar o navigar per "
+#~ "categoria, observar capturas de schermo, e leger revisiones per adjutar "
+#~ "te a trovar le app perfecte."
 
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Sort by Date"

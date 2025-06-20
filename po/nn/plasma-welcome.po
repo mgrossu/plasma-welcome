@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:44+0000\n"
-"PO-Revision-Date: 2024-08-02 21:22+0200\n"
+"POT-Creation-Date: 2025-04-28 00:43+0000\n"
+"PO-Revision-Date: 2025-06-01 15:14+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 25.07.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -159,25 +159,23 @@ msgctxt "@action:button"
 msgid "&Back"
 msgstr "&Tilbake"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Finish"
 msgstr "&Fullfør"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Next"
 msgstr "&Neste"
 
 #: src/qml/footers/FooterUpdate.qml:21
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Show this page after Plasma is updated"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show after Plasma is updated"
-msgstr "Vis denne sida når Plasma har blitt oppdatert"
+msgstr "Vis når Plasma har blitt oppdatert"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -232,13 +230,13 @@ msgstr "Legg til aktivitet …"
 msgid "Search…"
 msgstr "Søk …"
 
-#: src/qml/mock/MockOverview.qml:98
+#: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
 msgid "Desktop 1"
 msgstr "Skrivebord 1"
 
-#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:206
+#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:210
 #, kde-format
 msgctxt "@info:placeholder Shown when there is insufficent width"
 msgid "Expand the window"
@@ -250,7 +248,7 @@ msgctxt "@info:window"
 msgid "Error loading page"
 msgstr "Feil ved lasting av sida"
 
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:80
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Report Bug…"
@@ -280,26 +278,23 @@ msgctxt "@info:usagetip"
 msgid "This page provided by Welcome Center could not be loaded"
 msgstr "Klarte ikkje lasta inn sida frå velkomstsenteret"
 
-# Lettare å forstå enn det tekniske «Handsam programvare».
-#: src/qml/pages/Discover.qml:22
+#: src/qml/pages/Discover.qml:20
 #, kde-format
 msgctxt "@title:window"
-msgid "Manage Software"
-msgstr "Finn og installer programvare"
+msgid "Find Great Apps"
+msgstr "Finn gode appar"
 
-#: src/qml/pages/Discover.qml:23
+#: src/qml/pages/Discover.qml:21
 #, kde-kuit-format
 msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
+"%2 is the distro name."
 msgid ""
-"The <application>%1</application> app helps you find and install "
-"applications, games, and tools. You can search or browse by category, look "
-"at screenshots, and read reviews to help you find the perfect app."
+"There’s no need to search the web to download app installers or use a "
+"command-line package manager; KDE’s app store <application>%1</application> "
+"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
+"try!"
 msgstr ""
-"Programmet <application>%1</application> hjelper deg å finna og installera "
-"program, spel og verktøy. For å finna fram til programvara du treng, kan du "
-"søkja, bla gjennom program­kategoriar, sjå bilete av programma og lesa "
-"omtalar frå andre brukarar."
 
 #: src/qml/pages/Discover.qml:107
 #, kde-format
@@ -362,29 +357,25 @@ msgstr "Takk til våre faste støttemedlemmar for deira pengegåver til KDE:"
 #, kde-format
 msgctxt "@action:button %1 is the selected sort order, e.g. Random"
 msgid "Sort: %1"
-msgstr ""
+msgstr "Sortering: %1"
 
 #: src/qml/pages/enjoy/Supporters.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Sort Randomly"
+#, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "Random"
-msgstr "Sorter tilfeldig"
+msgstr "Vilkårleg"
 
 #: src/qml/pages/enjoy/Supporters.qml:56
 #, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "Last Name"
-msgstr ""
+msgstr "Etternamn"
 
 #: src/qml/pages/enjoy/Supporters.qml:67
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Sort by Name"
+#, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "First Name"
-msgstr "Sorter etter namn"
+msgstr "Fornamn"
 
 #: src/qml/pages/enjoy/Supporters.qml:78
 #, kde-format
@@ -392,21 +383,21 @@ msgctxt ""
 "@action:inmenu An order to sort a list, referring to the date a user has "
 "first made a donation"
 msgid "Contribution Date"
-msgstr ""
+msgstr "Bidragsdato"
 
 #: src/qml/pages/enjoy/Supporters.qml:91
 #, kde-format
 msgctxt "@action:inmenu An option to sort a list in reverse order"
 msgid "Reverse"
-msgstr ""
+msgstr "Omvend"
 
-#: src/qml/pages/Feedback.qml:15
+#: src/qml/pages/Feedback.qml:16
 #, kde-format
 msgctxt "@title: window"
 msgid "Share Anonymous Usage Information"
 msgstr "Del anonym bruksinformasjon"
 
-#: src/qml/pages/Feedback.qml:16
+#: src/qml/pages/Feedback.qml:17
 #, kde-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -451,13 +442,13 @@ msgctxt "@action:button"
 msgid "Visit home page"
 msgstr "Besøk heimesida"
 
-#: src/qml/pages/Network.qml:20
+#: src/qml/pages/Network.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Access the Internet"
 msgstr "Få tilgang til Internett"
 
-#: src/qml/pages/Network.qml:21
+#: src/qml/pages/Network.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -471,13 +462,13 @@ msgstr ""
 "<interface>Nettverk</interface>-ikonet i <interface>systemtrauet</"
 "interface>, som vanlegvis ligg nede til høgre på skjermen."
 
-#: src/qml/pages/Network.qml:75
+#: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Networking support for Plasma is not currently installed"
 msgstr "Nettverksstøtte for Plasma er ikkje installert"
 
-#: src/qml/pages/Network.qml:76
+#: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
 msgid ""
@@ -487,19 +478,19 @@ msgstr ""
 "For å styra nett-tilkoplingar treng Plasma <icode>plasma-nm</icode> "
 "installert. Meld frå om at dette manglar til %1."
 
-#: src/qml/pages/Network.qml:245
+#: src/qml/pages/Network.qml:211
 #, kde-format
 msgctxt "@info:placeholder Shown when connected to the internet"
 msgid "You’re connected"
 msgstr "Du er tilkopla"
 
-#: src/qml/pages/Network.qml:246
+#: src/qml/pages/Network.qml:212
 #, kde-format
 msgctxt "@info:usagetip Shown when connected to the internet"
 msgid "All good to go!"
 msgstr "Alt er i orden!"
 
-#: src/qml/pages/Network.qml:253
+#: src/qml/pages/Network.qml:219
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -511,7 +502,7 @@ msgstr ""
 "statusen til nett-tilkoplinga. Du kan sjå korleis dei ulike sidene ser ut "
 "via knappen."
 
-#: src/qml/pages/Network.qml:258
+#: src/qml/pages/Network.qml:224
 #, kde-format
 msgctxt "@action:button"
 msgid "Change state"
@@ -582,27 +573,25 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Download Preview"
-msgstr ""
+msgstr "Last ned førehandsvising"
 
 #: src/qml/pages/PlasmaUpdate.qml:178
 #, kde-format
 msgctxt "@action:button"
 msgid "Download Anyway"
-msgstr ""
+msgstr "Last ned likevel"
 
 #: src/qml/pages/PlasmaUpdate.qml:180
 #, kde-format
 msgctxt "@action:button"
 msgid "Retry"
-msgstr ""
+msgstr "Prøv på nytt"
 
 #: src/qml/pages/PlasmaUpdate.qml:182
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Open Settings…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open in Browser…"
-msgstr "Opna innstillingar …"
+msgstr "Opna i nettlesar …"
 
 #: src/qml/pages/PlasmaUpdate.qml:228
 #, kde-format
@@ -622,7 +611,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid "<b>Click to read the announcement</b>"
-msgstr ""
+msgstr "<b>Trykk for å lesa kunngjeringa</b>"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:16
 #, kde-format
@@ -635,56 +624,56 @@ msgstr "Kraftig når det trengst"
 msgctxt "@info:usagetip"
 msgid ""
 "Plasma is an extremely feature-rich environment, designed to super-charge "
-"your productivity! Here is just a smattering of the things it can do for you:"
+"your productivity!<nl/><nl/>"
 msgstr ""
-"Plasma har svært mykje funksjonalitet – laga for å gjera deg super­effektiv! "
-"Her er nokre eksempel på kva som finst:"
+"Plasma har svært mykje funksjonalitet – laga for å gjera deg super­effektiv!"
+"<nl/><nl/>"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:56
+#: src/qml/pages/PowerfulWhenNeeded.qml:47
 #, kde-format
 msgctxt "@title:row Name of the 'Overview' KWin effect"
 msgid "Overview"
 msgstr "Oversikt"
 
 # Ganske fri omsetjing, men er lettare å forstå.
-#: src/qml/pages/PowerfulWhenNeeded.qml:57
+#: src/qml/pages/PowerfulWhenNeeded.qml:48
 #, kde-format
 msgctxt "@info Caption for Overview button"
 msgid "Your system command center"
 msgstr "Oversikt over opne program/vindauge"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:67
+#: src/qml/pages/PowerfulWhenNeeded.qml:53
 #, kde-format
 msgctxt "@title:row"
 msgid "KRunner"
 msgstr "KRunner"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:68
+#: src/qml/pages/PowerfulWhenNeeded.qml:54
 #, kde-format
 msgctxt "@info Caption for KRunner button"
 msgid "Search for anything"
 msgstr "Søk etter alt mogleg"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:78
+#: src/qml/pages/PowerfulWhenNeeded.qml:59
 #, kde-format
 msgctxt "@title:row Name of the 'KDE Connect' feature"
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:79
+#: src/qml/pages/PowerfulWhenNeeded.qml:60
 #, kde-format
 msgctxt "@info Caption for KDE Connect button"
 msgid "Connect your phone and your computer"
 msgstr "Kopla telefonen din saman med datamaskina"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:90
+#: src/qml/pages/PowerfulWhenNeeded.qml:65
 #, kde-format
 msgctxt "@title:row Name of the 'Activities' Plasma feature"
 msgid "Activities"
 msgstr "Aktivitetar"
 
 # Brukar same rekkjefølgje (fritid, skule, arbeid) som i ein annan tekst i programmet.
-#: src/qml/pages/PowerfulWhenNeeded.qml:91
+#: src/qml/pages/PowerfulWhenNeeded.qml:66
 #, kde-format
 msgctxt ""
 "@info Caption for Activities button. Note that 'Separate' is being used as "
@@ -692,31 +681,31 @@ msgctxt ""
 msgid "Separate work, school, or home tasks"
 msgstr "Skil mellom fritid, skule og arbeid"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:101
+#: src/qml/pages/PowerfulWhenNeeded.qml:71
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
 msgstr "Datakvelv"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:102
+#: src/qml/pages/PowerfulWhenNeeded.qml:72
 #, kde-format
 msgctxt "@info Caption for Plasma Vaults button"
 msgid "Store sensitive files securely"
 msgstr "Lagra sensitive filer på ein trygg måte"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:112
+#: src/qml/pages/PowerfulWhenNeeded.qml:77
 #, kde-format
 msgctxt "@title:row"
 msgid "System Settings"
 msgstr "Systemoppsett"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:113
+#: src/qml/pages/PowerfulWhenNeeded.qml:78
 #, kde-format
 msgctxt "@info Caption for Get System Settings button"
 msgid "Configure the system"
 msgstr "Set opp systemet"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:120
+#: src/qml/pages/PowerfulWhenNeeded.qml:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Learn about more Plasma features"
@@ -754,7 +743,7 @@ msgid "Open Settings…"
 msgstr "Opna innstillingar …"
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:56
-#, fuzzy, kde-kuit-format
+#, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
 "To get started, launch <interface>System Settings</interface> and search for "
@@ -763,7 +752,7 @@ msgid ""
 msgstr ""
 "Kom i gang ved å opna <interface>system­oppsettet</interface> og søkja etter "
 "«aktivitetar». Der kan du leggja til nye aktivitetar. Du kan så byta mellom "
-"dei med snøggtasten <shortcut>Meta + T</shortcut>."
+"dei med snøggtasten <shortcut>Meta + Q</shortcut>."
 
 #: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:17
 #, kde-format
@@ -950,30 +939,30 @@ msgstr ""
 "Kvelva kan òg liggja i mapper som du alt synkroniserer til skylagring, slik "
 "at du får ekstra tryggleik for skyinnhaldet."
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:93
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
 msgctxt "@title:window Title of the Plasma Vaults popup"
 msgid "Vaults"
 msgstr "Datakvelv"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:108
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:112
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "Important Documents"
 msgstr "Importer dokument"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:109
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:113
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "Bileta mine"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:117
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
 #, kde-format
 msgid "Unlock and Open"
 msgstr "Lås opp og opna"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:129
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -983,13 +972,13 @@ msgstr ""
 "Kom i gang ved å trykkja på pila i <interface>systemkorga</interface> (for å "
 "visa gøymde oppføringar), og vel så ikonet <interface>Datakvelv</interface>."
 
-#: src/qml/pages/SimpleByDefault.qml:22
+#: src/qml/pages/SimpleByDefault.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Simple by Default"
 msgstr "Enkelt som standard"
 
-#: src/qml/pages/SimpleByDefault.qml:23
+#: src/qml/pages/SimpleByDefault.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -1005,7 +994,7 @@ msgstr ""
 "ut. Flytt peikaren over noko eller trykk på det for å lesa meir om det."
 
 # Passar betre med kursiv enn hermeteikn for definisjonar på norsk (<dfn>-taggar er ikkje støtta).
-#: src/qml/pages/SimpleByDefault.qml:34
+#: src/qml/pages/SimpleByDefault.qml:33
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1022,7 +1011,7 @@ msgstr ""
 "tilpassing</interface> for å leggja til eller fjerna småprogram (kalla "
 "<i>skjerm­element</i>)."
 
-#: src/qml/pages/SimpleByDefault.qml:37
+#: src/qml/pages/SimpleByDefault.qml:36
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1035,19 +1024,19 @@ msgstr ""
 "endra korleis det fungerer – for eksempel kva skjermkant det skal ligga "
 "langs – eller for å leggja til eller fjerna småprogram."
 
-#: src/qml/pages/SimpleByDefault.qml:40
+#: src/qml/pages/SimpleByDefault.qml:39
 #, kde-format
 msgctxt "@info"
 msgid ""
-"This is the “Kickoff” widget, a multipurpose launcher. Here you can launch "
-"apps, shut down or restart the system, access recent files, and more. Click "
-"on it to get started!"
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
 msgstr ""
-"Dette er <i>program­startaren</i> (òg kalla «Kickoff»). Her kan du blant anna "
-"starta program, slå av eller starta om maskina og få tilgang til nyleg "
-"brukte filer. Trykk på han og prøv deg fram!"
+"Dette er <i>program­startaren</i>. Her kan du blant anna starta program, slå "
+"av eller starta om maskina og få tilgang til nyleg brukte filer. Trykk på "
+"han og prøv deg fram!"
 
-#: src/qml/pages/SimpleByDefault.qml:43
+#: src/qml/pages/SimpleByDefault.qml:42
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1057,7 +1046,7 @@ msgstr ""
 "Dette er <i>oppgåvehandsamaren</i>. Her kan du byta mellom opne program "
 "eller starta nye. Dra ikona for å byta plassering."
 
-#: src/qml/pages/SimpleByDefault.qml:46
+#: src/qml/pages/SimpleByDefault.qml:45
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1071,7 +1060,7 @@ msgstr ""
 "berre viste når dei er relevante. Trykk eventuelt på ⌃-pila ved sida av "
 "klokka for å sjå alle oppføringane."
 
-#: src/qml/pages/SimpleByDefault.qml:49
+#: src/qml/pages/SimpleByDefault.qml:48
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1083,7 +1072,7 @@ msgstr ""
 "kan òg setjast opp til å visa andre tidssoner samt avtalar frå dine eigne "
 "kalendrar."
 
-#: src/qml/pages/SimpleByDefault.qml:52
+#: src/qml/pages/SimpleByDefault.qml:51
 #, kde-format
 msgctxt "@info"
 msgid ""

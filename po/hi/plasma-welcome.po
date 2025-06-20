@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:44+0000\n"
+"POT-Creation-Date: 2025-04-28 00:43+0000\n"
 "PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -158,13 +158,13 @@ msgctxt "@action:button"
 msgid "&Back"
 msgstr "&पीछे"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Finish"
 msgstr "&खत्म करना"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Next"
@@ -231,13 +231,13 @@ msgstr "गतिविधि बनाएं…"
 msgid "Search…"
 msgstr "खोजना…"
 
-#: src/qml/mock/MockOverview.qml:98
+#: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
 msgid "Desktop 1"
 msgstr "डेस्कटॉप 1"
 
-#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:206
+#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:210
 #, kde-format
 msgctxt "@info:placeholder Shown when there is insufficent width"
 msgid "Expand the window"
@@ -249,7 +249,7 @@ msgctxt "@info:window"
 msgid "Error loading page"
 msgstr "पेज लोड करने में त्रुटि"
 
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:80
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Report Bug…"
@@ -279,24 +279,23 @@ msgctxt "@info:usagetip"
 msgid "This page provided by Welcome Center could not be loaded"
 msgstr "वेलकम सेंटर द्वारा प्रदान किया गया यह पृष्ठ लोड नहीं किया जा सका"
 
-#: src/qml/pages/Discover.qml:22
+#: src/qml/pages/Discover.qml:20
 #, kde-format
 msgctxt "@title:window"
-msgid "Manage Software"
-msgstr "सॉफ्टवेयर प्रबंधित करें"
+msgid "Find Great Apps"
+msgstr ""
 
-#: src/qml/pages/Discover.qml:23
+#: src/qml/pages/Discover.qml:21
 #, kde-kuit-format
 msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
+"%2 is the distro name."
 msgid ""
-"The <application>%1</application> app helps you find and install "
-"applications, games, and tools. You can search or browse by category, look "
-"at screenshots, and read reviews to help you find the perfect app."
+"There’s no need to search the web to download app installers or use a "
+"command-line package manager; KDE’s app store <application>%1</application> "
+"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
+"try!"
 msgstr ""
-"<application>%1</application> ऐप आपको एप्लिकेशन, गेम और टूल खोजने और इंस्टॉल करने में "
-"मदद करता है। आप श्रेणी के अनुसार खोज या ब्राउज़ कर सकते हैं, स्क्रीनशॉट देख सकते हैं और सही "
-"ऐप खोजने में मदद के लिए समीक्षाएँ पढ़ सकते हैं।"
 
 #: src/qml/pages/Discover.qml:107
 #, kde-format
@@ -396,13 +395,13 @@ msgctxt "@action:inmenu An option to sort a list in reverse order"
 msgid "Reverse"
 msgstr ""
 
-#: src/qml/pages/Feedback.qml:15
+#: src/qml/pages/Feedback.qml:16
 #, kde-format
 msgctxt "@title: window"
 msgid "Share Anonymous Usage Information"
 msgstr "अनाम उपयोग जानकारी साझा करें"
 
-#: src/qml/pages/Feedback.qml:16
+#: src/qml/pages/Feedback.qml:17
 #, kde-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -446,13 +445,13 @@ msgctxt "@action:button"
 msgid "Visit home page"
 msgstr "होम पेज पर जाएँ"
 
-#: src/qml/pages/Network.qml:20
+#: src/qml/pages/Network.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Access the Internet"
 msgstr "इंटरनेट का उपयोग करें"
 
-#: src/qml/pages/Network.qml:21
+#: src/qml/pages/Network.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -465,13 +464,13 @@ msgstr ""
 "को प्रबंधित कर सकते हैं। इसे एक्सेस करने के लिए, अपने <इंटरफ़ेस>सिस्टम ट्रे</इंटरफ़ेस> में "
 "<इंटरफ़ेस>नेटवर्क</इंटरफ़ेस> आइकन पर क्लिक करें, जो स्क्रीन के निचले-दाएँ कोने में रहता है।"
 
-#: src/qml/pages/Network.qml:75
+#: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Networking support for Plasma is not currently installed"
 msgstr "प्लाज़्मा के लिए नेटवर्किंग समर्थन वर्तमान में स्थापित नहीं है"
 
-#: src/qml/pages/Network.qml:76
+#: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
 msgid ""
@@ -481,19 +480,19 @@ msgstr ""
 "नेटवर्क कनेक्शन प्रबंधित करने के लिए, प्लाज़्मा को <icode>plasma-nm</icode> स्थापित करने "
 "की आवश्यकता है। कृपया इस चूक की रिपोर्ट %1 को करें।"
 
-#: src/qml/pages/Network.qml:245
+#: src/qml/pages/Network.qml:211
 #, kde-format
 msgctxt "@info:placeholder Shown when connected to the internet"
 msgid "You’re connected"
 msgstr "आप कनेक्ट हो गए हैं"
 
-#: src/qml/pages/Network.qml:246
+#: src/qml/pages/Network.qml:212
 #, kde-format
 msgctxt "@info:usagetip Shown when connected to the internet"
 msgid "All good to go!"
 msgstr "सब ठीक है!"
 
-#: src/qml/pages/Network.qml:253
+#: src/qml/pages/Network.qml:219
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -505,7 +504,7 @@ msgstr ""
 "संस्करण का उपयोग कर रहे हैं। पृष्ठ की विभिन्न स्थितियों का मैन्युअल रूप से पूर्वावलोकन करने के "
 "लिए, आप बटन का उपयोग कर सकते हैं।"
 
-#: src/qml/pages/Network.qml:258
+#: src/qml/pages/Network.qml:224
 #, kde-format
 msgctxt "@action:button"
 msgid "Change state"
@@ -624,58 +623,63 @@ msgid "Powerful When Needed"
 msgstr "जब जरूरत हो तब शक्तिशाली"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:17
-#, kde-kuit-format
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info:usagetip"
+#| msgid ""
+#| "Plasma is an extremely feature-rich environment, designed to super-charge "
+#| "your productivity! Here is just a smattering of the things it can do for "
+#| "you:"
 msgctxt "@info:usagetip"
 msgid ""
 "Plasma is an extremely feature-rich environment, designed to super-charge "
-"your productivity! Here is just a smattering of the things it can do for you:"
+"your productivity!<nl/><nl/>"
 msgstr ""
 "प्लाज़्मा एक अत्यंत सुविधा संपन्न वातावरण है, जिसे आपकी उत्पादकता को बढ़ाने के लिए डिज़ाइन "
 "किया गया है! यहाँ कुछ ऐसी चीज़ें बताई गई हैं जो यह आपके लिए कर सकता है:"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:56
+#: src/qml/pages/PowerfulWhenNeeded.qml:47
 #, kde-format
 msgctxt "@title:row Name of the 'Overview' KWin effect"
 msgid "Overview"
 msgstr "अवलोकन"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:57
+#: src/qml/pages/PowerfulWhenNeeded.qml:48
 #, kde-format
 msgctxt "@info Caption for Overview button"
 msgid "Your system command center"
 msgstr "आपका सिस्टम कमांड सेंटर"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:67
+#: src/qml/pages/PowerfulWhenNeeded.qml:53
 #, kde-format
 msgctxt "@title:row"
 msgid "KRunner"
 msgstr "लॉकर"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:68
+#: src/qml/pages/PowerfulWhenNeeded.qml:54
 #, kde-format
 msgctxt "@info Caption for KRunner button"
 msgid "Search for anything"
 msgstr "कुछ भी खोजें"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:78
+#: src/qml/pages/PowerfulWhenNeeded.qml:59
 #, kde-format
 msgctxt "@title:row Name of the 'KDE Connect' feature"
 msgid "KDE Connect"
 msgstr "केडीई कनेक्ट"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:79
+#: src/qml/pages/PowerfulWhenNeeded.qml:60
 #, kde-format
 msgctxt "@info Caption for KDE Connect button"
 msgid "Connect your phone and your computer"
 msgstr "अपने फ़ोन और कंप्यूटर को कनेक्ट करें"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:90
+#: src/qml/pages/PowerfulWhenNeeded.qml:65
 #, kde-format
 msgctxt "@title:row Name of the 'Activities' Plasma feature"
 msgid "Activities"
 msgstr "गतिविधियाँ"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:91
+#: src/qml/pages/PowerfulWhenNeeded.qml:66
 #, kde-format
 msgctxt ""
 "@info Caption for Activities button. Note that 'Separate' is being used as "
@@ -683,31 +687,31 @@ msgctxt ""
 msgid "Separate work, school, or home tasks"
 msgstr "काम, स्कूल या घर के कामों को अलग-अलग करें"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:101
+#: src/qml/pages/PowerfulWhenNeeded.qml:71
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
 msgstr "वाल्टों"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:102
+#: src/qml/pages/PowerfulWhenNeeded.qml:72
 #, kde-format
 msgctxt "@info Caption for Plasma Vaults button"
 msgid "Store sensitive files securely"
 msgstr "संवेदनशील फ़ाइलों को सुरक्षित रूप से संग्रहीत करें"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:112
+#: src/qml/pages/PowerfulWhenNeeded.qml:77
 #, kde-format
 msgctxt "@title:row"
 msgid "System Settings"
 msgstr "सिस्टम सेटिंग्स"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:113
+#: src/qml/pages/PowerfulWhenNeeded.qml:78
 #, kde-format
 msgctxt "@info Caption for Get System Settings button"
 msgid "Configure the system"
 msgstr "सिस्टम कॉन्फ़िगर करें"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:120
+#: src/qml/pages/PowerfulWhenNeeded.qml:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Learn about more Plasma features"
@@ -938,30 +942,30 @@ msgstr ""
 "अंदर भी रह सकते हैं जो क्लाउड स्टोरेज सेवाओं से सिंक किए गए हैं, जो उस सामग्री के लिए "
 "अतिरिक्त गोपनीयता प्रदान करते हैं।"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:93
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
 msgctxt "@title:window Title of the Plasma Vaults popup"
 msgid "Vaults"
 msgstr "वाल्टों"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:108
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:112
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "Important Documents"
 msgstr "महत्वपूर्ण दस्त्तावेज"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:109
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:113
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "मेरी तस्वीरें"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:117
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
 #, kde-format
 msgid "Unlock and Open"
 msgstr "अनलॉक करें और खोलें"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:129
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -971,13 +975,13 @@ msgstr ""
 "आरंभ करने के लिए, छुपे हुए आइटम दिखाने के लिए <इंटरफ़ेस>सिस्टम ट्रे</इंटरफ़ेस> पर तीर पर क्लिक "
 "करें, और फिर <इंटरफ़ेस>वॉल्ट</इंटरफ़ेस> आइकन पर क्लिक करें।"
 
-#: src/qml/pages/SimpleByDefault.qml:22
+#: src/qml/pages/SimpleByDefault.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Simple by Default"
 msgstr "डिफ़ॉल्ट रूप से सरल"
 
-#: src/qml/pages/SimpleByDefault.qml:23
+#: src/qml/pages/SimpleByDefault.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -992,7 +996,7 @@ msgstr ""
 "नहीं होती है।<nl/><nl/>नीचे एक विशिष्ट प्लाज्मा डेस्कटॉप का दृश्य प्रतिनिधित्व है; इसके "
 "बारे में जानने के लिए पॉइंटर को ऊपर ले जाएँ या किसी चीज़ पर क्लिक करें!"
 
-#: src/qml/pages/SimpleByDefault.qml:34
+#: src/qml/pages/SimpleByDefault.qml:33
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1008,7 +1012,7 @@ msgstr ""
 "विजेट जोड़ने, हटाने या संशोधित करने के लिए <interface>संपादन मोड दर्ज करें</interface> "
 "भी चुन सकते हैं।"
 
-#: src/qml/pages/SimpleByDefault.qml:37
+#: src/qml/pages/SimpleByDefault.qml:36
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1020,19 +1024,24 @@ msgstr ""
 "पैनल कॉन्फ़िगरेशन</इंटरफ़ेस> चुनें ताकि यह बदल सके कि यह कैसे व्यवहार करता है, यह किस स्क्रीन "
 "किनारे पर रहता है, और विजेट जोड़ने, हटाने या संशोधित करने के लिए।"
 
-#: src/qml/pages/SimpleByDefault.qml:40
-#, kde-format
+#: src/qml/pages/SimpleByDefault.qml:39
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "This is the “Kickoff” widget, a multipurpose launcher. Here you can "
+#| "launch apps, shut down or restart the system, access recent files, and "
+#| "more. Click on it to get started!"
 msgctxt "@info"
 msgid ""
-"This is the “Kickoff” widget, a multipurpose launcher. Here you can launch "
-"apps, shut down or restart the system, access recent files, and more. Click "
-"on it to get started!"
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
 msgstr ""
 "यह \"किकऑफ़\" विजेट है, जो एक बहुउद्देशीय लॉन्चर है। यहाँ आप ऐप लॉन्च कर सकते हैं, सिस्टम "
 "को शट डाउन या रीस्टार्ट कर सकते हैं, हाल ही की फ़ाइलों तक पहुँच सकते हैं, और भी बहुत कुछ "
 "कर सकते हैं। आरंभ करने के लिए इस पर क्लिक करें!"
 
-#: src/qml/pages/SimpleByDefault.qml:43
+#: src/qml/pages/SimpleByDefault.qml:42
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1042,7 +1051,7 @@ msgstr ""
 "यह \"टास्क मैनेजर\" विजेट है, जहाँ आप खुले हुए ऐप्स के बीच स्विच कर सकते हैं और नए ऐप भी "
 "लॉन्च कर सकते हैं। ऐप आइकन को फिर से व्यवस्थित करने के लिए उन्हें खींचें।"
 
-#: src/qml/pages/SimpleByDefault.qml:46
+#: src/qml/pages/SimpleByDefault.qml:45
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1055,7 +1064,7 @@ msgstr ""
 "को नियंत्रित करने देता है। आइटम यहाँ केवल तभी दिखाई देंगे जब वे प्रासंगिक होंगे। सभी उपलब्ध "
 "आइटम देखने के लिए, घड़ी के बगल में ⌃ तीर पर क्लिक करें।"
 
-#: src/qml/pages/SimpleByDefault.qml:49
+#: src/qml/pages/SimpleByDefault.qml:48
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1066,7 +1075,7 @@ msgstr ""
 "यह \"डिजिटल घड़ी\" विजेट है। कैलेंडर दिखाने के लिए इस पर क्लिक करें। इसे आपके डिजिटल कैलेंडर "
 "से अन्य समयक्षेत्र और ईवेंट दिखाने के लिए भी कॉन्फ़िगर किया जा सकता है।"
 
-#: src/qml/pages/SimpleByDefault.qml:52
+#: src/qml/pages/SimpleByDefault.qml:51
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1179,6 +1188,21 @@ msgstr "%1 बीटा"
 msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 बीटा %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Manage Software"
+#~ msgstr "सॉफ्टवेयर प्रबंधित करें"
+
+#~ msgctxt ""
+#~ "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+#~ msgid ""
+#~ "The <application>%1</application> app helps you find and install "
+#~ "applications, games, and tools. You can search or browse by category, "
+#~ "look at screenshots, and read reviews to help you find the perfect app."
+#~ msgstr ""
+#~ "<application>%1</application> ऐप आपको एप्लिकेशन, गेम और टूल खोजने और इंस्टॉल करने "
+#~ "में मदद करता है। आप श्रेणी के अनुसार खोज या ब्राउज़ कर सकते हैं, स्क्रीनशॉट देख सकते हैं और "
+#~ "सही ऐप खोजने में मदद के लिए समीक्षाएँ पढ़ सकते हैं।"
 
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Sort by Date"

@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the plasma-welcome package.
 #
 # Sveinn í Felli <sv1@fellsnet.is>, 2022, 2023.
-# SPDX-FileCopyrightText: 2024 Guðmundur Erlingsson <gudmundure@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Guðmundur Erlingsson <gudmundure@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:44+0000\n"
-"PO-Revision-Date: 2024-12-13 20:44+0000\n"
+"POT-Creation-Date: 2025-04-28 00:43+0000\n"
+"PO-Revision-Date: 2025-04-18 13:39+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
@@ -162,25 +162,23 @@ msgctxt "@action:button"
 msgid "&Back"
 msgstr "Til &baka"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Finish"
 msgstr "&Ljúka"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Next"
 msgstr "&Næsta"
 
 #: src/qml/footers/FooterUpdate.qml:21
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Show this page after Plasma is updated"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show after Plasma is updated"
-msgstr "Birta þessa síðu eftir að Plasma er uppfært"
+msgstr "Birta eftir að Plasma er uppfært"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -235,13 +233,13 @@ msgstr "Búa til athöfn..."
 msgid "Search…"
 msgstr "Leita…"
 
-#: src/qml/mock/MockOverview.qml:98
+#: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
 msgid "Desktop 1"
 msgstr "Skjáborð 1"
 
-#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:206
+#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:210
 #, kde-format
 msgctxt "@info:placeholder Shown when there is insufficent width"
 msgid "Expand the window"
@@ -253,7 +251,7 @@ msgctxt "@info:window"
 msgid "Error loading page"
 msgstr "Villa við að hlaða síðu"
 
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:80
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Report Bug…"
@@ -285,25 +283,27 @@ msgid "This page provided by Welcome Center could not be loaded"
 msgstr ""
 "Ekki tókst að hlaða inn þessari síðu sem kemur frá Kynningarmiðstöðinni"
 
-#: src/qml/pages/Discover.qml:22
+#: src/qml/pages/Discover.qml:20
 #, kde-format
 msgctxt "@title:window"
-msgid "Manage Software"
-msgstr "Umsjón með hugbúnaði"
+msgid "Find Great Apps"
+msgstr "Finna frábær forrit"
 
-#: src/qml/pages/Discover.qml:23
+#: src/qml/pages/Discover.qml:21
 #, kde-kuit-format
 msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
+"%2 is the distro name."
 msgid ""
-"The <application>%1</application> app helps you find and install "
-"applications, games, and tools. You can search or browse by category, look "
-"at screenshots, and read reviews to help you find the perfect app."
+"There’s no need to search the web to download app installers or use a "
+"command-line package manager; KDE’s app store <application>%1</application> "
+"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
+"try!"
 msgstr ""
-"Forritið <application>%1</application> hjálpar þér að finna og setja upp "
-"forriti, leiki og verkfæri. Hægt er að leita eða fletta eftir flokkum, skoða "
-"skjámyndir og lesa umsagnir til að auðvelda þér að finna forritið sem best "
-"hentar."
+"Það er óþarfi að leita á netinu til að sækja uppsetningarskrár fyrir forrit "
+"eða nota pakkastjóra á skipanalínunni. Forritaverslun KDE <application>%1</"
+"application> gerir þetta allt fyrir þig!<nl/><nl/>Smelltu á eitt af táknunum "
+"hér fyrir neðan til að prófa!"
 
 #: src/qml/pages/Discover.qml:107
 #, kde-format
@@ -365,53 +365,47 @@ msgstr "Við þökkum eftirfarandi stuðningsaðilum fyrir að styrja KDE reglul
 #, kde-format
 msgctxt "@action:button %1 is the selected sort order, e.g. Random"
 msgid "Sort: %1"
-msgstr ""
+msgstr "Raða: %1"
 
 #: src/qml/pages/enjoy/Supporters.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Sort Randomly"
+#, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "Random"
-msgstr "Raða handahófskennt"
+msgstr "Slembið"
 
 #: src/qml/pages/enjoy/Supporters.qml:56
 #, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "Last Name"
-msgstr ""
+msgstr "Eftirnafn"
 
 #: src/qml/pages/enjoy/Supporters.qml:67
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Sort by Name"
+#, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "First Name"
-msgstr "Raða eftir nafni"
+msgstr "Skírnarnafn"
 
 #: src/qml/pages/enjoy/Supporters.qml:78
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Start Contributing!"
+#, kde-format
 msgctxt ""
 "@action:inmenu An order to sort a list, referring to the date a user has "
 "first made a donation"
 msgid "Contribution Date"
-msgstr "Byrjaðu að gefa af þér!"
+msgstr "Dagsetning framlags"
 
 #: src/qml/pages/enjoy/Supporters.qml:91
 #, kde-format
 msgctxt "@action:inmenu An option to sort a list in reverse order"
 msgid "Reverse"
-msgstr ""
+msgstr "Öfug röð"
 
-#: src/qml/pages/Feedback.qml:15
+#: src/qml/pages/Feedback.qml:16
 #, kde-format
 msgctxt "@title: window"
 msgid "Share Anonymous Usage Information"
 msgstr "Deila nafnlausum upplýsingum um notkun"
 
-#: src/qml/pages/Feedback.qml:16
+#: src/qml/pages/Feedback.qml:17
 #, kde-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -455,13 +449,13 @@ msgctxt "@action:button"
 msgid "Visit home page"
 msgstr "Heimsækja heimasíðuna"
 
-#: src/qml/pages/Network.qml:20
+#: src/qml/pages/Network.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Access the Internet"
 msgstr "Tengjast internetinu"
 
-#: src/qml/pages/Network.qml:21
+#: src/qml/pages/Network.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -475,13 +469,13 @@ msgstr ""
 "táknið<interface>Net</interface> í <interface>Kerfisbakkanum</interface> sem "
 "þú sérð neðst til hægri á skjánum."
 
-#: src/qml/pages/Network.qml:75
+#: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Networking support for Plasma is not currently installed"
 msgstr "Netstuðningur fyrir Plasma er ekki uppsettur "
 
-#: src/qml/pages/Network.qml:76
+#: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
 msgid ""
@@ -491,19 +485,19 @@ msgstr ""
 "Til að hafa umsjón með nettengingum í Plasma þarf <icode>plasma-nm</icode> "
 "að vera uppsett. Tilkynntu um að þetta vanti til %1."
 
-#: src/qml/pages/Network.qml:245
+#: src/qml/pages/Network.qml:211
 #, kde-format
 msgctxt "@info:placeholder Shown when connected to the internet"
 msgid "You’re connected"
 msgstr "Tenging er komin á"
 
-#: src/qml/pages/Network.qml:246
+#: src/qml/pages/Network.qml:212
 #, kde-format
 msgctxt "@info:usagetip Shown when connected to the internet"
 msgid "All good to go!"
 msgstr "Allt tilbúið!"
 
-#: src/qml/pages/Network.qml:253
+#: src/qml/pages/Network.qml:219
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -515,7 +509,7 @@ msgstr ""
 "þar sem þú ert að nota þróunarútgáfu. Til að forskoða handvirkt mismunandi "
 "stöðu síðunnar geturðu notað þennan hnapp."
 
-#: src/qml/pages/Network.qml:258
+#: src/qml/pages/Network.qml:224
 #, kde-format
 msgctxt "@action:button"
 msgid "Change state"
@@ -560,7 +554,7 @@ msgstr "Senda villutilkynningu"
 #, kde-format
 msgctxt "@info"
 msgid "Download an embedded preview of the release announcement?"
-msgstr ""
+msgstr "Sækja innfellda forskoðun á útgáfutilkynningunni?"
 
 #: src/qml/pages/PlasmaUpdate.qml:155
 #, kde-format
@@ -569,50 +563,50 @@ msgid ""
 "The preview has not been automatically downloaded because you are using a "
 "metered network connection."
 msgstr ""
+"Forskoðunin var ekki sótt sjálfkrafa þar sem þú ert að nota gagnamælda "
+"nettengingu."
 
 #: src/qml/pages/PlasmaUpdate.qml:157
 #, kde-format
 msgctxt "@info, %1 is an error code"
 msgid "The preview could not be downloaded — a network error occurred (%1)."
-msgstr ""
+msgstr "Ekki tókst að sækja forskoðunina vegna netvillu (%1)."
 
 #: src/qml/pages/PlasmaUpdate.qml:159
 #, kde-format
 msgctxt "@info"
 msgid "The preview could not be loaded — a parse error occurred."
-msgstr ""
+msgstr "Ekki tókst að hlaða forskoðun vegna þáttunarvillu."
 
 #: src/qml/pages/PlasmaUpdate.qml:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Download Preview"
-msgstr ""
+msgstr "Sækja forskoðun"
 
 #: src/qml/pages/PlasmaUpdate.qml:178
 #, kde-format
 msgctxt "@action:button"
 msgid "Download Anyway"
-msgstr ""
+msgstr "Sækja samt sem áður"
 
 #: src/qml/pages/PlasmaUpdate.qml:180
 #, kde-format
 msgctxt "@action:button"
 msgid "Retry"
-msgstr ""
+msgstr "Reyna aftur"
 
 #: src/qml/pages/PlasmaUpdate.qml:182
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Open Settings…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open in Browser…"
-msgstr "Opna stillingar…"
+msgstr "Opna í vafra…"
 
 #: src/qml/pages/PlasmaUpdate.qml:228
 #, kde-format
 msgctxt "@option:check"
 msgid "Load preview automatically"
-msgstr ""
+msgstr "Hlaða forskoðun sjálfkrafa"
 
 #: src/qml/pages/PlasmaUpdate.qml:236
 #, kde-format
@@ -621,12 +615,14 @@ msgid ""
 "The preview will be loaded automatically when this page is shown for future "
 "Plasma updates, except when using a metered network connection."
 msgstr ""
+"Forskoðunin hleðst inn sjálfkrafa þegar þessi síða er birt í uppfærslum á "
+"Plasma í framtíðinni, nema þegar notuð er gagnamæld nettenging."
 
 #: src/qml/pages/PlasmaUpdate.qml:421
 #, kde-format
 msgctxt "@info"
 msgid "<b>Click to read the announcement</b>"
-msgstr ""
+msgstr "<b>Smelltu til að lesa tilkynninguna</b>"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:16
 #, kde-format
@@ -639,55 +635,54 @@ msgstr "Öflugt þegar á þarf að halda"
 msgctxt "@info:usagetip"
 msgid ""
 "Plasma is an extremely feature-rich environment, designed to super-charge "
-"your productivity! Here is just a smattering of the things it can do for you:"
+"your productivity!<nl/><nl/>"
 msgstr ""
-"Plasma býr yfir mjög fjölbreyttum eiginleikum og er hannað til að hjálpa þér "
-"að koma meiru í verk. Hér er bara smá brot af því sem það getur gert fyrir "
-"þig:"
+"Plasma býr yfir mjög fjölbreyttum eiginleikum sem auðvelda þér að koma meiru "
+"í verk!<nl/><nl/>"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:56
+#: src/qml/pages/PowerfulWhenNeeded.qml:47
 #, kde-format
 msgctxt "@title:row Name of the 'Overview' KWin effect"
 msgid "Overview"
 msgstr "Yfirlitsskjár"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:57
+#: src/qml/pages/PowerfulWhenNeeded.qml:48
 #, kde-format
 msgctxt "@info Caption for Overview button"
 msgid "Your system command center"
 msgstr "Stjórnstöð tölvunnar þinnar"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:67
+#: src/qml/pages/PowerfulWhenNeeded.qml:53
 #, kde-format
 msgctxt "@title:row"
 msgid "KRunner"
 msgstr "KRunner"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:68
+#: src/qml/pages/PowerfulWhenNeeded.qml:54
 #, kde-format
 msgctxt "@info Caption for KRunner button"
 msgid "Search for anything"
 msgstr "Leitaðu að hverju sem er"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:78
+#: src/qml/pages/PowerfulWhenNeeded.qml:59
 #, kde-format
 msgctxt "@title:row Name of the 'KDE Connect' feature"
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:79
+#: src/qml/pages/PowerfulWhenNeeded.qml:60
 #, kde-format
 msgctxt "@info Caption for KDE Connect button"
 msgid "Connect your phone and your computer"
 msgstr "Tengdu saman símann þinn og tölvuna"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:90
+#: src/qml/pages/PowerfulWhenNeeded.qml:65
 #, kde-format
 msgctxt "@title:row Name of the 'Activities' Plasma feature"
 msgid "Activities"
 msgstr "Athafnir"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:91
+#: src/qml/pages/PowerfulWhenNeeded.qml:66
 #, kde-format
 msgctxt ""
 "@info Caption for Activities button. Note that 'Separate' is being used as "
@@ -695,31 +690,31 @@ msgctxt ""
 msgid "Separate work, school, or home tasks"
 msgstr "Haltu verkefnum fyrir vinnu, skóla eða heimili aðskildum"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:101
+#: src/qml/pages/PowerfulWhenNeeded.qml:71
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
 msgstr "Öryggisgeymslur"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:102
+#: src/qml/pages/PowerfulWhenNeeded.qml:72
 #, kde-format
 msgctxt "@info Caption for Plasma Vaults button"
 msgid "Store sensitive files securely"
 msgstr "Geymdu viðkvæmar skrár á öruggan hátt"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:112
+#: src/qml/pages/PowerfulWhenNeeded.qml:77
 #, kde-format
 msgctxt "@title:row"
 msgid "System Settings"
 msgstr "Kerfisstillingar"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:113
+#: src/qml/pages/PowerfulWhenNeeded.qml:78
 #, kde-format
 msgctxt "@info Caption for Get System Settings button"
 msgid "Configure the system"
 msgstr "Grunnstilla kerfið"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:120
+#: src/qml/pages/PowerfulWhenNeeded.qml:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Learn about more Plasma features"
@@ -954,30 +949,30 @@ msgstr ""
 "samstilltar við skýjageymslur á netinu sem veitir slíku efni enn meira "
 "öryggi."
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:93
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
 msgctxt "@title:window Title of the Plasma Vaults popup"
 msgid "Vaults"
 msgstr "Öryggisgeymslur"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:108
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:112
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "Important Documents"
 msgstr "Mikilvæg skjöl"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:109
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:113
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "Ljósmyndir"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:117
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
 #, kde-format
 msgid "Unlock and Open"
 msgstr "Aflæsa og opna"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:129
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -987,13 +982,13 @@ msgstr ""
 "Smelltu á örina í <interface>kerfisbakkanum</interface> til að sýna falin "
 "atriði og smelltu svo á táknið fyrir <interface>Öryggisgeymslur</interface>."
 
-#: src/qml/pages/SimpleByDefault.qml:22
+#: src/qml/pages/SimpleByDefault.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Simple by Default"
 msgstr "Einfalt í eðli sínu"
 
-#: src/qml/pages/SimpleByDefault.qml:23
+#: src/qml/pages/SimpleByDefault.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -1009,7 +1004,7 @@ msgstr ""
 "Plasma-skjáborð. Færðu bendilinn yfir hluti og smelltu á þá til að læra "
 "meira!"
 
-#: src/qml/pages/SimpleByDefault.qml:34
+#: src/qml/pages/SimpleByDefault.qml:33
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1026,7 +1021,7 @@ msgstr ""
 "valið <interface>Opna breytisniði</interface> til að bæta við, fjarlægja eða "
 "breyta græjum."
 
-#: src/qml/pages/SimpleByDefault.qml:37
+#: src/qml/pages/SimpleByDefault.qml:36
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1039,19 +1034,19 @@ msgstr ""
 "interface> til að breyta hegðun hennar, við hvað brún skjásins hún er og til "
 "að bæta við, fjarlægja eða breyta græjum."
 
-#: src/qml/pages/SimpleByDefault.qml:40
+#: src/qml/pages/SimpleByDefault.qml:39
 #, kde-format
 msgctxt "@info"
 msgid ""
-"This is the “Kickoff” widget, a multipurpose launcher. Here you can launch "
-"apps, shut down or restart the system, access recent files, and more. Click "
-"on it to get started!"
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
 msgstr ""
 "Þetta er “forritaræsirinn” sem opnar fjölhæfa ræsivalmynd. Hér geturðu keyrt "
-"forrit, slökkt og endurræst tölvuna, séð nýlegar skrár og fleira. Smelltu á "
+"forrit, slökkt eða endurræst tölvuna, séð nýlegar skrár og fleira. Smelltu á "
 "hann til að hefjast handa!"
 
-#: src/qml/pages/SimpleByDefault.qml:43
+#: src/qml/pages/SimpleByDefault.qml:42
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1062,7 +1057,7 @@ msgstr ""
 "forrita og opnað ný forrit. Dragðu til forritatáknin til að raða þeim upp á "
 "nýtt."
 
-#: src/qml/pages/SimpleByDefault.qml:46
+#: src/qml/pages/SimpleByDefault.qml:45
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1076,7 +1071,7 @@ msgstr ""
 "sýnilegar þegar á þeim þarf að halda. Smelltu á ⌃ örina við hliðina á "
 "klukkunni til að sjá öll atriðin sem eru í boði."
 
-#: src/qml/pages/SimpleByDefault.qml:49
+#: src/qml/pages/SimpleByDefault.qml:48
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1088,7 +1083,7 @@ msgstr ""
 "að stilla hana þannig að hún sýni önnur tímabelti og viðburði úr stafræna "
 "dagatalinu þínu."
 
-#: src/qml/pages/SimpleByDefault.qml:52
+#: src/qml/pages/SimpleByDefault.qml:51
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1204,6 +1199,22 @@ msgstr "%1 Beta"
 msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 Beta %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Manage Software"
+#~ msgstr "Umsjón með hugbúnaði"
+
+#~ msgctxt ""
+#~ "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+#~ msgid ""
+#~ "The <application>%1</application> app helps you find and install "
+#~ "applications, games, and tools. You can search or browse by category, "
+#~ "look at screenshots, and read reviews to help you find the perfect app."
+#~ msgstr ""
+#~ "Forritið <application>%1</application> hjálpar þér að finna og setja upp "
+#~ "forriti, leiki og verkfæri. Hægt er að leita eða fletta eftir flokkum, "
+#~ "skoða skjámyndir og lesa umsagnir til að auðvelda þér að finna forritið "
+#~ "sem best hentar."
 
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Sort by Date"

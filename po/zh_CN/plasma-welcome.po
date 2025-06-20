@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:44+0000\n"
+"POT-Creation-Date: 2025-04-28 00:43+0000\n"
 "PO-Revision-Date: 2024-04-23 19:24\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -157,13 +157,13 @@ msgctxt "@action:button"
 msgid "&Back"
 msgstr "上一页(&B)"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Finish"
 msgstr "完成(&F)"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Next"
@@ -228,13 +228,13 @@ msgstr "创建活动…"
 msgid "Search…"
 msgstr "搜索…"
 
-#: src/qml/mock/MockOverview.qml:98
+#: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
 msgid "Desktop 1"
 msgstr "桌面 1"
 
-#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:206
+#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:210
 #, kde-format
 msgctxt "@info:placeholder Shown when there is insufficent width"
 msgid "Expand the window"
@@ -246,7 +246,7 @@ msgctxt "@info:window"
 msgid "Error loading page"
 msgstr "加载页面出错"
 
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:80
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Report Bug…"
@@ -276,24 +276,26 @@ msgctxt "@info:usagetip"
 msgid "This page provided by Welcome Center could not be loaded"
 msgstr "无法加载此页面 (由欢迎中心提供)"
 
-#: src/qml/pages/Discover.qml:22
+#: src/qml/pages/Discover.qml:20
 #, kde-format
 msgctxt "@title:window"
-msgid "Manage Software"
-msgstr "管理软件"
+msgid "Find Great Apps"
+msgstr "发现优秀的应用程序"
 
-#: src/qml/pages/Discover.qml:23
+#: src/qml/pages/Discover.qml:21
 #, kde-kuit-format
 msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
+"%2 is the distro name."
 msgid ""
-"The <application>%1</application> app helps you find and install "
-"applications, games, and tools. You can search or browse by category, look "
-"at screenshots, and read reviews to help you find the perfect app."
+"There’s no need to search the web to download app installers or use a "
+"command-line package manager; KDE’s app store <application>%1</application> "
+"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
+"try!"
 msgstr ""
-"<application>%1</application> 应用能帮助您查找并安装所需的应用程序、游戏和实"
-"用工具。您可以通过关键词查找程序，也可以按分类浏览程序。您还可以查看屏幕截"
-"图，阅读用户评价，找到最适合自己的应用程序。"
+"无需搜索互联网以下载应用的安装包，也无需使用命令行软件包管理器；KDE 的应用商"
+"店程序 <application>%1</application> 能够帮您完成这些工作。<nl/><nl/>点击下面"
+"的任意图标即可试用。"
 
 #: src/qml/pages/Discover.qml:107
 #, kde-format
@@ -388,13 +390,13 @@ msgctxt "@action:inmenu An option to sort a list in reverse order"
 msgid "Reverse"
 msgstr "倒序"
 
-#: src/qml/pages/Feedback.qml:15
+#: src/qml/pages/Feedback.qml:16
 #, kde-format
 msgctxt "@title: window"
 msgid "Share Anonymous Usage Information"
 msgstr "分享匿名的使用情况信息"
 
-#: src/qml/pages/Feedback.qml:16
+#: src/qml/pages/Feedback.qml:17
 #, kde-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -437,13 +439,13 @@ msgctxt "@action:button"
 msgid "Visit home page"
 msgstr "访问起始页"
 
-#: src/qml/pages/Network.qml:20
+#: src/qml/pages/Network.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Access the Internet"
 msgstr "连接到互联网"
 
-#: src/qml/pages/Network.qml:21
+#: src/qml/pages/Network.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -456,13 +458,13 @@ msgstr ""
 "开网络小程序，请在<interface>系统托盘</interface> 中点击<interface>网络</"
 "interface>图标。它默认位于屏幕的右下角。"
 
-#: src/qml/pages/Network.qml:75
+#: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Networking support for Plasma is not currently installed"
 msgstr "Plasma 的网络支持模块目前尚未安装"
 
-#: src/qml/pages/Network.qml:76
+#: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
 msgid ""
@@ -472,19 +474,19 @@ msgstr ""
 "要管理网络连接，Plasma 需要安装 <icode>plasma-nm</icode>。请将此软件包安装缺"
 "漏情况报告给 %1。"
 
-#: src/qml/pages/Network.qml:245
+#: src/qml/pages/Network.qml:211
 #, kde-format
 msgctxt "@info:placeholder Shown when connected to the internet"
 msgid "You’re connected"
 msgstr "您已连接到互联网"
 
-#: src/qml/pages/Network.qml:246
+#: src/qml/pages/Network.qml:212
 #, kde-format
 msgctxt "@info:usagetip Shown when connected to the internet"
 msgid "All good to go!"
 msgstr "网络连接一切正常"
 
-#: src/qml/pages/Network.qml:253
+#: src/qml/pages/Network.qml:219
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -495,7 +497,7 @@ msgstr ""
 "由于您正在使用开发版本的 Plasma，不管网络连接情况如何，程序都会显示此页面。要"
 "手动切换此页面在不同网络连接状态下的预览，请点击“更改状态”按钮。"
 
-#: src/qml/pages/Network.qml:258
+#: src/qml/pages/Network.qml:224
 #, kde-format
 msgctxt "@action:button"
 msgid "Change state"
@@ -525,8 +527,8 @@ msgid ""
 "KDE contributors have spent the last four months hard at work on this "
 "release. We hope you enjoy using Plasma as much as we enjoyed making it!"
 msgstr ""
-"为了完成这一版本的 Plasma，KDE 的贡献者们已经努力工作了四个月。虽然劳累，但我"
-"们也很享受这一过程。希望新版的 Plasma 能为您带来愉悦的使用体验！"
+"KDE 贡献者们在过去四个月里为这一版本的 Plasma 付出了辛勤的努力。尽管劳累，但"
+"我们也很享受这一过程。希望新版的 Plasma 能为您带来愉悦的使用体验！"
 
 #: src/qml/pages/PlasmaUpdate.qml:29
 #, kde-format
@@ -617,53 +619,53 @@ msgstr "按需定制功能强大"
 msgctxt "@info:usagetip"
 msgid ""
 "Plasma is an extremely feature-rich environment, designed to super-charge "
-"your productivity! Here is just a smattering of the things it can do for you:"
+"your productivity!<nl/><nl/>"
 msgstr ""
-"Plasma 具备丰富的功能，可以提高您的工作效率。您可以从下面的这些功能开始体验："
+"Plasma 是一款功能极其丰富的桌面环境，致力于提升您的工作效率。<nl/><nl/>"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:56
+#: src/qml/pages/PowerfulWhenNeeded.qml:47
 #, kde-format
 msgctxt "@title:row Name of the 'Overview' KWin effect"
 msgid "Overview"
 msgstr "桌面概览"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:57
+#: src/qml/pages/PowerfulWhenNeeded.qml:48
 #, kde-format
 msgctxt "@info Caption for Overview button"
 msgid "Your system command center"
 msgstr "显示全部桌面和窗口并进行切换和管理"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:67
+#: src/qml/pages/PowerfulWhenNeeded.qml:53
 #, kde-format
 msgctxt "@title:row"
 msgid "KRunner"
 msgstr "KRunner"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:68
+#: src/qml/pages/PowerfulWhenNeeded.qml:54
 #, kde-format
 msgctxt "@info Caption for KRunner button"
 msgid "Search for anything"
 msgstr "搜索您想要的内容"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:78
+#: src/qml/pages/PowerfulWhenNeeded.qml:59
 #, kde-format
 msgctxt "@title:row Name of the 'KDE Connect' feature"
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:79
+#: src/qml/pages/PowerfulWhenNeeded.qml:60
 #, kde-format
 msgctxt "@info Caption for KDE Connect button"
 msgid "Connect your phone and your computer"
 msgstr "连接您的手机和电脑"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:90
+#: src/qml/pages/PowerfulWhenNeeded.qml:65
 #, kde-format
 msgctxt "@title:row Name of the 'Activities' Plasma feature"
 msgid "Activities"
 msgstr "活动"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:91
+#: src/qml/pages/PowerfulWhenNeeded.qml:66
 #, kde-format
 msgctxt ""
 "@info Caption for Activities button. Note that 'Separate' is being used as "
@@ -671,31 +673,31 @@ msgctxt ""
 msgid "Separate work, school, or home tasks"
 msgstr "区分处理工作、学习和家庭任务"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:101
+#: src/qml/pages/PowerfulWhenNeeded.qml:71
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
 msgstr "保险库"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:102
+#: src/qml/pages/PowerfulWhenNeeded.qml:72
 #, kde-format
 msgctxt "@info Caption for Plasma Vaults button"
 msgid "Store sensitive files securely"
 msgstr "安全地存储敏感文件"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:112
+#: src/qml/pages/PowerfulWhenNeeded.qml:77
 #, kde-format
 msgctxt "@title:row"
 msgid "System Settings"
 msgstr "系统设置"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:113
+#: src/qml/pages/PowerfulWhenNeeded.qml:78
 #, kde-format
 msgctxt "@info Caption for Get System Settings button"
 msgid "Configure the system"
 msgstr "配置系统功能"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:120
+#: src/qml/pages/PowerfulWhenNeeded.qml:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Learn about more Plasma features"
@@ -920,30 +922,30 @@ msgstr ""
 "以直接作为文件保存在与云端存储服务同步的文件夹中，从而为云端存储提供额外的保"
 "护。"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:93
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
 msgctxt "@title:window Title of the Plasma Vaults popup"
 msgid "Vaults"
 msgstr "保险库"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:108
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:112
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "Important Documents"
 msgstr "重要文档"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:109
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:113
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "我的照片"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:117
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
 #, kde-format
 msgid "Unlock and Open"
 msgstr "解锁并打开"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:129
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -953,13 +955,13 @@ msgstr ""
 "要使用保险库功能，请点击<interface>系统托盘</interface>中的上箭头图标以显示隐"
 "藏的项目，然后点击<interface>保险库</interface>图标。"
 
-#: src/qml/pages/SimpleByDefault.qml:22
+#: src/qml/pages/SimpleByDefault.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Simple by Default"
 msgstr "默认状态简洁易用"
 
-#: src/qml/pages/SimpleByDefault.qml:23
+#: src/qml/pages/SimpleByDefault.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -973,7 +975,7 @@ msgstr ""
 "人的使用习惯，让您无需繁琐的配置即可舒适高效地使用电脑。<nl/><nl/>下方显示了 "
 "Plasma 桌面的典型状态。点击或者将光标悬停在对象之上即可了解它的功能。"
 
-#: src/qml/pages/SimpleByDefault.qml:34
+#: src/qml/pages/SimpleByDefault.qml:33
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -989,7 +991,7 @@ msgstr ""
 "interface>。要更改桌面的外观，请在桌面上点击右键，在菜单中选择 <interface>配"
 "置桌面和壁纸…</interface>。"
 
-#: src/qml/pages/SimpleByDefault.qml:37
+#: src/qml/pages/SimpleByDefault.qml:36
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1001,19 +1003,19 @@ msgstr ""
 "<interface>显示面板配置</interface> 以更改面板的行为、贴靠的屏幕边缘、添加、"
 "移除和修改挂件等。"
 
-#: src/qml/pages/SimpleByDefault.qml:40
+#: src/qml/pages/SimpleByDefault.qml:39
 #, kde-format
 msgctxt "@info"
 msgid ""
-"This is the “Kickoff” widget, a multipurpose launcher. Here you can launch "
-"apps, shut down or restart the system, access recent files, and more. Click "
-"on it to get started!"
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
 msgstr ""
-"这是“开始菜单 (Kickoff)”挂件，它是 Plasma 的多用途启动器，和开始菜单类似。您"
-"可以通过它来启动应用、关机或者重新启动电脑，访问最近文件等各种功能。点击它的"
-"图标即可展开。"
+"这是“应用程序启动器”挂件，它是 Plasma 的多用途启动器，和开始菜单类似。您可以"
+"通过它来启动应用、关机或者重新启动电脑，访问最近文件等各种功能。点击它的图标"
+"即可展开。"
 
-#: src/qml/pages/SimpleByDefault.qml:43
+#: src/qml/pages/SimpleByDefault.qml:42
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1023,7 +1025,7 @@ msgstr ""
 "这是“任务管理器”挂件，您可以通过它来启动应用程序，或者在已打开的多个程序之间"
 "切换。您可以通过拖拽应用程序的图标来对它们进行重新排列。"
 
-#: src/qml/pages/SimpleByDefault.qml:46
+#: src/qml/pages/SimpleByDefault.qml:45
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1036,7 +1038,7 @@ msgstr ""
 "络等。系统托盘默认只会显示当前可用的项目。要显示全部项目，请点击时钟旁边的 ⌃ "
 "上箭头图标。"
 
-#: src/qml/pages/SimpleByDefault.qml:49
+#: src/qml/pages/SimpleByDefault.qml:48
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1047,7 +1049,7 @@ msgstr ""
 "这是“数字时钟”挂件。在它上面点击还会显示日历。您还可以将它配置为显示其他时区"
 "的时间和您的数字日历的日程。"
 
-#: src/qml/pages/SimpleByDefault.qml:52
+#: src/qml/pages/SimpleByDefault.qml:51
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1090,10 +1092,10 @@ msgid ""
 "done. We hope you love it!"
 msgstr ""
 "欢迎使用 %1 操作系统。此系统正在运行 KDE Plasma 桌面环境。<nl/><nl/>Plasma "
-"(等离子) 是一款由 KDE 出品的自由开源的桌面环境。KDE 是一个由志愿者组成的国际"
-"性软件社区。Plasma 的默认状态简洁直观，无需繁琐的配置即可流畅使用。它还提供了"
-"全面的功能和丰富的自定义选项，让您可以按照自己的想法高效工作。我们祝您获得良"
-"好的使用体验！"
+"(中文含义：等离子体) 是一款由 KDE 出品的自由开源的桌面环境。KDE 是一个由志愿"
+"者组成的国际性软件社区。Plasma 的默认状态简洁直观，无需繁琐的配置即可流畅使"
+"用。它还提供了全面的功能和丰富的自定义选项，让您可以按照自己的想法高效工作。"
+"我们祝您获得良好的使用体验！"
 
 #: src/qml/pages/Welcome.qml:28
 #, kde-format

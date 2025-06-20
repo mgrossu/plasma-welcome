@@ -147,10 +147,12 @@ void Release::getPreview()
     if (announcementUrl.startsWith(kdeSite)) {
         // It's ours, we know how to localise it
         QString languageCode = KLocalizedString::languages().first().toLower().replace("_", "-");
-        announcementUrl.insert(kdeSite.length(), languageCode + "/");
+        if (languageCode != "c") {
+            announcementUrl.insert(kdeSite.length(), languageCode + "/");
+        }
     }
 
-    m_previewNetworkAccessManager->get(QNetworkRequest(announcementUrl));
+    m_previewNetworkAccessManager->get(QNetworkRequest(QUrl(announcementUrl)));
 }
 
 void Release::parsePreviewReply(QNetworkReply *const reply)

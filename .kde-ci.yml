@@ -16,8 +16,14 @@ Dependencies:
     'frameworks/kwindowsystem': '@latest-kf6'
     'frameworks/kjobwidgets': '@latest-kf6'
     'frameworks/kuserfeedback': '@latest-kf6'
+    'frameworks/kcmutils': '@latest-kf6'
     'plasma/libplasma': '@same'
     'plasma/milou': '@same'
     'libraries/kirigami-addons': '@latest-kf6'
+
+runtime-dependencies:
+ 'plasma/plasma5support': '@same'
+ 'plasma/plasma-nm': '@same'
+
 Options:
  require-passing-tests-on: ['Linux', 'FreeBSD']

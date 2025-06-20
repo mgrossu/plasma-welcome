@@ -11,7 +11,7 @@ add_subdirectory(public)
 
 # Application, including private library (org.kde.plasma.welcome.private)
 add_executable(plasma-welcome)
-ecm_add_qml_module(plasma-welcome URI "org.kde.plasma.welcome.private" GENERATE_PLUGIN_SOURCE)
+ecm_add_qml_module(plasma-welcome URI "org.kde.plasma.welcome.private" GENERATE_PLUGIN_SOURCE DEPENDENCIES QtQuick)
 
 configure_file(config-plasma-welcome.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-plasma-welcome.h)
 
@@ -21,6 +21,7 @@ target_sources(plasma-welcome PRIVATE
     app.cpp
     qmlconfig.h
     release.cpp
+    plasmacolors.cpp
 )
 
 ecm_target_qml_sources(plasma-welcome
@@ -53,9 +54,10 @@ ecm_target_qml_sources(plasma-welcome
     qml/pages/Welcome.qml
     qml/pages/Network.qml
     qml/pages/network/PlasmaNM.qml
+    qml/pages/network/PlasmaNMLoader.qml
     qml/pages/SimpleByDefault.qml
     qml/pages/PowerfulWhenNeeded.qml
-    qml/pages/powerfulwhenneeded/PlasmaFeatureButton.qml
+    qml/pages/powerfulwhenneeded/PlasmaFeatureCard.qml
     qml/pages/powerfulwhenneeded/Overview.qml
     qml/pages/powerfulwhenneeded/KRunner.qml
     qml/pages/powerfulwhenneeded/KDEConnect.qml
@@ -95,6 +97,7 @@ target_link_libraries(plasma-welcome PRIVATE
     KF6::JobWidgets
     KF6::Service
     KF6::WindowSystem
+    Plasma::Plasma
 )
 
 kconfig_add_kcfg_files(plasma-welcome GENERATE_MOC config.kcfgc)

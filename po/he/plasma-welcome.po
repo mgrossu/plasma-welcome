@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:44+0000\n"
-"PO-Revision-Date: 2025-02-07 09:41+0200\n"
+"POT-Creation-Date: 2025-04-28 00:43+0000\n"
+"PO-Revision-Date: 2025-04-01 08:12+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 24.12.2\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -158,13 +158,13 @@ msgctxt "@action:button"
 msgid "&Back"
 msgstr "&חזרה"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Finish"
 msgstr "&סיום"
 
-#: src/qml/footers/FooterDefault.qml:69
+#: src/qml/footers/FooterDefault.qml:71
 #, kde-format
 msgctxt "@action:button"
 msgid "&Next"
@@ -229,13 +229,13 @@ msgstr "יצירת פעילות…"
 msgid "Search…"
 msgstr "חיפוש…"
 
-#: src/qml/mock/MockOverview.qml:98
+#: src/qml/mock/MockOverview.qml:97
 #, kde-format
 msgctxt "@title The default name of a Plasma desktop as seen in the overview"
 msgid "Desktop 1"
 msgstr "שולחן עבודה 1"
 
-#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:206
+#: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:210
 #, kde-format
 msgctxt "@info:placeholder Shown when there is insufficent width"
 msgid "Expand the window"
@@ -247,7 +247,7 @@ msgctxt "@info:window"
 msgid "Error loading page"
 msgstr "שגיאה בטעינת עמוד"
 
-#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:80
+#: src/qml/PageError.qml:27 src/qml/pages/Network.qml:45
 #, kde-format
 msgctxt "@action:button"
 msgid "Report Bug…"
@@ -277,24 +277,26 @@ msgctxt "@info:usagetip"
 msgid "This page provided by Welcome Center could not be loaded"
 msgstr "טעינת העמוד הזה סופק על ידי מרכז קבלת הפנים לא הצליחה"
 
-#: src/qml/pages/Discover.qml:22
+#: src/qml/pages/Discover.qml:20
 #, kde-format
 msgctxt "@title:window"
-msgid "Manage Software"
-msgstr "ניהול תוכנה"
+msgid "Find Great Apps"
+msgstr "מציאת יישומים מצוינים"
 
-#: src/qml/pages/Discover.qml:23
+#: src/qml/pages/Discover.qml:21
 #, kde-kuit-format
 msgctxt ""
-"@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+"@info:usagetip %1 is 'Discover', the name of KDE's software center app, and "
+"%2 is the distro name."
 msgid ""
-"The <application>%1</application> app helps you find and install "
-"applications, games, and tools. You can search or browse by category, look "
-"at screenshots, and read reviews to help you find the perfect app."
+"There’s no need to search the web to download app installers or use a "
+"command-line package manager; KDE’s app store <application>%1</application> "
+"does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
+"try!"
 msgstr ""
-"היישום <application>%1</application> מסייע לך למצוא ולהתקין יישומים, משחקים "
-"וכלים. אפשר לחפש או לעיין לפי קטגוריות, להסתכל על צילומי מסך ולקרוא ביקורות "
-"כדי לסייע לך למצוא את היישום שהכי מתאים לך."
+"לא צריך לחפש באינטרנט כדי להוריד תוכניות התקנה של יישומים או להשתמש במנהל "
+"חבילות משורת הפקודות, חנות היישומים של KDE <application>%1</application> כבר "
+"עושה את זה עבורך!<nl/><nl/>לחיצה על כל אחד מהסמלים שלהלן תאפשר לך להתנסות!"
 
 #: src/qml/pages/Discover.qml:107
 #, kde-format
@@ -390,13 +392,13 @@ msgctxt "@action:inmenu An option to sort a list in reverse order"
 msgid "Reverse"
 msgstr "היפוך"
 
-#: src/qml/pages/Feedback.qml:15
+#: src/qml/pages/Feedback.qml:16
 #, kde-format
 msgctxt "@title: window"
 msgid "Share Anonymous Usage Information"
 msgstr "שיתוף פרטי שימוש אלמוניים"
 
-#: src/qml/pages/Feedback.qml:16
+#: src/qml/pages/Feedback.qml:17
 #, kde-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -439,13 +441,13 @@ msgctxt "@action:button"
 msgid "Visit home page"
 msgstr "ביקור בדף הבית"
 
-#: src/qml/pages/Network.qml:20
+#: src/qml/pages/Network.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Access the Internet"
 msgstr "גישה לאינטרנט"
 
-#: src/qml/pages/Network.qml:21
+#: src/qml/pages/Network.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -459,13 +461,13 @@ msgstr ""
 "interface> שב<interface>מגש המערכת שלך</interface> ששוכן בפינה השמאלית "
 "התחתונה של המסך."
 
-#: src/qml/pages/Network.qml:75
+#: src/qml/pages/Network.qml:40
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Networking support for Plasma is not currently installed"
 msgstr "לא מותקנת תמיכה בתקשורת רשת בפלזמה כרגע"
 
-#: src/qml/pages/Network.qml:76
+#: src/qml/pages/Network.qml:41
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the name of the user's distro"
 msgid ""
@@ -475,19 +477,19 @@ msgstr ""
 "כדי לנהל את חיבורי הרשת שלך, פלזמה צריכה שהחבילה <icode>plasma-nm</icode> "
 "תהיה מותקנת. נא לדווח על ההשמטה הזאת אל %1."
 
-#: src/qml/pages/Network.qml:245
+#: src/qml/pages/Network.qml:211
 #, kde-format
 msgctxt "@info:placeholder Shown when connected to the internet"
 msgid "You’re connected"
 msgstr "התחברת"
 
-#: src/qml/pages/Network.qml:246
+#: src/qml/pages/Network.qml:212
 #, kde-format
 msgctxt "@info:usagetip Shown when connected to the internet"
 msgid "All good to go!"
 msgstr "מוכנים לצאת לדרך!"
 
-#: src/qml/pages/Network.qml:253
+#: src/qml/pages/Network.qml:219
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -498,7 +500,7 @@ msgstr ""
 "עמוד זה מוצג ללא תלות במצב החיבור לרשת כיוון שבחרת להשתמש בגרסת פיתוח. כדי "
 "להציג ידנית את המצבים השונים של העמוד, אפשר להשתמש בכפתור."
 
-#: src/qml/pages/Network.qml:258
+#: src/qml/pages/Network.qml:224
 #, kde-format
 msgctxt "@action:button"
 msgid "Change state"
@@ -620,54 +622,53 @@ msgstr "עוצמתית לפי הצורך"
 msgctxt "@info:usagetip"
 msgid ""
 "Plasma is an extremely feature-rich environment, designed to super-charge "
-"your productivity! Here is just a smattering of the things it can do for you:"
+"your productivity!<nl/><nl/>"
 msgstr ""
-"פלזמה היא סביבה עתירת יכולות שתוכננה לשדרג פלאים את היעילות שלך! הנה קמצוץ "
-"מהדברים שהיא יכולה לעשות בשבילך:"
+"פלזמה היא סביבה עתירת יכולות שתוכננה לשדרג פלאים את היעילות שלך! <nl/><nl/>"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:56
+#: src/qml/pages/PowerfulWhenNeeded.qml:47
 #, kde-format
 msgctxt "@title:row Name of the 'Overview' KWin effect"
 msgid "Overview"
 msgstr "סקירה"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:57
+#: src/qml/pages/PowerfulWhenNeeded.qml:48
 #, kde-format
 msgctxt "@info Caption for Overview button"
 msgid "Your system command center"
 msgstr "מרכז הבקרה של המערכת שלך"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:67
+#: src/qml/pages/PowerfulWhenNeeded.qml:53
 #, kde-format
 msgctxt "@title:row"
 msgid "KRunner"
 msgstr "KRunner"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:68
+#: src/qml/pages/PowerfulWhenNeeded.qml:54
 #, kde-format
 msgctxt "@info Caption for KRunner button"
 msgid "Search for anything"
 msgstr "חיפוש אחר כל דבר אפשרי"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:78
+#: src/qml/pages/PowerfulWhenNeeded.qml:59
 #, kde-format
 msgctxt "@title:row Name of the 'KDE Connect' feature"
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:79
+#: src/qml/pages/PowerfulWhenNeeded.qml:60
 #, kde-format
 msgctxt "@info Caption for KDE Connect button"
 msgid "Connect your phone and your computer"
 msgstr "חיבור בין הטלפון והמחשב שלך"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:90
+#: src/qml/pages/PowerfulWhenNeeded.qml:65
 #, kde-format
 msgctxt "@title:row Name of the 'Activities' Plasma feature"
 msgid "Activities"
 msgstr "פעילויות"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:91
+#: src/qml/pages/PowerfulWhenNeeded.qml:66
 #, kde-format
 msgctxt ""
 "@info Caption for Activities button. Note that 'Separate' is being used as "
@@ -675,31 +676,31 @@ msgctxt ""
 msgid "Separate work, school, or home tasks"
 msgstr "הפרדה בין משימות לעבודה, ללימודים ולבית"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:101
+#: src/qml/pages/PowerfulWhenNeeded.qml:71
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
 msgstr "כספות"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:102
+#: src/qml/pages/PowerfulWhenNeeded.qml:72
 #, kde-format
 msgctxt "@info Caption for Plasma Vaults button"
 msgid "Store sensitive files securely"
 msgstr "אחסון קבצים רגישים בצורה מאובטחת"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:112
+#: src/qml/pages/PowerfulWhenNeeded.qml:77
 #, kde-format
 msgctxt "@title:row"
 msgid "System Settings"
 msgstr "הגדרות מערכת"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:113
+#: src/qml/pages/PowerfulWhenNeeded.qml:78
 #, kde-format
 msgctxt "@info Caption for Get System Settings button"
 msgid "Configure the system"
 msgstr "הגדרת המערכת"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:120
+#: src/qml/pages/PowerfulWhenNeeded.qml:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Learn about more Plasma features"
@@ -931,30 +932,30 @@ msgstr ""
 "מאובטחת הרחק מסקרנים. כספות יכולות לחיות בתוך תיקיות שמסונכרנות גם מול "
 "שירותי ענן, המספקים פרטיות נוספת לתוכן הזה."
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:93
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:97
 #, kde-format
 msgctxt "@title:window Title of the Plasma Vaults popup"
 msgid "Vaults"
 msgstr "כספות"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:108
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:112
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "Important Documents"
 msgstr "מסמכים חשובים"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:109
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:113
 #, kde-format
 msgctxt "@title The name of an example Plasma vault"
 msgid "My Photos"
 msgstr "התמונות שלי"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:117
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:121
 #, kde-format
 msgid "Unlock and Open"
 msgstr "שחרור ופתיחה"
 
-#: src/qml/pages/powerfulwhenneeded/Vaults.qml:129
+#: src/qml/pages/powerfulwhenneeded/Vaults.qml:133
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -964,13 +965,13 @@ msgstr ""
 "כדי להתחיל, נא ללחוץ על החץ ב<interface>שורת המערכת</interface> כדי להציג "
 "פריטים מוסתרים, ואז ללחוץ על סמל ה<interface>כספות</interface>."
 
-#: src/qml/pages/SimpleByDefault.qml:22
+#: src/qml/pages/SimpleByDefault.qml:21
 #, kde-format
 msgctxt "@info:window"
 msgid "Simple by Default"
 msgstr "פשוטה מהיסוד"
 
-#: src/qml/pages/SimpleByDefault.qml:23
+#: src/qml/pages/SimpleByDefault.qml:22
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
@@ -985,7 +986,7 @@ msgstr ""
 "משימות.<nl/><nl/>להלן ייצוג חזותי של שולחן עבודה טיפוסי של פלזמה. אפשר להזיז "
 "את הסמן על גבי משהו או ללחוץ על משהו כדי ללמוד עליו!"
 
-#: src/qml/pages/SimpleByDefault.qml:34
+#: src/qml/pages/SimpleByDefault.qml:33
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1001,7 +1002,7 @@ msgstr ""
 "העבודה. אפשר גם לבחור ב<interface>כניסה למצב עריכה</interface> כדי להוסיף, "
 "להסיר או לערוך וידג׳טים."
 
-#: src/qml/pages/SimpleByDefault.qml:37
+#: src/qml/pages/SimpleByDefault.qml:36
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1013,18 +1014,18 @@ msgstr ""
 "הגדרות לוח</interface> תאפשר לשנות איך הוא מתנהג, באילו שוליים של המסך הוא "
 "חי ולהוסיף, להסיר או לערוך וידג׳טים."
 
-#: src/qml/pages/SimpleByDefault.qml:40
+#: src/qml/pages/SimpleByDefault.qml:39
 #, kde-format
 msgctxt "@info"
 msgid ""
-"This is the “Kickoff” widget, a multipurpose launcher. Here you can launch "
-"apps, shut down or restart the system, access recent files, and more. Click "
-"on it to get started!"
+"This is the “Application Launcher” widget, a multipurpose launcher. Here you "
+"can launch apps, shut down or restart the system, access recent files, and "
+"more. Click on it to get started!"
 msgstr ""
-"זה וידג׳ט „יציאה לדרך”, משגר רב־תכליתי. כאן אפשר לשגר יישומים, לכבות או "
+"זה וידג׳ט „משגר היישומים”, משגר רב־תכליתי. כאן אפשר לשגר יישומים, לכבות או "
 "להפעיל את המערכת מחדש, לגשת לקבצים אחרונים ועוד. כדאי ללחוץ עליו כדי להתחיל!"
 
-#: src/qml/pages/SimpleByDefault.qml:43
+#: src/qml/pages/SimpleByDefault.qml:42
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1034,7 +1035,7 @@ msgstr ""
 "זה וידג׳ט „מנהל המשימות”, בו אפשר לעבור בין יישומים פתוחים וגם לפתוח חדשים. "
 "אפשר לגרור את הסמלים כדי לסדר אותם באופן שמתאים לך."
 
-#: src/qml/pages/SimpleByDefault.qml:46
+#: src/qml/pages/SimpleByDefault.qml:45
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1047,7 +1048,7 @@ msgstr ""
 "והתחברות לרשתות. הפריטים גלויים רק כשהם נחוצים. כדי לצפות בכל הפריטים "
 "הזמינים, יש ללחוץ על החץ שליד השעון."
 
-#: src/qml/pages/SimpleByDefault.qml:49
+#: src/qml/pages/SimpleByDefault.qml:48
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1058,7 +1059,7 @@ msgstr ""
 "זה וידג׳ט „שעון דיגיטלי”. יש ללחוץ עליו כדי להציג לוח שנה. אפשר להגדיר אותו "
 "כך שיציג אזורי זמן נוספים ואירועים מלוחות השנה הדיגיטליים שלך."
 
-#: src/qml/pages/SimpleByDefault.qml:52
+#: src/qml/pages/SimpleByDefault.qml:51
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1171,6 +1172,21 @@ msgstr "%1 בטא"
 msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 בטא %2"
+
+#~ msgctxt "@title:window"
+#~ msgid "Manage Software"
+#~ msgstr "ניהול תוכנה"
+
+#~ msgctxt ""
+#~ "@info:usagetip %1 is 'Discover', the name of KDE's software center app"
+#~ msgid ""
+#~ "The <application>%1</application> app helps you find and install "
+#~ "applications, games, and tools. You can search or browse by category, "
+#~ "look at screenshots, and read reviews to help you find the perfect app."
+#~ msgstr ""
+#~ "היישום <application>%1</application> מסייע לך למצוא ולהתקין יישומים, "
+#~ "משחקים וכלים. אפשר לחפש או לעיין לפי קטגוריות, להסתכל על צילומי מסך "
+#~ "ולקרוא ביקורות כדי לסייע לך למצוא את היישום שהכי מתאים לך."
 
 #~ msgctxt "@item:inlistbox"
 #~ msgid "Sort by Date"
