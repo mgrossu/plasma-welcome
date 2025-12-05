@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: welcome-app\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-28 00:43+0000\n"
-"PO-Revision-Date: 2025-04-01 16:52+0200\n"
+"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"PO-Revision-Date: 2025-10-28 14:25+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -91,19 +91,19 @@ msgctxt "%1 is the filesystem path to a settings module"
 msgid "Unknown module %1 requested"
 msgstr "Onbekende module %1 gevraagd"
 
-#: src/public/controller.cpp:43 src/public/utils.cpp:40
+#: src/public/controller.cpp:45 src/public/utils.cpp:45
 #, kde-kuit-format
 msgctxt "@info:progress"
 msgid "The command <command>%1</command> could not be found."
 msgstr "Het commando <command>%1</command> is niet gevonden."
 
-#: src/public/controller.cpp:76 src/public/utils.cpp:73
+#: src/public/controller.cpp:78 src/public/utils.cpp:78
 #, kde-format
 msgctxt "@info:progress"
 msgid "No error message provided"
 msgstr "Geen foutmelding geleverd"
 
-#: src/public/controller.cpp:80 src/public/utils.cpp:77
+#: src/public/controller.cpp:82 src/public/utils.cpp:82
 #, kde-kuit-format
 msgctxt ""
 "@info:progress %1 is the command being run, and %2 is the human-readable "
@@ -111,7 +111,7 @@ msgctxt ""
 msgid "The command <command>%1</command> failed: %2"
 msgstr "Het commando (<command>%1</command>) is mislukt: %2"
 
-#: src/public/qml/ApplicationIcon.qml:40
+#: src/public/qml/ApplicationIcon.qml:42
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1 now"
@@ -237,7 +237,7 @@ msgstr "Bureaublad 1"
 
 #: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:210
 #, kde-format
-msgctxt "@info:placeholder Shown when there is insufficent width"
+msgctxt "@info:placeholder Shown when there is insufficient width"
 msgid "Expand the window"
 msgstr "Het venster uitbreiden"
 
@@ -300,7 +300,7 @@ msgstr ""
 "dat allemaal voor u!<nl/><nl/>Klik op een van de onderstaande pictogrammen "
 "om het te proberen!"
 
-#: src/qml/pages/Discover.qml:107
+#: src/qml/pages/Discover.qml:103
 #, kde-format
 msgctxt "@action:button %1 is the name of an app"
 msgid "Show %1 in Discover"
@@ -631,59 +631,73 @@ msgctxt "@info:window"
 msgid "Powerful When Needed"
 msgstr "Krachtig wanneer nodig"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:17
+#: src/qml/pages/PowerfulWhenNeeded.qml:19
 #, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
 "Plasma is an extremely feature-rich environment, designed to super-charge "
-"your productivity!<nl/><nl/>"
+"your productivity!<nl/><nl/>Click the cards below to see just a smattering "
+"of what it can do for you:"
 msgstr ""
 "Plasma is een omgeving extreem rijk aan mogelijkheden, ontworpen om uw "
-"productiviteit aan te jagen!<nl/><nl/>"
+"productiviteit aan te jagen!<nl/><nl/>Klik op de onderstaande kaarten om een "
+"beetje oppervlakkig te zien wat het voor u kan doen:"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:47
+#: src/qml/pages/PowerfulWhenNeeded.qml:49
+#, kde-format
+msgctxt "@title:row"
+msgid "Keyboard Shortcuts"
+msgstr "Keyboard Shortcuts"
+
+#: src/qml/pages/PowerfulWhenNeeded.qml:50
+#, kde-format
+msgctxt "@info Caption for Get Keyboard Shortcuts button"
+msgid "Activate features from the keyboard"
+msgstr "Mogelijkheden activeren vanaf het toetsenbord"
+
+#: src/qml/pages/PowerfulWhenNeeded.qml:55
 #, kde-format
 msgctxt "@title:row Name of the 'Overview' KWin effect"
 msgid "Overview"
 msgstr "Overzicht"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:48
+#: src/qml/pages/PowerfulWhenNeeded.qml:56
 #, kde-format
 msgctxt "@info Caption for Overview button"
 msgid "Your system command center"
 msgstr "Uw centrum voor besturing van het systeem"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:53
+#: src/qml/pages/PowerfulWhenNeeded.qml:61
 #, kde-format
 msgctxt "@title:row"
 msgid "KRunner"
 msgstr "KRunner"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:54
+#: src/qml/pages/PowerfulWhenNeeded.qml:62
 #, kde-format
 msgctxt "@info Caption for KRunner button"
 msgid "Search for anything"
 msgstr "Zoeken naar alles"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:59
+#: src/qml/pages/PowerfulWhenNeeded.qml:67
 #, kde-format
 msgctxt "@title:row Name of the 'KDE Connect' feature"
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:60
+#: src/qml/pages/PowerfulWhenNeeded.qml:68
 #, kde-format
 msgctxt "@info Caption for KDE Connect button"
 msgid "Connect your phone and your computer"
 msgstr "Uw telefoon en uw computer verbinden"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:65
+#: src/qml/pages/PowerfulWhenNeeded.qml:73
 #, kde-format
 msgctxt "@title:row Name of the 'Activities' Plasma feature"
 msgid "Activities"
 msgstr "Activiteiten"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:66
+#: src/qml/pages/PowerfulWhenNeeded.qml:74
 #, kde-format
 msgctxt ""
 "@info Caption for Activities button. Note that 'Separate' is being used as "
@@ -691,31 +705,19 @@ msgctxt ""
 msgid "Separate work, school, or home tasks"
 msgstr "Taken voor werk, school of thuis scheiden"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:71
+#: src/qml/pages/PowerfulWhenNeeded.qml:79
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
 msgstr "Kluizen"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:72
+#: src/qml/pages/PowerfulWhenNeeded.qml:80
 #, kde-format
 msgctxt "@info Caption for Plasma Vaults button"
 msgid "Store sensitive files securely"
 msgstr "Gevoelige bestanden veilig opslaan"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:77
-#, kde-format
-msgctxt "@title:row"
-msgid "System Settings"
-msgstr "Systeeminstellingen"
-
-#: src/qml/pages/PowerfulWhenNeeded.qml:78
-#, kde-format
-msgctxt "@info Caption for Get System Settings button"
-msgid "Configure the system"
-msgstr "Het systeem configureren"
-
-#: src/qml/pages/PowerfulWhenNeeded.qml:91
+#: src/qml/pages/PowerfulWhenNeeded.qml:93
 #, kde-format
 msgctxt "@action:button"
 msgid "Learn about more Plasma features"
@@ -745,7 +747,6 @@ msgstr ""
 "toepassingen en widgets op het bureaublad."
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:28
-#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:37
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:28
 #, kde-format
 msgctxt "@action:button"
@@ -780,9 +781,7 @@ msgid ""
 "item><item>Sync your clipboard contents between your computer and your "
 "phone</item><item>Make a noise on your phone when it’s been misplaced</"
 "item><item>Copy pictures, videos, and other files from your phone to your "
-"computer, and vice versa</item><item>…And much more!</item></list><nl/>To "
-"get started, launch <interface>System Settings</interface> and search for "
-"“KDE Connect”. On that page, you can pair your phone."
+"computer, and vice versa</item><item>…And much more!</item></list>"
 msgstr ""
 "KDE Connect laat u uw telefoon op verschillende manieren integreren met uw "
 "computer:<nl/><list><item>Bekijk meldingen van uw telefoon op uw computer</"
@@ -791,9 +790,35 @@ msgstr ""
 "telefoon</item><item>Maak een geluid op uw telefoon wanneer u het niet kunt "
 "vinden</item><item>Kopieer plaatjes, video's en andere bestanden van uw "
 "telefoon naar uw computer en omgekeerd</item><item>…En nog veel meer!</"
-"item></list><nl/>Om te beginnen, start <interface>Systeeminstellingen</"
-"interface> en zoek naar “KDE Connect”. Op die pagina kunt u uw telefoon "
-"paren."
+"item></list>"
+
+#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:35
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid ""
+"To get started, click the <interface>%1</interface> button. You can pair "
+"your phone there."
+msgstr ""
+"Om te starten, klik op de knop <interface>%1</interface>. U kunt uw telefoon "
+"daar paren."
+
+#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:50
+#, kde-format
+msgctxt "@action:button"
+msgid "Open %1"
+msgstr "%1 openen"
+
+#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:62
+#, kde-format
+msgctxt "@info"
+msgid "KDE Connect is not installed."
+msgstr "KDE Connect is niet geïnstalleerd."
+
+#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:67
+#, kde-format
+msgctxt "@action:button Install KDE Connect"
+msgid "Install KDE Connect…"
+msgstr "Installeer KDE Connect…"
 
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:22
 #, kde-format
@@ -873,6 +898,135 @@ msgctxt ""
 msgid "...and much more!"
 msgstr "...en nog veel meer!"
 
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:18
+#, kde-format
+msgctxt "@info:window"
+msgid "Keyboard Shortcuts"
+msgstr "Sneltoetsen"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:23
+#, kde-format
+msgctxt "@action:button"
+msgid "Configure Shortcuts…"
+msgstr "Sneltoetsen configureren…"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:29
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid ""
+"Almost anything in Plasma can be done with the keyboard, using shortcuts "
+"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac "
+"keyboard, this is the “Command” key:"
+msgstr ""
+"Bijna alles in Plasma kan gedaan worden met het toetsenbord door sneltoetsen "
+"te gebruiken die bijna altijd de toets <shortcut>Meta</shortcut> bevat.<nl/"
+"><nl/>Op een Mac-toetsenbord is dat de toets “Command”:"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:30
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid ""
+"Almost anything in Plasma can be done with the keyboard, using shortcuts "
+"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is "
+"usually located between the left <shortcut>Ctrl</shortcut> and "
+"<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or "
+"the word “Super”:"
+msgstr ""
+"Bijna alles in Plasma kan gedaan worden met het toetsenbord door sneltoetsen "
+"te gebruiken die bijna altijd de toets <shortcut>Meta</shortcut> bevat.<nl/"
+"><nl/>Deze toets bevindt zich gewoonlijk tussen de linker toets "
+"<shortcut>Ctrl</shortcut> en toets <shortcut>Alt</shortcut> en bevat ofwel "
+"een soort symbool of het woord “Super”:"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:56
+#, kde-format
+msgctxt "The typical label for the keyboard's Ctrl key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:59
+#, kde-format
+msgctxt "The typical label for the keyboard's Function key"
+msgid "Fn"
+msgstr "Fn"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:69
+#, kde-format
+msgctxt "The typical label for the keyboard's Meta key"
+msgid "Super"
+msgstr "Super"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:78
+#, kde-format
+msgctxt ""
+"This is a terrible dad joke about the meta key on the keyboard being able to "
+"have many symbols. Translate it into one of similar groanworthiness if this "
+"is possible; if not, translate it as an empty string."
+msgid "I never meta key I didn't like"
+msgstr "Ik heb nooit ontm(o)et(a)een toets die ik niet leuk vond"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:101
+#, kde-format
+msgctxt "The typical label for the keyboard's Alt key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:114
+#, kde-format
+msgctxt "The actual translated label for 'fn' on a Mac keyboard"
+msgid "fn"
+msgstr "fn"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:119
+#, kde-format
+msgctxt "The actual translated label for 'control' on a Mac keyboard"
+msgid "control"
+msgstr "control"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:123
+#, kde-format
+msgctxt "The actual translated label for 'option' on a Mac keyboard"
+msgid "option"
+msgstr "optie"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:128
+#, kde-format
+msgctxt "The actual translated label for 'command' on a Mac keyboard"
+msgid "command"
+msgstr "commando"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:137
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid ""
+"What can you do with the <shortcut>Meta</shortcut> key? Here are a few "
+"examples:<list><item>Press it: Open the Application Launcher widget</"
+"item><item>Press <shortcut>Meta+[arrow keys]</shortcut>: Tile window to "
+"screen edges or corners</item><item>Press <shortcut>Meta+[number keys]</"
+"shortcut>: Launch pinned Task Manager apps</item><item>Press <shortcut>Meta"
+"+R</shortcut>: Start a screen recording</item><item>Press <shortcut>Meta+L</"
+"shortcut>: Lock the screen</item><item>Press <shortcut>Meta+Shift+S</"
+"shortcut>: Toggle screen reader on/off</item><item>Press <shortcut>Meta+Alt"
+"+P</shortcut>: Move keyboard focus to panel</item><item>Press <shortcut>Meta"
+"+Esc</shortcut>: Launch System Monitor app</item><item>Press <shortcut>Meta+."
+"</shortcut>: Launch Emoji Selector app</item><item>Press <shortcut>Meta+D</"
+"shortcut>: Show the desktop</item></list>"
+msgstr ""
+"Wat kunt u doen met de <shortcut>Meta</shortcut>-toets? Hier zijn een paar "
+"voorbeelden:<list><item>Druk erop: open het widget Toepassingenstarter</"
+"item><item>Druk op <shortcut>Meta+[pijltjestoets]</shortcut>: Verplaats het "
+"venster naar schermranden of hoeken</item><item>Druk op <shortcut>Meta"
+"+[cijfertoetsen]</shortcut>: Start vastgezette Takenbeheerder toepassingen</"
+"item><item>Druk op <shortcut>Meta+R</shortcut>: Start een opname van het "
+"scherm</item><item>Druk op <shortcut>Meta+L</shortcut>: Vergrendel het "
+"scherm</item><item>Druk op <shortcut>Meta+Shift+S</shortcut>: Schakel "
+"schermlezer aan/uit</item><item>Druk op <shortcut>Meta+Alt+P</shortcut>: "
+"Verplaats focus van toetsenbord naar paneel</item><item>Druk op "
+"<shortcut>Meta+Esc</shortcut>: Start toepassing Systeemmonitor</"
+"item><item>Druk op <shortcut>Meta+.</shortcut>: Start selectietoepassing van "
+"Emoji</item><item>Druk op <shortcut>Meta+D</shortcut>: Toon het bureaublad</"
+"item></list>"
+
 #: src/qml/pages/powerfulwhenneeded/Overview.qml:19
 #, kde-format
 msgctxt "@info:window The name of a KWin effect"
@@ -908,27 +1062,6 @@ msgstr ""
 "of door uw muis in de linkerbovenhoek van het scherm te verplaatsen. U kunt "
 "ook <shortcut>Meta+G</shortcut> voor Grid View (rasterweergave) indrukken, "
 "die virtuele bureaubladen in een raster toont."
-
-#: src/qml/pages/powerfulwhenneeded/SystemSettings.qml:16
-#, kde-format
-msgctxt "@info:window"
-msgid "System Settings"
-msgstr "Systeeminstellingen"
-
-#: src/qml/pages/powerfulwhenneeded/SystemSettings.qml:17
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"The System Settings app lets you extensively customize the system to suit "
-"your tastes and preferences. Default apps, wallpapers, visual styles and "
-"icons, virtual desktops, power management, 3rd-party add-ons — you’ll find "
-"it all there!"
-msgstr ""
-"De toepassing Systeeminstellingen laat u het systeem uitgebreid aanpassen "
-"naar uw smaak en voorkeuren. Standaard toepassingen, "
-"achtergrondafbeeldingen, visuele stijlen en pictogrammen, virtuele "
-"bureaubladen, energiebeheer, toevoegingen van derden - u zult het allemaal "
-"daar vinden!"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:22
 #, kde-format
@@ -1163,47 +1296,72 @@ msgctxt "@action:button %1 is the name of the user's distro"
 msgid "Learn more about %1"
 msgstr "Kom meer te weten over %1"
 
-#: src/qml/pages/Welcome.qml:99
-#, kde-format
-msgctxt "@title"
-msgid "Image loading failed"
-msgstr "Laden van afbeelding is mislukt"
-
-#: src/qml/pages/Welcome.qml:100
-#, kde-kuit-format
-msgctxt "@info:placeholder"
-msgid "Could not load <filename>%1</filename>. Make sure it exists."
-msgstr "Kon <filename>%1</filename> niet laden. Ga na dat het bestaat."
-
-#: src/qml/pages/Welcome.qml:127
-#, kde-format
-msgctxt "@action:button clicking on this takes the user to a web page"
-msgid "Visit %1"
-msgstr "%1 bezoeken"
-
-#: src/qml/pages/Welcome.qml:134
+#: src/qml/pages/Welcome.qml:76
 #, kde-format
 msgctxt "@info"
 msgid "The KDE mascot Konqi welcomes you to the KDE community!"
 msgstr "De mascotte van KDE, Konqi, verwelkomt u in de KDE-gemeenschap!"
 
-#: src/release.cpp:43
+#: src/qml/pages/Welcome.qml:109
+#, kde-format
+msgctxt "@title"
+msgid "Image loading failed"
+msgstr "Laden van afbeelding is mislukt"
+
+#: src/qml/pages/Welcome.qml:110
+#, kde-kuit-format
+msgctxt "@info:placeholder"
+msgid "Could not load <filename>%1</filename>. Make sure it exists."
+msgstr "Kon <filename>%1</filename> niet laden. Ga na dat het bestaat."
+
+#: src/qml/pages/Welcome.qml:133
+#, kde-format
+msgctxt "@action:button clicking on this takes the user to a web page"
+msgid "Visit %1"
+msgstr "%1 bezoeken"
+
+#: src/release.cpp:42
 #, kde-format
 msgctxt "@label %1 is the Plasma version"
 msgid "%1 Dev"
 msgstr "%1 Ontw"
 
-#: src/release.cpp:46
+#: src/release.cpp:45
 #, kde-format
 msgctxt "@label %1 is the Plasma version"
 msgid "%1 Beta"
 msgstr "%1 beta"
 
-#: src/release.cpp:50
+#: src/release.cpp:49
 #, kde-format
 msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 beta %2"
+
+#~ msgctxt "@title:row"
+#~ msgid "System Settings"
+#~ msgstr "Systeeminstellingen"
+
+#~ msgctxt "@info Caption for Get System Settings button"
+#~ msgid "Configure the system"
+#~ msgstr "Het systeem configureren"
+
+#~ msgctxt "@info:window"
+#~ msgid "System Settings"
+#~ msgstr "Systeeminstellingen"
+
+#~ msgctxt "@info:usagetip"
+#~ msgid ""
+#~ "The System Settings app lets you extensively customize the system to suit "
+#~ "your tastes and preferences. Default apps, wallpapers, visual styles and "
+#~ "icons, virtual desktops, power management, 3rd-party add-ons — you’ll "
+#~ "find it all there!"
+#~ msgstr ""
+#~ "De toepassing Systeeminstellingen laat u het systeem uitgebreid aanpassen "
+#~ "naar uw smaak en voorkeuren. Standaard toepassingen, "
+#~ "achtergrondafbeeldingen, visuele stijlen en pictogrammen, virtuele "
+#~ "bureaubladen, energiebeheer, toevoegingen van derden - u zult het "
+#~ "allemaal daar vinden!"
 
 #~ msgctxt "@title:window"
 #~ msgid "Manage Software"

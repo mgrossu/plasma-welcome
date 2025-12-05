@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-welcome\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-28 00:43+0000\n"
-"PO-Revision-Date: 2025-01-10 00:38+0200\n"
+"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"PO-Revision-Date: 2025-09-15 02:08+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -97,19 +97,19 @@ msgctxt "%1 is the filesystem path to a settings module"
 msgid "Unknown module %1 requested"
 msgstr "Užklaustas nežinomas modulis %1"
 
-#: src/public/controller.cpp:43 src/public/utils.cpp:40
+#: src/public/controller.cpp:45 src/public/utils.cpp:45
 #, kde-kuit-format
 msgctxt "@info:progress"
 msgid "The command <command>%1</command> could not be found."
 msgstr "Nepavyko rasti komandos <command>%1</command>."
 
-#: src/public/controller.cpp:76 src/public/utils.cpp:73
+#: src/public/controller.cpp:78 src/public/utils.cpp:78
 #, kde-format
 msgctxt "@info:progress"
 msgid "No error message provided"
 msgstr "Nepateikta jokio klaidos pranešimo"
 
-#: src/public/controller.cpp:80 src/public/utils.cpp:77
+#: src/public/controller.cpp:82 src/public/utils.cpp:82
 #, kde-kuit-format
 msgctxt ""
 "@info:progress %1 is the command being run, and %2 is the human-readable "
@@ -117,7 +117,7 @@ msgctxt ""
 msgid "The command <command>%1</command> failed: %2"
 msgstr "Komanda <command>%1</command> patyrė nesėkmę: %2"
 
-#: src/public/qml/ApplicationIcon.qml:40
+#: src/public/qml/ApplicationIcon.qml:42
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1 now"
@@ -177,12 +177,10 @@ msgid "&Next"
 msgstr "&Kitas"
 
 #: src/qml/footers/FooterUpdate.qml:21
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Show this page after Plasma is updated"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show after Plasma is updated"
-msgstr "Rodyti šį puslapį po Plasma atnaujinimo"
+msgstr "Rodyti po Plasma atnaujinimo"
 
 #: src/qml/footers/FooterUpdate.qml:36
 #, kde-format
@@ -245,7 +243,7 @@ msgstr "Darbalaukis 1"
 
 #: src/qml/mock/MockPlasmoid.qml:151 src/qml/pages/SimpleByDefault.qml:210
 #, kde-format
-msgctxt "@info:placeholder Shown when there is insufficent width"
+msgctxt "@info:placeholder Shown when there is insufficient width"
 msgid "Expand the window"
 msgstr "Išplėsti langą"
 
@@ -289,7 +287,7 @@ msgstr "Nepavyko įkelti šio puslapio, kurį pateikė supažindinimas su sistem
 #, kde-format
 msgctxt "@title:window"
 msgid "Find Great Apps"
-msgstr ""
+msgstr "Atraskite nuostabių programų"
 
 #: src/qml/pages/Discover.qml:21
 #, kde-kuit-format
@@ -302,8 +300,12 @@ msgid ""
 "does it all for you!<nl/><nl/>Click on any of the icons below to give it a "
 "try!"
 msgstr ""
+"Nėra reikalo ieškoti saityne, kaip atsisiųsti programų diegimo programas ar "
+"naudoti komandų eilutės paketų tvarkytuvę; KDE programų parduotuvė "
+"<application>%1</application> visa tai atlieka už jus!<nl/><nl/>Spustelėkite "
+"ant bet kurios piktogramos žemiau, kad išbandytumėte!"
 
-#: src/qml/pages/Discover.qml:107
+#: src/qml/pages/Discover.qml:103
 #, kde-format
 msgctxt "@action:button %1 is the name of an app"
 msgid "Show %1 in Discover"
@@ -366,45 +368,39 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button %1 is the selected sort order, e.g. Random"
 msgid "Sort: %1"
-msgstr ""
+msgstr "Rikiuoti pagal: %1"
 
 #: src/qml/pages/enjoy/Supporters.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Sort Randomly"
+#, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "Random"
-msgstr "Rikiuoti atsitiktine tvarka"
+msgstr "Atsitiktinai"
 
 #: src/qml/pages/enjoy/Supporters.qml:56
 #, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "Last Name"
-msgstr ""
+msgstr "Pavardė"
 
 #: src/qml/pages/enjoy/Supporters.qml:67
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Sort by Name"
+#, kde-format
 msgctxt "@action:inmenu An order to sort a list"
 msgid "First Name"
-msgstr "Rikiuoti pagal pavadinimą"
+msgstr "Vardas"
 
 #: src/qml/pages/enjoy/Supporters.qml:78
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Start Contributing!"
+#, kde-format
 msgctxt ""
 "@action:inmenu An order to sort a list, referring to the date a user has "
 "first made a donation"
 msgid "Contribution Date"
-msgstr "Pradėkite talkinti!"
+msgstr "Aukojimo data"
 
 #: src/qml/pages/enjoy/Supporters.qml:91
 #, kde-format
 msgctxt "@action:inmenu An option to sort a list in reverse order"
 msgid "Reverse"
-msgstr ""
+msgstr "Atvirkštinė tvarka"
 
 #: src/qml/pages/Feedback.qml:16
 #, kde-format
@@ -563,7 +559,7 @@ msgstr "Praneškite apie klaidą"
 #, kde-format
 msgctxt "@info"
 msgid "Download an embedded preview of the release announcement?"
-msgstr ""
+msgstr "Atsisiųsti įterptą skelbimo apie laidą peržiūrą?"
 
 #: src/qml/pages/PlasmaUpdate.qml:155
 #, kde-format
@@ -572,50 +568,50 @@ msgid ""
 "The preview has not been automatically downloaded because you are using a "
 "metered network connection."
 msgstr ""
+"Peržiūra nebuvo atsiųsta automatiškai, nes naudojate ribotų duomenų tinklo "
+"ryšį."
 
 #: src/qml/pages/PlasmaUpdate.qml:157
 #, kde-format
 msgctxt "@info, %1 is an error code"
 msgid "The preview could not be downloaded — a network error occurred (%1)."
-msgstr ""
+msgstr "Nepavyko atsisiųsti peržiūros – įvyko tinklo klaida (%1)."
 
 #: src/qml/pages/PlasmaUpdate.qml:159
 #, kde-format
 msgctxt "@info"
 msgid "The preview could not be loaded — a parse error occurred."
-msgstr ""
+msgstr "Nepavyko įkelti peržiūros – įvyko nagrinėjimo klaida."
 
 #: src/qml/pages/PlasmaUpdate.qml:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Download Preview"
-msgstr ""
+msgstr "Atsisiųsti peržiūrą"
 
 #: src/qml/pages/PlasmaUpdate.qml:178
 #, kde-format
 msgctxt "@action:button"
 msgid "Download Anyway"
-msgstr ""
+msgstr "Vis tiek atsisiųsti"
 
 #: src/qml/pages/PlasmaUpdate.qml:180
 #, kde-format
 msgctxt "@action:button"
 msgid "Retry"
-msgstr ""
+msgstr "Bandyti dar kartą"
 
 #: src/qml/pages/PlasmaUpdate.qml:182
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Open Settings…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open in Browser…"
-msgstr "Atverti nuostatas…"
+msgstr "Atverti naršyklėje…"
 
 #: src/qml/pages/PlasmaUpdate.qml:228
 #, kde-format
 msgctxt "@option:check"
 msgid "Load preview automatically"
-msgstr ""
+msgstr "Automatiškai įkelti peržiūrą"
 
 #: src/qml/pages/PlasmaUpdate.qml:236
 #, kde-format
@@ -624,12 +620,15 @@ msgid ""
 "The preview will be loaded automatically when this page is shown for future "
 "Plasma updates, except when using a metered network connection."
 msgstr ""
+"Peržiūra bus įkelta automatiškai, kai šis puslapis bus rodomas būsimuose "
+"Plasma atnaujinimuose, išskyrus atvejus, kai bus naudojamas ribotų duomenų "
+"tinklo ryšys."
 
 #: src/qml/pages/PlasmaUpdate.qml:421
 #, kde-format
 msgctxt "@info"
 msgid "<b>Click to read the announcement</b>"
-msgstr ""
+msgstr "<b>Spustelėkite norėdami skaityti pranešimą</b>"
 
 #: src/qml/pages/PowerfulWhenNeeded.qml:16
 #, kde-format
@@ -637,64 +636,73 @@ msgctxt "@info:window"
 msgid "Powerful When Needed"
 msgstr "Galinga, kai to reikia"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:17
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info:usagetip"
-#| msgid ""
-#| "Plasma is an extremely feature-rich environment, designed to super-charge "
-#| "your productivity! Here is just a smattering of the things it can do for "
-#| "you:"
+#: src/qml/pages/PowerfulWhenNeeded.qml:19
+#, kde-kuit-format
 msgctxt "@info:usagetip"
 msgid ""
 "Plasma is an extremely feature-rich environment, designed to super-charge "
-"your productivity!<nl/><nl/>"
+"your productivity!<nl/><nl/>Click the cards below to see just a smattering "
+"of what it can do for you:"
 msgstr ""
 "Plasma yra nepaprastai daugiafukcė aplinka, sukurta smarkiai padidinti jūsų "
-"produktyvumą! Štai keli iš daugybės dalykų, kaip ji gali jums pasitarnauti:"
+"produktyvumą!<nl/><nl/>Spustelėkite ant žemiau esančių kortelių, kad "
+"pamatytumėte kelis iš daugybės dalykų, kaip ji gali jums pasitarnauti:"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:47
+#: src/qml/pages/PowerfulWhenNeeded.qml:49
+#, kde-format
+msgctxt "@title:row"
+msgid "Keyboard Shortcuts"
+msgstr "Spartieji klavišai"
+
+#: src/qml/pages/PowerfulWhenNeeded.qml:50
+#, kde-format
+msgctxt "@info Caption for Get Keyboard Shortcuts button"
+msgid "Activate features from the keyboard"
+msgstr "Aktyvuoti ypatybes klaviatūra"
+
+#: src/qml/pages/PowerfulWhenNeeded.qml:55
 #, kde-format
 msgctxt "@title:row Name of the 'Overview' KWin effect"
 msgid "Overview"
 msgstr "Apžvalga"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:48
+#: src/qml/pages/PowerfulWhenNeeded.qml:56
 #, kde-format
 msgctxt "@info Caption for Overview button"
 msgid "Your system command center"
 msgstr "Jūsų sistemos komandinis centras"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:53
+#: src/qml/pages/PowerfulWhenNeeded.qml:61
 #, kde-format
 msgctxt "@title:row"
 msgid "KRunner"
 msgstr "KRunner"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:54
+#: src/qml/pages/PowerfulWhenNeeded.qml:62
 #, kde-format
 msgctxt "@info Caption for KRunner button"
 msgid "Search for anything"
 msgstr "Ieškokite bet ko"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:59
+#: src/qml/pages/PowerfulWhenNeeded.qml:67
 #, kde-format
 msgctxt "@title:row Name of the 'KDE Connect' feature"
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:60
+#: src/qml/pages/PowerfulWhenNeeded.qml:68
 #, kde-format
 msgctxt "@info Caption for KDE Connect button"
 msgid "Connect your phone and your computer"
 msgstr "Sujunkite savo telefoną ir kompiuterį"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:65
+#: src/qml/pages/PowerfulWhenNeeded.qml:73
 #, kde-format
 msgctxt "@title:row Name of the 'Activities' Plasma feature"
 msgid "Activities"
 msgstr "Veiklos"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:66
+#: src/qml/pages/PowerfulWhenNeeded.qml:74
 #, kde-format
 msgctxt ""
 "@info Caption for Activities button. Note that 'Separate' is being used as "
@@ -702,31 +710,19 @@ msgctxt ""
 msgid "Separate work, school, or home tasks"
 msgstr "Atskirkite darbo, mokyklos ir namų užduotis"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:71
+#: src/qml/pages/PowerfulWhenNeeded.qml:79
 #, kde-format
 msgctxt "@title:row Short form of the 'Vaults' Plasma feature"
 msgid "Vaults"
 msgstr "Slėptuvės"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:72
+#: src/qml/pages/PowerfulWhenNeeded.qml:80
 #, kde-format
 msgctxt "@info Caption for Plasma Vaults button"
 msgid "Store sensitive files securely"
 msgstr "Saugiai saugokite slaptus failus"
 
-#: src/qml/pages/PowerfulWhenNeeded.qml:77
-#, kde-format
-msgctxt "@title:row"
-msgid "System Settings"
-msgstr "Sistemos nuostatos"
-
-#: src/qml/pages/PowerfulWhenNeeded.qml:78
-#, kde-format
-msgctxt "@info Caption for Get System Settings button"
-msgid "Configure the system"
-msgstr "Konfigūruoti sistemą"
-
-#: src/qml/pages/PowerfulWhenNeeded.qml:91
+#: src/qml/pages/PowerfulWhenNeeded.qml:93
 #, kde-format
 msgctxt "@action:button"
 msgid "Learn about more Plasma features"
@@ -756,7 +752,6 @@ msgstr ""
 "rinkinį."
 
 #: src/qml/pages/powerfulwhenneeded/Activities.qml:28
-#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:37
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:28
 #, kde-format
 msgctxt "@action:button"
@@ -792,9 +787,7 @@ msgid ""
 "item><item>Sync your clipboard contents between your computer and your "
 "phone</item><item>Make a noise on your phone when it’s been misplaced</"
 "item><item>Copy pictures, videos, and other files from your phone to your "
-"computer, and vice versa</item><item>…And much more!</item></list><nl/>To "
-"get started, launch <interface>System Settings</interface> and search for "
-"“KDE Connect”. On that page, you can pair your phone."
+"computer, and vice versa</item><item>…And much more!</item></list>"
 msgstr ""
 "KDE Connect jums leidžia įvairiais būdais integruoti savo telefoną į "
 "kompiuterį:<nl/><list><item>Matyti kompiuteryje pranešimus iš telefono</"
@@ -802,10 +795,35 @@ msgstr ""
 "item><item>Sinchronizuoti iškarpinės turinį tarp kompiuterio ir telefono</"
 "item><item>Atkurti telefone garso signalą, kai nerandate telefono</"
 "item><item>Kopijuoti paveikslus, vaizdo įrašus ir kitus failus iš telefono į "
-"kompiuterį arba atvirkščiai</item><item>…Ir žymiai daugiau!</item></list><nl/"
-">Norėdami pradėti, paleiskite <interface>Sistemos nuostatas</interface> ir "
-"paieškos laukelyje įrašykite „KDE Connect“. Atsivėrusiame puslapyje galėsite "
-"suporuoti telefoną su kompiuteriu."
+"kompiuterį arba atvirkščiai</item><item>…Ir žymiai daugiau!</item></list>"
+
+#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:35
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid ""
+"To get started, click the <interface>%1</interface> button. You can pair "
+"your phone there."
+msgstr ""
+"Norėdami pradėti, spustelėkite mygtuką <interface>%1</interface>. Ten "
+"galėsite suporuoti telefoną."
+
+#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:50
+#, kde-format
+msgctxt "@action:button"
+msgid "Open %1"
+msgstr "Atverti %1"
+
+#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:62
+#, kde-format
+msgctxt "@info"
+msgid "KDE Connect is not installed."
+msgstr "KDE Connect nėra įdiegta."
+
+#: src/qml/pages/powerfulwhenneeded/KDEConnect.qml:67
+#, kde-format
+msgctxt "@action:button Install KDE Connect"
+msgid "Install KDE Connect…"
+msgstr "Įdiegti KDE Connect…"
 
 #: src/qml/pages/powerfulwhenneeded/KRunner.qml:22
 #, kde-format
@@ -886,6 +904,142 @@ msgctxt ""
 msgid "...and much more!"
 msgstr "...ir žymiai daugiau!"
 
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:18
+#, kde-format
+msgctxt "@info:window"
+msgid "Keyboard Shortcuts"
+msgstr "Spartieji klavišai"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:23
+#, kde-format
+msgctxt "@action:button"
+msgid "Configure Shortcuts…"
+msgstr "Konfigūruoti sparčiuosius klavišus…"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:29
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid ""
+"Almost anything in Plasma can be done with the keyboard, using shortcuts "
+"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>On a Mac "
+"keyboard, this is the “Command” key:"
+msgstr ""
+"Plasma aplinkoje beveik viską galima atlikti klaviatūra, naudojant "
+"sparčiuosius klavišus, kuriuose didžiąją dalį sudaro <shortcut>Meta</"
+"shortcut> klavišas.<nl/><nl/>„Mac“ klaviatūrose tai yra „Command“ klavišas:"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:30
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info:usagetip"
+#| msgid ""
+#| "Almost anything in Plasma can be done with the keyboard, using shortcuts "
+#| "that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key "
+#| "is usually located between the left <shortcut>Ctrl</shortcut> and "
+#| "<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, "
+#| "or the word “Super:”"
+msgctxt "@info:usagetip"
+msgid ""
+"Almost anything in Plasma can be done with the keyboard, using shortcuts "
+"that mostly involve the <shortcut>Meta</shortcut> key.<nl/><nl/>This key is "
+"usually located between the left <shortcut>Ctrl</shortcut> and "
+"<shortcut>Alt</shortcut> keys, and contains either a symbol of some kind, or "
+"the word “Super”:"
+msgstr ""
+"Plasma aplinkoje beveik viską galima atlikti klaviatūra, naudojant "
+"sparčiuosius klavišus, kuriuose didžiąją dalį sudaro <shortcut>Meta</"
+"shortcut> klavišas.<nl/><nl/>Šio klavišo vieta, įprastai, yra tarp kairiųjų "
+"<shortcut>Vald</shortcut> ir <shortcut>Alt</shortcut> klavišų, o ant jo būna "
+"nupieštas koks nors simbolis arba užrašytas žodis „Super:”"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:56
+#, kde-format
+msgctxt "The typical label for the keyboard's Ctrl key"
+msgid "Ctrl"
+msgstr "Vald"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:59
+#, kde-format
+msgctxt "The typical label for the keyboard's Function key"
+msgid "Fn"
+msgstr "Fn"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:69
+#, kde-format
+msgctxt "The typical label for the keyboard's Meta key"
+msgid "Super"
+msgstr "Super"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:78
+#, kde-format
+msgctxt ""
+"This is a terrible dad joke about the meta key on the keyboard being able to "
+"have many symbols. Translate it into one of similar groanworthiness if this "
+"is possible; if not, translate it as an empty string."
+msgid "I never meta key I didn't like"
+msgstr " "
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:101
+#, kde-format
+msgctxt "The typical label for the keyboard's Alt key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:114
+#, kde-format
+msgctxt "The actual translated label for 'fn' on a Mac keyboard"
+msgid "fn"
+msgstr "fn"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:119
+#, kde-format
+msgctxt "The actual translated label for 'control' on a Mac keyboard"
+msgid "control"
+msgstr "control"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:123
+#, kde-format
+msgctxt "The actual translated label for 'option' on a Mac keyboard"
+msgid "option"
+msgstr "option"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:128
+#, kde-format
+msgctxt "The actual translated label for 'command' on a Mac keyboard"
+msgid "command"
+msgstr "command"
+
+#: src/qml/pages/powerfulwhenneeded/MetaKey.qml:137
+#, kde-kuit-format
+msgctxt "@info:usagetip"
+msgid ""
+"What can you do with the <shortcut>Meta</shortcut> key? Here are a few "
+"examples:<list><item>Press it: Open the Application Launcher widget</"
+"item><item>Press <shortcut>Meta+[arrow keys]</shortcut>: Tile window to "
+"screen edges or corners</item><item>Press <shortcut>Meta+[number keys]</"
+"shortcut>: Launch pinned Task Manager apps</item><item>Press <shortcut>Meta"
+"+R</shortcut>: Start a screen recording</item><item>Press <shortcut>Meta+L</"
+"shortcut>: Lock the screen</item><item>Press <shortcut>Meta+Shift+S</"
+"shortcut>: Toggle screen reader on/off</item><item>Press <shortcut>Meta+Alt"
+"+P</shortcut>: Move keyboard focus to panel</item><item>Press <shortcut>Meta"
+"+Esc</shortcut>: Launch System Monitor app</item><item>Press <shortcut>Meta+."
+"</shortcut>: Launch Emoji Selector app</item><item>Press <shortcut>Meta+D</"
+"shortcut>: Show the desktop</item></list>"
+msgstr ""
+"Ką galite atlikti naudodami <shortcut>Meta</shortcut> klavišą? Štai keli "
+"pavyzdžiai:<list><item>Paspaudę jį: Atversite programų paleidyklės valdiklį</"
+"item><item>Paspaudę <shortcut>Meta+[rodyklės klavišus]</shortcut>: Išklosite "
+"langą ekrano kraštuose ar kampuose</item><item>Paspaudę <shortcut>Meta"
+"+[skaitmenų klavišus]</shortcut>: Paleisite prisegtas užduočių tvarkytuvės "
+"programas</item><item>Paspaudę <shortcut>Meta+R</shortcut>: Pradėsite "
+"filmuoti ekraną</item><item>Paspaudę <shortcut>Meta+L</shortcut>: "
+"Užrakinsite ekraną</item><item>Paspaudę <shortcut>Meta+Lyg2+S</shortcut>: "
+"Įjungsite arba išjungsite ekrano skaityklę</item><item>Paspaudę "
+"<shortcut>Meta+Alt+P</shortcut>: Perkelsite klaviatūros fokusavimą į "
+"skydelį</item><item>Paspaudę <shortcut>Meta+Gr</shortcut>: Paleisite "
+"sistemos prižiūryklės programą</item><item>Paspaudę <shortcut>Meta+.</"
+"shortcut>: Paleisite jaustukų parinkiklio programą</item><item>Paspaudę "
+"<shortcut>Meta+D</shortcut>: Matysite darbalaukį</item></list>"
+
 #: src/qml/pages/powerfulwhenneeded/Overview.qml:19
 #, kde-format
 msgctxt "@info:window The name of a KWin effect"
@@ -921,27 +1075,6 @@ msgstr ""
 "klavišą arba perkeldami pelę į viršutinį kairįjį ekrano kampą. Be to, galite "
 "paspausti <shortcut>Meta+G</shortcut>, kad būtų rodomas tinklelio rodinys, "
 "kuriame tinkleliu atvaizduojami virtualūs darbalaukiai."
-
-#: src/qml/pages/powerfulwhenneeded/SystemSettings.qml:16
-#, kde-format
-msgctxt "@info:window"
-msgid "System Settings"
-msgstr "Sistemos nuostatos"
-
-#: src/qml/pages/powerfulwhenneeded/SystemSettings.qml:17
-#, kde-kuit-format
-msgctxt "@info:usagetip"
-msgid ""
-"The System Settings app lets you extensively customize the system to suit "
-"your tastes and preferences. Default apps, wallpapers, visual styles and "
-"icons, virtual desktops, power management, 3rd-party add-ons — you’ll find "
-"it all there!"
-msgstr ""
-"Sistemos nuostatų programa jums leidžia plačiai tinkinti sistemą taip, kad "
-"ji patenkintų jūsų pomėgius ir nuostatas. Numatytosios programos, "
-"darbalaukio fonai, vaizdiniai stiliai ir piktogramos, virtualūs "
-"darbalaukiai, energijos valdymas, trečiųjų šalių papildiniai – visa tai "
-"rasite ten!"
 
 #: src/qml/pages/powerfulwhenneeded/Vaults.qml:22
 #, kde-format
@@ -1054,21 +1187,16 @@ msgstr ""
 "ekraną ir pridėtumėte, pašalintumėte ar modifikuotumėte valdiklius."
 
 #: src/qml/pages/SimpleByDefault.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid ""
-#| "This is the “Kickoff” widget, a multipurpose launcher. Here you can "
-#| "launch apps, shut down or restart the system, access recent files, and "
-#| "more. Click on it to get started!"
+#, kde-format
 msgctxt "@info"
 msgid ""
 "This is the “Application Launcher” widget, a multipurpose launcher. Here you "
 "can launch apps, shut down or restart the system, access recent files, and "
 "more. Click on it to get started!"
 msgstr ""
-"Tai yra „Pradžios“ valdiklis, universali paleidyklė. Čia galite paleisti "
-"programas, išjungti sistemą arba paleisti ją iš naujo, pasiekti paskiausiai "
-"naudotus failus ir kt. Spustelėkite ant jo norėdami pradėti!"
+"Tai yra „Programų paleidyklės“ valdiklis, universali paleidyklė. Čia galite "
+"paleisti programas, išjungti sistemą arba paleisti ją iš naujo, pasiekti "
+"paskiausiai naudotus failus ir kt. Spustelėkite ant jo norėdami pradėti!"
 
 #: src/qml/pages/SimpleByDefault.qml:42
 #, kde-format
@@ -1185,47 +1313,72 @@ msgctxt "@action:button %1 is the name of the user's distro"
 msgid "Learn more about %1"
 msgstr "Sužinokite daugiau apie %1"
 
-#: src/qml/pages/Welcome.qml:99
-#, kde-format
-msgctxt "@title"
-msgid "Image loading failed"
-msgstr "Nepavyko įkelti paveikslo"
-
-#: src/qml/pages/Welcome.qml:100
-#, kde-kuit-format
-msgctxt "@info:placeholder"
-msgid "Could not load <filename>%1</filename>. Make sure it exists."
-msgstr "Nepavyko įkelti <filename>%1</filename>. Įsitikinkite, kad jis yra."
-
-#: src/qml/pages/Welcome.qml:127
-#, kde-format
-msgctxt "@action:button clicking on this takes the user to a web page"
-msgid "Visit %1"
-msgstr "Apsilankyti %1"
-
-#: src/qml/pages/Welcome.qml:134
+#: src/qml/pages/Welcome.qml:76
 #, kde-format
 msgctxt "@info"
 msgid "The KDE mascot Konqi welcomes you to the KDE community!"
 msgstr "KDE talismanas Konqi sveikina jus KDE bendruomenėje!"
 
-#: src/release.cpp:43
+#: src/qml/pages/Welcome.qml:109
+#, kde-format
+msgctxt "@title"
+msgid "Image loading failed"
+msgstr "Nepavyko įkelti paveikslo"
+
+#: src/qml/pages/Welcome.qml:110
+#, kde-kuit-format
+msgctxt "@info:placeholder"
+msgid "Could not load <filename>%1</filename>. Make sure it exists."
+msgstr "Nepavyko įkelti <filename>%1</filename>. Įsitikinkite, kad jis yra."
+
+#: src/qml/pages/Welcome.qml:133
+#, kde-format
+msgctxt "@action:button clicking on this takes the user to a web page"
+msgid "Visit %1"
+msgstr "Apsilankyti %1"
+
+#: src/release.cpp:42
 #, kde-format
 msgctxt "@label %1 is the Plasma version"
 msgid "%1 Dev"
 msgstr "%1 plėtojama"
 
-#: src/release.cpp:46
+#: src/release.cpp:45
 #, kde-format
 msgctxt "@label %1 is the Plasma version"
 msgid "%1 Beta"
 msgstr "%1 Beta"
 
-#: src/release.cpp:50
+#: src/release.cpp:49
 #, kde-format
 msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
 msgid "%1 Beta %2"
 msgstr "%1 Beta %2"
+
+#~ msgctxt "@title:row"
+#~ msgid "System Settings"
+#~ msgstr "Sistemos nuostatos"
+
+#~ msgctxt "@info Caption for Get System Settings button"
+#~ msgid "Configure the system"
+#~ msgstr "Konfigūruoti sistemą"
+
+#~ msgctxt "@info:window"
+#~ msgid "System Settings"
+#~ msgstr "Sistemos nuostatos"
+
+#~ msgctxt "@info:usagetip"
+#~ msgid ""
+#~ "The System Settings app lets you extensively customize the system to suit "
+#~ "your tastes and preferences. Default apps, wallpapers, visual styles and "
+#~ "icons, virtual desktops, power management, 3rd-party add-ons — you’ll "
+#~ "find it all there!"
+#~ msgstr ""
+#~ "Sistemos nuostatų programa jums leidžia plačiai tinkinti sistemą taip, "
+#~ "kad ji patenkintų jūsų pomėgius ir nuostatas. Numatytosios programos, "
+#~ "darbalaukio fonai, vaizdiniai stiliai ir piktogramos, virtualūs "
+#~ "darbalaukiai, energijos valdymas, trečiųjų šalių papildiniai – visa tai "
+#~ "rasite ten!"
 
 #~ msgctxt "@title:window"
 #~ msgid "Manage Software"

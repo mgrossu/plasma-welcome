@@ -55,56 +55,53 @@ Welcome.Page {
             Repeater {
                 model: ListModel {
                     id: appsModel
-                    ListElement { name: "Krita"; appstream: "org.kde.krita"; snap: "krita"; icon: "krita.png" }
-                    ListElement { name: "Blender"; appstream: "org.blender.Blender"; snap: "blender"; icon: "blender" }
-                    ListElement { name: "VLC"; appstream: "org.videolan.VLC"; snap: "vlc"; icon: "vlc" }
-                    ListElement { name: "GIMP"; appstream: "org.gimp.GIMP"; snap: "gimp"; icon: "gimp" }
-                    ListElement { name: "KStars"; appstream: "org.kde.kstars.desktop"; snap: "kstars"; icon: "kstars" }
+                    ListElement { name: "Krita"; appstream: "org.kde.krita"; snap: "krita"; icon: "krita.svg" }
+                    ListElement { name: "Blender"; appstream: "org.blender.Blender"; snap: "blender"; icon: "blender.svg" }
+                    ListElement { name: "VLC"; appstream: "org.videolan.VLC"; snap: "vlc"; icon: "vlc.png" }
+                    ListElement { name: "GIMP"; appstream: "org.gimp.GIMP"; snap: "gimp"; icon: "gimp.svg" }
+                    ListElement { name: "KStars"; appstream: "org.kde.kstars.desktop"; snap: "kstars"; icon: "kstars.svg" }
                     ListElement { name: "Endless Sky"; appstream: "io.github.endless_sky.endless_sky"; snap: "endlesssky"; icon: "endlesssky.png" }
                 }
-                delegate: ColumnLayout {
-                    spacing: Kirigami.Units.smallSpacing
+                delegate: QQC2.AbstractButton {
+                    id: appButton
 
+                    text: model.name
 
-                    Loader {
-                        Layout.preferredWidth: applicationGrid.itemSize
-                        Layout.preferredHeight: applicationGrid.itemSize
+                    contentItem: ColumnLayout {
+                        spacing: Kirigami.Units.smallSpacing
 
-                        sourceComponent : model.icon.endsWith(".png") ? imageComponent : iconComponent
+                        Image {
+                            Layout.preferredWidth: applicationGrid.itemSize
+                            Layout.preferredHeight: applicationGrid.itemSize
 
-                        Component {
-                            id: iconComponent
-                            Kirigami.Icon { source: model.icon }
+                            source: model.icon
+                            mipmap: true
                         }
-                        Component {
-                            id: imageComponent
-                            Image { source: model.icon }
+
+                        QQC2.Label {
+                            Layout.alignment: Qt.AlignHCenter
+                            Layout.maximumWidth: applicationGrid.itemSize
+                            text: appButton.text
+                            wrapMode: Text.Wrap
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignTop
                         }
-                    }
 
-                    QQC2.Label {
-                        Layout.alignment: Qt.AlignHCenter
-                        Layout.maximumWidth: applicationGrid.itemSize
-                        text: model.name
-                        wrapMode: Text.Wrap
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignTop
-                    }
-
-                    HoverHandler {
-                        id: hoverhandler
-                        cursorShape: Qt.PointingHandCursor
-                    }
-                    TapHandler {
-                        onTapped: {
-                          let url = Private.App.isDistroSnapOnly ? `snap://${model.snap}` : `appstream://${model.appstream}`
-                          Qt.openUrlExternally(url)
+                        HoverHandler {
+                            id: hoverhandler
+                            cursorShape: Qt.PointingHandCursor
                         }
-                    }
+                        TapHandler {
+                            onTapped: {
+                            let url = Private.App.isDistroSnapOnly ? `snap://${model.snap}` : `appstream://${model.appstream}`
+                            Qt.openUrlExternally(url)
+                            }
+                        }
 
-                    QQC2.ToolTip {
-                        visible: hoverhandler.hovered
-                        text: i18nc("@action:button %1 is the name of an app", "Show %1 in Discover", model.name)
+                        QQC2.ToolTip {
+                            visible: hoverhandler.hovered
+                            text: i18nc("@action:button %1 is the name of an app", "Show %1 in Discover", appButton.text)
+                        }
                     }
                 }
             }

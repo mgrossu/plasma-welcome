@@ -56,7 +56,6 @@
   <name xml:lang="ta">வரவேற்பு மையம்</name>
   <name xml:lang="tr">Karşılama Merkezi</name>
   <name xml:lang="uk">Вітальний центр</name>
-  <name xml:lang="x-test">xxWelcome Centerxx</name>
   <name xml:lang="zh-CN">欢迎中心</name>
   <name xml:lang="zh-TW">歡迎中心</name>
   <summary>Learn more about KDE Plasma</summary>
@@ -65,6 +64,7 @@
   <summary xml:lang="bg">Научете повече за Plasma</summary>
   <summary xml:lang="ca">Apreneu-ne més pel que fa al Plasma de KDE</summary>
   <summary xml:lang="ca-valencia">Apreneu-ne més pel que fa a Plasma de KDE</summary>
+  <summary xml:lang="cs">Poznejte možnosti prostředí KDE Plasma</summary>
   <summary xml:lang="da">Lær mere om KDE Plasma</summary>
   <summary xml:lang="de">Mehr über KDE Plasma erfahren</summary>
   <summary xml:lang="en-GB">Learn more about KDE Plasma</summary>
@@ -91,6 +91,7 @@
   <summary xml:lang="pa">KDE ਪਲਾਜ਼ਮਾ ਬਾਰੇ ਹੋਰ ਜਾਣੋ</summary>
   <summary xml:lang="pl">Dowiedz się o Plazmie KDE</summary>
   <summary xml:lang="pt-BR">Aprenda mais sobre o KDE Plasma</summary>
+  <summary xml:lang="ro">Aflați mai multe despre KDE Plasma</summary>
   <summary xml:lang="ru">Узнать больше о KDE Plasma</summary>
   <summary xml:lang="sa">KDE Plasma विषये अधिकं ज्ञातुं शक्नुवन्ति</summary>
   <summary xml:lang="sl">Poučite se več o KDE Plasmi</summary>
@@ -98,7 +99,6 @@
   <summary xml:lang="ta">கே.டீ.யீ. பிளாஸ்மாவைப் பற்றி மேலும் அறிய உதவும்</summary>
   <summary xml:lang="tr">KDE Plasma hakkında daha fazla bilgi alın</summary>
   <summary xml:lang="uk">Дізнайтеся більше про Плазму KDE</summary>
-  <summary xml:lang="x-test">xxLearn more about KDE Plasmaxx</summary>
   <summary xml:lang="zh-CN">了解 KDE Plasma 的更多信息</summary>
   <summary xml:lang="zh-TW">瞭解更多關於 KDE Plasma 的資訊</summary>
   <description>
@@ -111,7 +111,7 @@
     <p xml:lang="ca">El centre de benvinguda és la introducció perfecta al Plasma de KDE! Pot ajudar-vos a aprendre com connectar-vos a Internet, instal·lar aplicacions, personalitzar el sistema, i més!</p>
     <p xml:lang="ca-valencia">El centre de benvinguda és la introducció perfecta a Plasma de KDE! Pot ajudar-vos a aprendre com connectar-vos a Internet, instal·lar aplicacions, personalitzar el sistema, i més!</p>
     <p xml:lang="da">Velkomstcenter er den perfekte introduktion til KDE Plasma! Den kan lære dig at tilslutte til internettet, installere programer, tilpas systemet og mere!</p>
-    <p xml:lang="de">Der Begrüßungsassistent ist die perfekte Einführung in KDE Plasma. Er kann Ihnen helfen, sich mit dem Internet zu verbinden, Anwendungen zu installieren, das System an Ihre Bedürfnisse anzupassen und vieles mehr.</p>
+    <p xml:lang="de">Der Begrüßungsassistent ist die perfekte Einführung in KDE Plasma! Er kann Ihnen helfen, sich mit dem Internet zu verbinden, Anwendungen zu installieren, das System an Ihre Bedürfnisse anzupassen und vieles mehr.</p>
     <p xml:lang="en-GB">Welcome Centre is the perfect introduction to KDE Plasma! It can help you learn how to connect to the internet, install apps, customise the system, and more!</p>
     <p xml:lang="eo">Bonvencentro estas la perfekta enkonduko al KDE Plasma! Ĝi povas helpi vin lerni kiel konekti al la interreto, instali aplikojn, proprigi la sistemon kaj pli!</p>
     <p xml:lang="es">El centro de bienvenida es la introducción perfecta a KDE Plasma. Le puede ayudar a aprender a conectarse a Internet, instalar aplicaciones, personalizar el sistema, y mucho más.</p>
@@ -146,7 +146,6 @@
     <p xml:lang="ta">வரவேற்பு மையம், உங்களுக்கு கே.டீ.யீ. பிளாஸ்மாவை அறிமுகப்படுத்தும். இணையத்தில் இணைவது, செயலிகளை நிறுவுவது, கணினியை மாற்றியமைப்பது போன்ற அடிப்படையானவற்றைக் நீங்கள் கற்றுகொள்ள உதவும்.</p>
     <p xml:lang="tr">Karşılama Merkezi, KDE Plasma için en iyi tanıtımı alabileceğiniz biricik yazılımdır. Size; internete bağlanmayı, uygulamalar kurmayı, sistemi özelleştirmeyi ve çok daha fazlasını gösterir!</p>
     <p xml:lang="uk">Вітальний центр є чудовим вступом до Плазми KDE! Він може допомогти вам дізнатися про те, як встановити з'єднання з інтернетом, встановити програми, налаштувати систему тощо!</p>
-    <p xml:lang="x-test">xxWelcome Center is the perfect introduction to KDE Plasma! It can help you learn how to connect to the internet, install apps, customize the system, and more!xx</p>
     <p xml:lang="zh-CN">欢迎中心是 KDE Plasma 的初次上手向导程序。它可以帮助您学习如何连接到互联网、安装应用、自定义系统以及使用其他功能。</p>
     <p xml:lang="zh-TW">歡迎中心是對 KDE Plasma 的完美初次簡介！它可以幫您學習如何連線到網際網路、安裝應用程式、自訂系統等等！</p>
   </description>
@@ -197,7 +196,6 @@
       <caption xml:lang="ta">வரவேற்பு மையத்தின் முதற்பக்கம்: பிளாஸ்மாவிற்கான அறிமுகம்</caption>
       <caption xml:lang="tr">Karşılama Merkezi ilk sayfası: KDE Plasma’ya hoş geldiniz</caption>
       <caption xml:lang="uk">Перша сторінка «Вітального центру»: вступ до Плазми KDE</caption>
-      <caption xml:lang="x-test">xxWelcome Center first page: introducing KDE Plasmaxx</caption>
       <caption xml:lang="zh-CN">欢迎中心第一页：介绍 KDE Plasma</caption>
       <caption xml:lang="zh-TW">歡迎中心的第一頁：KDE Plasma 簡介</caption>
     </screenshot>
@@ -247,7 +245,6 @@
       <caption xml:lang="ta">வரவேற்பு மையத்தின் இரண்டாம் பக்கம்: செயலிகளை நிறுவும் முறை</caption>
       <caption xml:lang="tr">Karşılama Merkezi ikinci sayfası: Uygulama kurma</caption>
       <caption xml:lang="uk">Друга сторінка «Вітального центру»: як встановлювати програми</caption>
-      <caption xml:lang="x-test">xxWelcome Center second page: how to install appsxx</caption>
       <caption xml:lang="zh-CN">欢迎中心第二页：如何安装应用</caption>
       <caption xml:lang="zh-TW">歡迎中心的第二頁：如何安裝應用程式</caption>
     </screenshot>
@@ -297,7 +294,6 @@
       <caption xml:lang="ta">வரவேற்பு மையத்தின் ஆறாவது பக்கம்: பங்களிக்கும் முறை</caption>
       <caption xml:lang="tr">Karşılama Merkezi altıncı sayfası: Nasıl katılabilirim</caption>
       <caption xml:lang="uk">Шоста сторінка «Вітального центру»: як взяти участь у проєкті</caption>
-      <caption xml:lang="x-test">xxWelcome Center sixth page: how to get involvedxx</caption>
       <caption xml:lang="zh-CN">欢迎中心第六页：如何参与贡献</caption>
       <caption xml:lang="zh-TW">歡迎中心的第六頁：如何參與</caption>
     </screenshot>
@@ -311,9 +307,9 @@
   <project_group>KDE</project_group>
   <compulsory_for_desktop>KDE</compulsory_for_desktop>
   <releases>
-    <release version="6.4.0" date="2025-06-12"/>
-    <release version="6.3.90" date="2025-05-15"/>
-    <release version="6.3.5" date="2025-05-06"/>
-    <release version="6.3.4" date="2025-04-01"/>
+    <release version="6.5.3" date="2025-11-18"/>
+    <release version="6.4.6" date="2025-11-11"/>
+    <release version="6.5.2" date="2025-11-04"/>
+    <release version="6.5.1" date="2025-10-28"/>
   </releases>
 </component>

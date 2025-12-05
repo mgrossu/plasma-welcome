@@ -15,6 +15,14 @@ ecm_add_qml_module(plasma-welcome URI "org.kde.plasma.welcome.private" GENERATE_
 
 configure_file(config-plasma-welcome.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-plasma-welcome.h)
 
+ecm_qt_declare_logging_category(plasma-welcome
+    HEADER welcome_debug.h
+    IDENTIFIER WELCOME_LOG
+    CATEGORY_NAME org.kde.plasma.welcome
+    DESCRIPTION "Welcome Center"
+    EXPORT WELCOME
+)
+
 target_sources(plasma-welcome PRIVATE
     main.cpp
 
@@ -58,22 +66,26 @@ ecm_target_qml_sources(plasma-welcome
     qml/pages/SimpleByDefault.qml
     qml/pages/PowerfulWhenNeeded.qml
     qml/pages/powerfulwhenneeded/PlasmaFeatureCard.qml
+    qml/pages/powerfulwhenneeded/MetaKey.qml
     qml/pages/powerfulwhenneeded/Overview.qml
     qml/pages/powerfulwhenneeded/KRunner.qml
     qml/pages/powerfulwhenneeded/KDEConnect.qml
     qml/pages/powerfulwhenneeded/Activities.qml
     qml/pages/powerfulwhenneeded/Vaults.qml
-    qml/pages/powerfulwhenneeded/SystemSettings.qml
     qml/pages/Discover.qml
     qml/pages/Feedback.qml
     qml/pages/Enjoy.qml
     qml/pages/enjoy/Supporters.qml
 
     RESOURCES
-    assets/krita.png
+    assets/blender.svg
     assets/endlesssky.png
+    assets/gimp.svg
+    assets/krita.svg
     assets/konqi-kde-hi.png
     assets/konqi-default.png
+    assets/kstars.svg
+    assets/vlc.png
 )
 
 target_compile_definitions(plasma-welcome PRIVATE "DISTRO_CUSTOM_PAGE_FOLDER=\"${DISTRO_CUSTOM_PAGE_FOLDER}\"")

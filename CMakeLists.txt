@@ -4,12 +4,12 @@
 
 cmake_minimum_required(VERSION 3.16)
 project(welcome)
-set(PROJECT_VERSION "6.4.80")
+set(PROJECT_VERSION "6.5.80")
 
 
-set(PROJECT_DEP_VERSION "6.3.90")
-set(QT_MIN_VERSION "6.8.0")
-set(KF6_MIN_VERSION "6.14.0")
+set(PROJECT_DEP_VERSION "6.4.90")
+set(QT_MIN_VERSION "6.9.0")
+set(KF6_MIN_VERSION "6.18.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 set(CMAKE_CXX_STANDARD 20)
@@ -37,6 +37,7 @@ include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 include(ECMQmlModule)
 include(ECMDeprecationSettings)
+include(ECMQtDeclareLoggingCategory)
 
 set(DISTRO_CUSTOM_PAGE_FOLDER "/usr/share/plasma/plasma-welcome/extra-pages/" CACHE STRING "Folder on disk to find custom pages")
 set(DISTRO_CUSTOM_INTRO_FILE "/usr/share/plasma/plasma-welcome/intro-customization.desktop" CACHE STRING "File specifying custom intro content")
@@ -62,8 +63,8 @@ set_package_properties(KUserFeedback PROPERTIES
     TYPE RUNTIME
 )
 
-ecm_set_disabled_deprecation_versions(QT 6.8.1
-    KF 6.12.0
+ecm_set_disabled_deprecation_versions(QT 6.9.0
+    KF 6.16.0
 )
 
 add_subdirectory(src)
@@ -72,5 +73,11 @@ install(PROGRAMS org.kde.plasma-welcome.desktop DESTINATION ${KDE_INSTALL_APPDIR
 install(FILES org.kde.plasma-welcome.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
+
+ecm_qt_install_logging_categories(
+    EXPORT WELCOME
+    FILE welcome.categories
+    DESTINATION "${KDE_INSTALL_LOGGINGCATEGORIESDIR}"
+)
 
 ki18n_install(po)

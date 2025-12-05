@@ -14,8 +14,10 @@ import org.kde.plasma.welcome as Welcome
 
 Welcome.Page {
     heading: i18nc("@info:window", "Powerful When Needed")
-    description: xi18nc("@info:usagetip", "Plasma is an extremely feature-rich environment, designed to super-charge your productivity!<nl/><nl/>
-    Click the cards below to see just a smattering of what it can do for you:")
+    // Don't change the weird indentation; it's intentional to make this
+    // long string nicer for translators
+    description: xi18nc("@info:usagetip", "Plasma is an extremely feature-rich environment, designed to super-charge your productivity!<nl/><nl/>\
+Click the cards below to see just a smattering of what it can do for you:")
 
     ColumnLayout {
         id: layout
@@ -42,6 +44,12 @@ Welcome.Page {
 
             Repeater {
                 model: [
+                    {
+                        page: "MetaKey.qml",
+                        title: i18nc("@title:row", "Keyboard Shortcuts"),
+                        subtitle: i18nc("@info Caption for Get Keyboard Shortcuts button", "Activate features from the keyboard"),
+                        buttonIcon: "preferences-desktop-keyboard-shortcut"
+                    },
                     {
                         page: "Overview.qml",
                         title: i18nc("@title:row Name of the 'Overview' KWin effect", "Overview"),
@@ -71,12 +79,6 @@ Welcome.Page {
                         title: i18nc("@title:row Short form of the 'Vaults' Plasma feature", "Vaults"),
                         subtitle: i18nc("@info Caption for Plasma Vaults button", "Store sensitive files securely"),
                         buttonIcon: "plasmavault"
-                    },
-                    {
-                        page: "SystemSettings.qml",
-                        title: i18nc("@title:row", "System Settings"),
-                        subtitle: i18nc("@info Caption for Get System Settings button", "Configure the system"),
-                        buttonIcon: "systemsettings"
                     }
                 ]
                 delegate: PlasmaFeatureCard {

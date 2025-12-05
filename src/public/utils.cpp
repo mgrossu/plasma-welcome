@@ -8,12 +8,17 @@
 
 #include <QApplication>
 #include <QClipboard>
+#include <QFile>
+#include <QFileInfo>
 #include <QProcess>
 #include <QStandardPaths>
+#include <QTextStream>
 
 #include <KIO/ApplicationLauncherJob>
 #include <KLocalizedString>
 #include <KNotificationJobUiDelegate>
+
+#include "welcome_debug.h"
 
 #include "utils.h"
 
@@ -39,7 +44,7 @@ void Utils::runCommand(const QString &command, QJSValue callback)
     if (QStandardPaths::findExecutable(program).isEmpty()) {
         const QString errorMessage = xi18nc("@info:progress", "The command <command>%1</command> could not be found.", program);
 
-        qWarning() << errorMessage;
+        qCWarning(WELCOME_LOG) << "The command" << program << "could not be found";
         if (resultHandled) {
             callback.call({-1, errorMessage});
         }
@@ -78,7 +83,7 @@ void Utils::runCommand(const QString &command, QJSValue callback)
                                                command,
                                                intermediateText);
 
-        qWarning() << finalOutputText;
+        qCWarning(WELCOME_LOG) << "The command" << command << "failed:" << intermediateText;
         callback.call({exitCode, finalOutputText});
         return;
     });
@@ -87,6 +92,33 @@ void Utils::runCommand(const QString &command, QJSValue callback)
 void Utils::copyToClipboard(const QString &content) const
 {
     QApplication::clipboard()->setText(content);
+}
+
+bool Utils::isMac() const
+{
+    bool isMac = false;
+
+    const QStringList possibleVendorNameFiles = {
+        QStringLiteral("/sys/class/dmi/id/sys_vendor"), // PCs and Intel macs
+        QStringLiteral("/proc/device-tree/model") // Arm and PPC macs
+    };
+    for (const QString &path : possibleVendorNameFiles) {
+        QFileInfo fileInfo(path);
+        if (fileInfo.exists()) {
+            QFile file(path);
+            if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+                QTextStream in(&file);
+                const QString vendor = in.readLine().trimmed();
+                file.close();
+                if (vendor.startsWith("Apple"), Qt::CaseInsensitive) {
+                    isMac = true;
+                    break;
+                }
+            }
+        }
+    }
+
+    return isMac;
 }
 
 #include "moc_utils.cpp"
