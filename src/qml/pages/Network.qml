@@ -5,61 +5,27 @@
  */
 
 import QtQuick
+import QtNetwork
 import QtQuick.Layouts
 import QtQuick.Effects
 
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.components as PC3
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome as Welcome
+import org.kde.plasma.welcome.private as Private
 
-GenericPage {
+Welcome.Page {
     id: root
 
     heading: i18nc("@info:window", "Access the Internet")
     description: xi18nc("@info:usagetip", "You can connect to the internet and manage your network connections with the <interface>Networks applet</interface>. To access it, click on the <interface>Networks</interface> icon in your <interface>System Tray</interface>, which lives in the bottom-right corner of the screen.")
 
-    Loader {
+    show: NetworkInformation.reachability !== NetworkInformation.Reachability.Online || Private.Release.isDevelopment
+
+    PlasmaNMLoader {
         id: nmLoader
-        source: "PlasmaNM.qml"
-
-        // Defaults for when PlasmaNM is not available
-        property bool statusConnected: false
-        property bool iconConnecting: false
-        property string icon: "network-wireless-available"
-
-        onStatusChanged: {
-            if (status === Loader.Ready) {
-                statusConnected = Qt.binding(() => nmLoader.item.networkStatus.connectivity === 4); // 4, Full connectivity
-                iconConnecting = Qt.binding(() => nmLoader.item.connectionIcon.connecting);
-                icon = Qt.binding(() => nmLoader.item.connectionIcon.connectionIcon);
-            } else if (status === Loader.Error) {
-                console.warn("PlasmaNM integration failed to load (is plasma-nm available?)");
-            }
-        }
-
-        // Continue to the next page automatically when connected
-        onStatusConnectedChanged: {
-            if (statusConnected && pageStack.currentItem == root) {
-                pageStack.currentIndex += 1;
-            }
-        }
     }
-
-    states: [
-        State {
-            name: "NoPlasmaNM" // Shows error message
-            when: nmLoader.status == Loader.Error
-        },
-        State {
-            name: "Connected" // Shows card and connected message
-            when: nmLoader.statusConnected
-        },
-        State {
-            name: "Disconnected" // Shows card
-            when: !nmLoader.statusConnected
-        }
-    ]
 
     Kirigami.PlaceholderMessage {
         id: errorMessage
@@ -68,27 +34,27 @@ GenericPage {
         width: parent.width - Kirigami.Units.gridUnit * 2
 
         // Shown when PlasmaNM is not available
-        visible: root.state == "NoPlasmaNM"
+        visible: nmLoader.state == "NoPlasmaNM"
 
         icon.name: "data-warning-symbolic"
         text: i18nc("@info:placeholder", "Networking support for Plasma is not currently installed")
-        explanation: xi18nc("@info:usagetip %1 is the name of the user's distro", "To manage network connections, Plasma requires <icode>plasma-nm</icode> to be installed. Please report this omission to %1.", Controller.distroName())
+        explanation: xi18nc("@info:usagetip %1 is the name of the user's distro", "To manage network connections, Plasma requires <icode>plasma-nm</icode> to be installed. Please report this omission to %1.", Welcome.Distro.name)
         helpfulAction: Kirigami.Action {
-            enabled: root.state == "NoPlasmaNM"
+            enabled: nmLoader.state === "NoPlasmaNM"
             icon.name: "tools-report-bug-symbolic"
             text: i18nc("@action:button", "Report Bug…")
-            onTriggered: Qt.openUrlExternally(Controller.distroBugReportUrl())
+            onTriggered: Qt.openUrlExternally(Welcome.Distro.bugReportUrl)
         }
     }
 
-    MockCard {
+    Private.MockCard {
         id: mock
         anchors.fill: parent
 
         backgroundAlignment: Qt.AlignRight | Qt.AlignBottom
-        visible: root.state != "NoPlasmaNM"
+        visible: nmLoader.state !== "NoPlasmaNM"
 
-        opacity: root.state == "Connected" ? 0.6 : 1
+        opacity: nmLoader.state === "Connected" ? 0.6 : 1
         Behavior on opacity {
             NumberAnimation {
                 duration: Kirigami.Units.longDuration
@@ -96,14 +62,14 @@ GenericPage {
             }
         }
 
-        MockPanel {
+        Private.MockPanel {
             id: mockPanel
             anchors.bottom: parent.bottom
             anchors.right: parent.right
 
             width: Math.max(mock.desktopWidth, parent.width)
 
-            MockKickoffApplet {
+            Private.MockKickoffApplet {
                 opacity: (mockPanel.x >= 0) ? 1 : 0
                 visible: opacity > 0
 
@@ -119,18 +85,19 @@ GenericPage {
                 Layout.fillWidth: true
             }
 
-            MockSystemTrayApplet {
+            Private.MockSystemTrayApplet {
                 id: mockSystemTray
 
-                MockSystemTrayIcon {
-                    source: "klipper-symbolic"
-                }
 
-                MockSystemTrayIcon {
+                Private.MockSystemTrayIcon {
                     source: "audio-volume-high-symbolic"
                 }
 
-                MockSystemTrayIcon {
+                Private.MockSystemTrayIcon {
+                    source: "brightness-high-symbolic"
+                }
+
+                Private.MockSystemTrayIcon {
                     id: mockNmTrayIcon
 
                     source: nmLoader.icon
@@ -148,7 +115,7 @@ GenericPage {
                     Item {
                         id: indicatorArrowContainer
 
-                        readonly property bool animate: visible && root.state !== "Connected" && pageStack.currentItem == root
+                        readonly property bool animate: visible && nmLoader.state !== "Connected" && pageStack.currentItem === root
 
                         implicitWidth: indicatorArrow.implicitWidth + glowPadding * 2
                         implicitHeight: indicatorArrow.implicitHeight + glowPadding * 2
@@ -196,7 +163,7 @@ GenericPage {
                             id: indicatorArrowGlow
                             anchors.fill: indicatorArrow
 
-                            layer.enabled: true
+                            layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
                             layer.effect: MultiEffect {
                                 autoPaddingEnabled: false
                                 paddingRect: Qt.rect(indicatorArrowContainer.glowPadding,
@@ -225,9 +192,9 @@ GenericPage {
                 }
             }
 
-            MockDigitalClockApplet {}
+            Private.MockDigitalClockApplet {}
 
-            MockShowDesktopApplet {}
+            Private.MockShowDesktopApplet {}
         }
     }
 
@@ -238,7 +205,7 @@ GenericPage {
         width: parent.width - Kirigami.Units.gridUnit * 2
 
         // Shown when connected
-        visible: root.state == "Connected"
+        visible: nmLoader.state === "Connected"
 
         icon.name: "data-success-symbolic"
         text: i18nc("@info:placeholder Shown when connected to the internet", "You’re connected")
@@ -248,7 +215,7 @@ GenericPage {
 
     footer: Kirigami.InlineMessage {
         position: Kirigami.InlineMessage.Footer
-        visible: Controller.patchVersion === 80
+        visible: Private.Release.isDevelopment
         text: i18nc("@info", "This page is being shown regardless of network connectivity because you are using a development version. To manually preview the different states of the page, you can use the button.")
         showCloseButton: true
 
@@ -256,8 +223,8 @@ GenericPage {
             Kirigami.Action {
                 text: i18nc("@action:button", "Change state")
                 onTriggered: {
-                    let stateIndex = root.states.findIndex(state => state.name == root.state)
-                    root.state = root.states[(stateIndex + 1) % root.states.length].name
+                    let stateIndex = nmLoader.states.findIndex(state => state.name === nmLoader.state)
+                    nmLoader.state = nmLoader.states[(stateIndex + 1) % nmLoader.states.length].name
                 }
             }
         ]

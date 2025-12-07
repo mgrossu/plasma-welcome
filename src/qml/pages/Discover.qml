@@ -8,27 +8,29 @@
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
+
 import org.kde.kirigami as Kirigami
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome as Welcome
+import org.kde.plasma.welcome.private as Private
 
-GenericPage {
+Welcome.Page {
     id: root
 
-    readonly property alias application: application
+    heading: i18nc("@title:window", "Find Great Apps")
+    description: xi18nc("@info:usagetip %1 is 'Discover', the name of KDE's software center app, and %2 is the distro name.", "There’s no need to search the web to download app installers or use a command-line package manager; KDE’s app store <application>%1</application> does it all for you!<nl/><nl/>Click on any of the icons below to give it a try!", application.name)
 
-    heading: i18nc("@title:window", "Manage Software")
-    description: xi18nc("@info:usagetip %1 is 'Discover', the name of KDE's software center app","The <application>%1</application> app helps you find and install applications, games, and tools. You can search or browse by category, look at screenshots, and read reviews to help you find the perfect app.", application.name)
+    show: application.exists
 
     ColumnLayout {
         anchors.centerIn: parent
         spacing: Kirigami.Units.gridUnit
 
-        ApplicationIcon {
+        Welcome.ApplicationIcon {
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             Layout.fillHeight: true
 
-            application: ApplicationInfo {
+            application: Welcome.ApplicationInfo {
                 id: application
                 desktopName: "org.kde.discover"
             }
@@ -53,56 +55,53 @@ GenericPage {
             Repeater {
                 model: ListModel {
                     id: appsModel
-                    ListElement { name: "Krita"; appstream: "org.kde.krita"; snap: "krita"; icon: "krita.png" }
-                    ListElement { name: "Blender"; appstream: "org.blender.Blender"; snap: "blender"; icon: "blender" }
-                    ListElement { name: "VLC"; appstream: "org.videolan.VLC"; snap: "vlc"; icon: "vlc" }
-                    ListElement { name: "GIMP"; appstream: "org.gimp.GIMP"; snap: "gimp"; icon: "gimp" }
-                    ListElement { name: "KStars"; appstream: "org.kde.kstars.desktop"; snap: "kstars"; icon: "kstars" }
+                    ListElement { name: "Krita"; appstream: "org.kde.krita"; snap: "krita"; icon: "krita.svg" }
+                    ListElement { name: "Blender"; appstream: "org.blender.Blender"; snap: "blender"; icon: "blender.svg" }
+                    ListElement { name: "VLC"; appstream: "org.videolan.VLC"; snap: "vlc"; icon: "vlc.png" }
+                    ListElement { name: "GIMP"; appstream: "org.gimp.GIMP"; snap: "gimp"; icon: "gimp.svg" }
+                    ListElement { name: "KStars"; appstream: "org.kde.kstars.desktop"; snap: "kstars"; icon: "kstars.svg" }
                     ListElement { name: "Endless Sky"; appstream: "io.github.endless_sky.endless_sky"; snap: "endlesssky"; icon: "endlesssky.png" }
                 }
-                delegate: ColumnLayout {
-                    spacing: Kirigami.Units.smallSpacing
+                delegate: QQC2.AbstractButton {
+                    id: appButton
 
+                    text: model.name
 
-                    Loader {
-                        Layout.preferredWidth: applicationGrid.itemSize
-                        Layout.preferredHeight: applicationGrid.itemSize
+                    contentItem: ColumnLayout {
+                        spacing: Kirigami.Units.smallSpacing
 
-                        sourceComponent : model.icon.endsWith(".png") ? imageComponent : iconComponent
+                        Image {
+                            Layout.preferredWidth: applicationGrid.itemSize
+                            Layout.preferredHeight: applicationGrid.itemSize
 
-                        Component {
-                            id: iconComponent
-                            Kirigami.Icon { source: model.icon }
+                            source: model.icon
+                            mipmap: true
                         }
-                        Component {
-                            id: imageComponent
-                            Image { source: model.icon }
+
+                        QQC2.Label {
+                            Layout.alignment: Qt.AlignHCenter
+                            Layout.maximumWidth: applicationGrid.itemSize
+                            text: appButton.text
+                            wrapMode: Text.Wrap
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignTop
                         }
-                    }
 
-                    QQC2.Label {
-                        Layout.alignment: Qt.AlignHCenter
-                        Layout.maximumWidth: applicationGrid.itemSize
-                        text: model.name
-                        wrapMode: Text.Wrap
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignTop
-                    }
-
-                    HoverHandler {
-                        id: hoverhandler
-                        cursorShape: Qt.PointingHandCursor
-                    }
-                    TapHandler {
-                        onTapped: {
-                          let url = Controller.isDistroSnapOnly() ? `snap://${model.snap}` : `appstream://${model.appstream}`
-                          Qt.openUrlExternally(url)
+                        HoverHandler {
+                            id: hoverhandler
+                            cursorShape: Qt.PointingHandCursor
                         }
-                    }
+                        TapHandler {
+                            onTapped: {
+                            let url = Private.App.isDistroSnapOnly ? `snap://${model.snap}` : `appstream://${model.appstream}`
+                            Qt.openUrlExternally(url)
+                            }
+                        }
 
-                    QQC2.ToolTip {
-                        visible: hoverhandler.hovered
-                        text: i18nc("@action:button %1 is the name of an app", "Show %1 in Discover", model.name)
+                        QQC2.ToolTip {
+                            visible: hoverhandler.hovered
+                            text: i18nc("@action:button %1 is the name of an app", "Show %1 in Discover", appButton.text)
+                        }
                     }
                 }
             }

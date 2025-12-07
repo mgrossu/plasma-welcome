@@ -11,18 +11,22 @@
 #include <QCommandLineParser>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQmlExtensionPlugin>
 #include <QQuickWindow>
 #include <QSurfaceFormat>
-#include <QUrl>
 
 #include <KAboutData>
 #include <KDBusService>
 #include <KLocalizedContext>
+#include <KLocalizedQmlContext>
 #include <KLocalizedString>
 #include <KWindowSystem>
 
-#include "controller.h"
+#include "app.h"
 #include "plasma-welcome-version.h"
+
+// Ensure the public plugin is linked by referencing exported symbol
+Q_IMPORT_QML_PLUGIN(org_kde_plasma_welcomePlugin);
 
 int main(int argc, char *argv[])
 {
@@ -70,7 +74,6 @@ int main(int argc, char *argv[])
     aboutData.setupCommandLine(&parser);
 
     parser.addOption(QCommandLineOption(QStringLiteral("post-update"), i18n("Display release notes for the current Plasma release.")));
-    parser.addOption(QCommandLineOption(QStringLiteral("post-update-beta"), i18n("Display release notes for the current Plasma release, for beta versions.")));
     parser.addOption(QCommandLineOption(QStringLiteral("live-environment"), i18n("Display the live page intended for distro live environments.")));
 
     QCommandLineOption pagesOption(QStringLiteral("pages"),
@@ -81,36 +84,7 @@ int main(int argc, char *argv[])
     parser.process(app);
     aboutData.processCommandLine(&parser);
 
-    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-
-    auto controller = engine.singletonInstance<Controller *>("org.kde.plasma.welcome", "Controller");
-    if (parser.isSet(QStringLiteral("pages"))) {
-        QStringList pages = parser.value(pagesOption).split(",");
-
-        // Ensure each page ends with ".qml"
-        for (QString &page : pages) {
-            if (!page.endsWith(".qml")) {
-                page.append(".qml");
-            }
-        }
-
-        if (pages.size() != 0) {
-            controller->setMode(Controller::Mode::Pages);
-            controller->setPages(pages);
-        }
-    } else if (parser.isSet(QStringLiteral("post-update"))) {
-        controller->setMode(Controller::Mode::Update);
-    } else if (parser.isSet(QStringLiteral("post-update-beta"))) {
-        controller->setMode(Controller::Mode::Beta);
-    } else if (parser.isSet(QStringLiteral("live-environment"))) {
-        controller->setMode(Controller::Mode::Live);
-    }
-
-    engine.loadFromModule("org.kde.plasma.welcome", "Main");
-
-    if (engine.rootObjects().isEmpty()) {
-        return -1;
-    }
+    engine.rootContext()->setContextObject(new KLocalizedQmlContext(&engine));
 
     // Make it single-instance so it raises e.g. when middle-clicking on taskmanager
     // or accidentally launching it while it's already open
@@ -126,6 +100,33 @@ int main(int argc, char *argv[])
             }
         }
     });
+
+    // Tell QML about requested mode/pages
+    auto appSingleton = engine.singletonInstance<App *>("org.kde.plasma.welcome.private", "App");
+    if (parser.isSet(QStringLiteral("pages"))) {
+        QStringList pages = parser.value(pagesOption).split(",");
+        if (!pages.isEmpty()) {
+            // Ensure each page ends with ".qml"
+            for (QString &page : pages) {
+                if (!page.endsWith(".qml")) {
+                    page.append(".qml");
+                }
+            }
+
+            appSingleton->setMode(App::Mode::Pages);
+            appSingleton->setPages(pages);
+        }
+    } else if (parser.isSet(QStringLiteral("post-update"))) {
+        appSingleton->setMode(App::Mode::Update);
+    } else if (parser.isSet(QStringLiteral("live-environment"))) {
+        appSingleton->setMode(App::Mode::Live);
+    }
+
+    engine.loadFromModule("org.kde.plasma.welcome.private", "Main");
+
+    if (engine.rootObjects().isEmpty()) {
+        return -1;
+    }
 
     return app.exec();
 }

@@ -5,23 +5,21 @@
  */
 
 import QtQuick
-import QtQuick.Effects
 import QtQuick.Layouts
 import Qt5Compat.GraphicalEffects
 
 import org.kde.kirigami as Kirigami
-import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.components as PC3
 import org.kde.plasma.extras as PlasmaExtras
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome.private as Private
 
 Item {
     id: root
 
     // We're intentionally ignoring our 16:10 desktop wallpaper (MockDesktop) - whilst that fits the square
     // window, we want to be more representative of what a user will see - most use a 16:9 display.
-    readonly property string wallpaper: "file:" + Controller.installPrefix() + "/share/wallpapers/Next/contents/images/1920x1080.png"
+    readonly property string wallpaper: "file:" + Private.App.installPrefix + "/share/wallpapers/Next/contents/images/5120x2880.png"
     readonly property double scale: layout.scale
 
     // Underlay
@@ -41,7 +39,7 @@ Item {
         width: (parent.width - Kirigami.Units.smallSpacing * 2) * (1 / scale)
         height: (parent.height - Kirigami.Units.smallSpacing * 2) * (1 / scale)
         scale: Math.max(0.5, Math.min(1, parent.width / (Kirigami.Units.gridUnit * 30), parent.height / (Kirigami.Units.gridUnit * 40)))
-        layer.enabled: true
+        layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
         layer.smooth: true
 
         spacing: 0
@@ -66,7 +64,7 @@ Item {
                         source: root.wallpaper
                         mipmap: true
 
-                        layer.enabled: true
+                        layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
                         // MultiEffect does not work for this, so using Qt5Compat.GraphicalEffects
                         layer.effect: OpacityMask {
                             maskSource: Rectangle {
@@ -114,7 +112,7 @@ Item {
 
                 // For some reason, these are not inherited from MockDesktop
                 Kirigami.Theme.inherit: false
-                Kirigami.Theme.textColor: PlasmaCore.Theme.textColor
+                Kirigami.Theme.textColor: Private.PlasmaColors.textColor
             }
         }
 
@@ -127,7 +125,7 @@ Item {
 
             // For some reason, these are not inherited from MockDesktop
             Kirigami.Theme.inherit: false
-            Kirigami.Theme.textColor: PlasmaCore.Theme.textColor
+            Kirigami.Theme.textColor: Private.PlasmaColors.textColor
         }
 
         // Desktop
@@ -143,7 +141,7 @@ Item {
                 width: Math.min(parent.width, parent.height * (sourceSize.width / sourceSize.height))
                 height: Math.min(parent.height, parent.width * (sourceSize.height / sourceSize.width))
 
-                visible: false
+                visible: GraphicsInfo.api === GraphicsInfo.Software
 
                 source: root.wallpaper
                 mipmap: true
@@ -151,6 +149,8 @@ Item {
 
             Kirigami.ShadowedTexture {
                 anchors.fill: desktop
+
+                visible: GraphicsInfo.api !== GraphicsInfo.Software
 
                 source: desktop
                 radius: Kirigami.Units.cornerRadius * 2

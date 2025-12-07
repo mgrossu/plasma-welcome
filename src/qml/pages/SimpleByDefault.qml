@@ -10,12 +10,12 @@ import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
 import org.kde.ksvg as KSvg
-import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.components as PC3
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome as Welcome
+import org.kde.plasma.welcome.private as Private
 
-GenericPage {
+Welcome.Page {
     id: root
 
     heading: i18nc("@info:window", "Simple by Default")
@@ -36,7 +36,7 @@ GenericPage {
                 explanatoryLabel.text = xi18nc("@info", "This is a “Panel” — a container to hold widgets. Right-click on it and choose <interface>Show Panel Configuration</interface> to change how it behaves, which screen edge it lives on, and to add, remove or modify widgets.");
                 break;
             case mockKickoff:
-                explanatoryLabel.text = i18nc("@info", "This is the “Kickoff” widget, a multipurpose launcher. Here you can launch apps, shut down or restart the system, access recent files, and more. Click on it to get started!");
+                explanatoryLabel.text = i18nc("@info", "This is the “Application Launcher” widget, a multipurpose launcher. Here you can launch apps, shut down or restart the system, access recent files, and more. Click on it to get started!");
                 break;
             case mockTaskManager:
                 explanatoryLabel.text = i18nc("@info", "This is the “Task Manager” widget, where you can switch between open apps and also launch new ones. Drag app icons to re-arrange them.");
@@ -64,7 +64,7 @@ GenericPage {
 
         if (hovered) {
             activeItem = item;
-        } else if (!hovered && activeItem == item) {
+        } else if (!hovered && activeItem === item) {
             activeItem = null
         }
     }
@@ -74,12 +74,16 @@ GenericPage {
             return;
         }
 
-        if (activeItem != item) {
+        if (activeItem !== item) {
             activeItem = item;
         }
     }
 
-    MockCard {
+    PlasmaNMLoader {
+        id: nmLoader
+    }
+
+    Private.MockCard {
         id: mock
         anchors.fill: parent
 
@@ -97,7 +101,7 @@ GenericPage {
             TapHandler { onTapped: root.handleTapped(mock) }
         }
 
-        MockPanel {
+        Private.MockPanel {
             id: mockPanel
             anchors.bottom: parent.bottom
             anchors.right: parent.right
@@ -106,7 +110,7 @@ GenericPage {
 
             width: parent.width
 
-            MockKickoffApplet {
+            Private.MockKickoffApplet {
                 id: mockKickoff
 
                 opacity: mockPanel.overflowing ? 0 : 1
@@ -118,7 +122,7 @@ GenericPage {
                 TapHandler { onTapped: root.handleTapped(mockKickoff) }
             }
 
-            MockTaskManager {
+            Private.MockTaskManager {
                 id: mockTaskManager
 
                 opacity: mockPanel.overflowing ? 0 : 1
@@ -150,13 +154,14 @@ GenericPage {
                 opacity: mockPanel.overflowing ? 0 : 1
                 Behavior on opacity { NumberAnimation { duration: Kirigami.Units.longDuration; easing.type: Easing.InOutQuad }}
 
-                MockSystemTrayApplet {
+                Private.MockSystemTrayApplet {
                     id: mockTray
 
                     active: root.activeItem == mockTray
 
-                    MockSystemTrayIcon { source: "klipper-symbolic" }
-                    MockSystemTrayIcon { source: "audio-volume-high-symbolic" }
+                    Private.MockSystemTrayIcon { source: "audio-volume-high-symbolic" }
+                    Private.MockSystemTrayIcon { source: "brightness-high-symbolic" }
+                    Private.MockSystemTrayIcon { source: nmLoader.icon }
                 }
 
                 HoverHandler { acceptedDevices: root.hoverHandlerAcceptedDevices
@@ -164,7 +169,7 @@ GenericPage {
                 TapHandler { onTapped: root.handleTapped(mockTray) }
             }
 
-            MockDigitalClockApplet {
+            Private.MockDigitalClockApplet {
                 id: mockClock
 
                 opacity: mockPanel.overflowing ? 0 : 1
@@ -176,7 +181,7 @@ GenericPage {
                 TapHandler { onTapped: root.handleTapped(mockClock) }
             }
 
-            MockShowDesktopApplet {
+            Private.MockShowDesktopApplet {
                 id: mockShowDesktop
 
                 opacity: mockPanel.overflowing ? 0 : 1
@@ -202,8 +207,8 @@ GenericPage {
                 }
             }
 
-            text: i18nc("@info:placeholder Shown when there is insufficent width", "Expand the window")
-            color: PlasmaCore.Theme.textColor
+            text: i18nc("@info:placeholder Shown when there is insufficient width", "Expand the window")
+            color: Private.PlasmaColors.textColor
         }
 
         Item {
@@ -278,7 +283,7 @@ GenericPage {
 
                     wrapMode: Text.Wrap
 
-                    color: PlasmaCore.Theme.textColor
+                    color: Private.PlasmaColors.textColor
                 }
             }
         }

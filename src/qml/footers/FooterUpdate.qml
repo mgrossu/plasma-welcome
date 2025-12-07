@@ -7,24 +7,30 @@
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
+
 import org.kde.kirigami as Kirigami
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome.private as Private
 
 RowLayout {
-    spacing: Kirigami.Units.smallSpacing
+    spacing: 0
 
     QQC2.Switch {
-        Layout.alignment: Qt.AlignLeft
+        Layout.fillWidth: true
 
-        text: i18nc("@option:check", "Show this page after Plasma is updated")
-        checked: Config.showUpdatePage
-        onToggled: { Config.showUpdatePage = checked; Config.save() }
+        text: i18nc("@option:check", "Show after Plasma is updated")
+        checked: Private.Config.showUpdatePage
+        onToggled: { Private.Config.showUpdatePage = checked; Private.Config.save() }
+    }
+
+    Item {
+        Layout.fillWidth: true
+        Layout.minimumWidth: Kirigami.Units.smallSpacing
+        Layout.horizontalStretchFactor: 1 // So this will be preferred to fill over the switch
     }
 
     QQC2.Button {
         id: okButton
-        Layout.alignment: Qt.AlignRight
 
         action: Kirigami.Action {
             text: i18nc("@action:button", "&OK")

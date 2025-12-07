@@ -30,6 +30,7 @@
   <name xml:lang="fr">Centre de bienvenue</name>
   <name xml:lang="gl">Centro de benvida</name>
   <name xml:lang="he">מרכז קבלת הפנים</name>
+  <name xml:lang="hi">स्वागत केंद्र</name>
   <name xml:lang="hu">Üdvözlőközpont</name>
   <name xml:lang="ia">Centro de Benvenite</name>
   <name xml:lang="id">Welcome Center</name>
@@ -39,6 +40,7 @@
   <name xml:lang="ko">환영 센터</name>
   <name xml:lang="lt">Supažindinimas su sistema</name>
   <name xml:lang="lv">Uzņemšanas centrs</name>
+  <name xml:lang="nb">Velkomstsenter</name>
   <name xml:lang="nl">Welkomstcentrum</name>
   <name xml:lang="nn">Velkomst­senter</name>
   <name xml:lang="pa">ਜੀ ਆਇਆਂ ਨੂੰ ਕੇਂਦਰ</name>
@@ -54,37 +56,49 @@
   <name xml:lang="ta">வரவேற்பு மையம்</name>
   <name xml:lang="tr">Karşılama Merkezi</name>
   <name xml:lang="uk">Вітальний центр</name>
-  <name xml:lang="x-test">xxWelcome Centerxx</name>
   <name xml:lang="zh-CN">欢迎中心</name>
   <name xml:lang="zh-TW">歡迎中心</name>
   <summary>Learn more about KDE Plasma</summary>
   <summary xml:lang="ar">تعلم المزيد عن بلازما كيدي</summary>
+  <summary xml:lang="az">KDE Plasma haqqında daha çox öyrən</summary>
   <summary xml:lang="bg">Научете повече за Plasma</summary>
   <summary xml:lang="ca">Apreneu-ne més pel que fa al Plasma de KDE</summary>
   <summary xml:lang="ca-valencia">Apreneu-ne més pel que fa a Plasma de KDE</summary>
+  <summary xml:lang="cs">Poznejte možnosti prostředí KDE Plasma</summary>
   <summary xml:lang="da">Lær mere om KDE Plasma</summary>
   <summary xml:lang="de">Mehr über KDE Plasma erfahren</summary>
   <summary xml:lang="en-GB">Learn more about KDE Plasma</summary>
+  <summary xml:lang="eo">Ekscii pli pri KDE Plasma</summary>
   <summary xml:lang="es">Descubra más sobre KDE Plasma</summary>
   <summary xml:lang="eu">KDE Plasmari buruzko informazio gehiago</summary>
+  <summary xml:lang="fi">Lue lisää KDE Plasmasta</summary>
   <summary xml:lang="fr">En savoir plus sur KDE Plasma</summary>
-  <summary xml:lang="gl">Aprender máis de KDE Plasma.</summary>
+  <summary xml:lang="gl">Aprender máis de KDE Plasma</summary>
   <summary xml:lang="he">מידע נוסף על KDE פלזמה</summary>
+  <summary xml:lang="hi">केडीई प्लाज़्मा के बारे में अधिक जानें</summary>
   <summary xml:lang="hu">Tudjon meg többet a KDE Plasmáról</summary>
   <summary xml:lang="ia">Apprende plus re KDE Plasma</summary>
+  <summary xml:lang="id">Pelajari lebih lanjut tentang KDE Plasma</summary>
+  <summary xml:lang="is">Læra meira um KDE Plasma</summary>
   <summary xml:lang="it">Scopri di più su KDE Plasma</summary>
   <summary xml:lang="ka">მეტის გაგება KDE Plasma-ის შესახებ</summary>
+  <summary xml:lang="ko">KDE Plasma 더 알아보기</summary>
+  <summary xml:lang="lt">Sužinokite daugiau apie KDE Plasma</summary>
   <summary xml:lang="lv">Uzziniet vairāk par KDE „Plasma“</summary>
+  <summary xml:lang="nb">Lær mer om KDE Plasma</summary>
   <summary xml:lang="nl">Kom meer te weten over KDE Plasma</summary>
   <summary xml:lang="nn">Lær meir om KDE Plasma</summary>
   <summary xml:lang="pa">KDE ਪਲਾਜ਼ਮਾ ਬਾਰੇ ਹੋਰ ਜਾਣੋ</summary>
   <summary xml:lang="pl">Dowiedz się o Plazmie KDE</summary>
+  <summary xml:lang="pt-BR">Aprenda mais sobre o KDE Plasma</summary>
+  <summary xml:lang="ro">Aflați mai multe despre KDE Plasma</summary>
   <summary xml:lang="ru">Узнать больше о KDE Plasma</summary>
+  <summary xml:lang="sa">KDE Plasma विषये अधिकं ज्ञातुं शक्नुवन्ति</summary>
   <summary xml:lang="sl">Poučite se več o KDE Plasmi</summary>
+  <summary xml:lang="sv">Lär dig mer om KDE Plasma</summary>
   <summary xml:lang="ta">கே.டீ.யீ. பிளாஸ்மாவைப் பற்றி மேலும் அறிய உதவும்</summary>
   <summary xml:lang="tr">KDE Plasma hakkında daha fazla bilgi alın</summary>
   <summary xml:lang="uk">Дізнайтеся більше про Плазму KDE</summary>
-  <summary xml:lang="x-test">xxLearn more about KDE Plasmaxx</summary>
   <summary xml:lang="zh-CN">了解 KDE Plasma 的更多信息</summary>
   <summary xml:lang="zh-TW">瞭解更多關於 KDE Plasma 的資訊</summary>
   <description>
@@ -97,7 +111,7 @@
     <p xml:lang="ca">El centre de benvinguda és la introducció perfecta al Plasma de KDE! Pot ajudar-vos a aprendre com connectar-vos a Internet, instal·lar aplicacions, personalitzar el sistema, i més!</p>
     <p xml:lang="ca-valencia">El centre de benvinguda és la introducció perfecta a Plasma de KDE! Pot ajudar-vos a aprendre com connectar-vos a Internet, instal·lar aplicacions, personalitzar el sistema, i més!</p>
     <p xml:lang="da">Velkomstcenter er den perfekte introduktion til KDE Plasma! Den kan lære dig at tilslutte til internettet, installere programer, tilpas systemet og mere!</p>
-    <p xml:lang="de">Der Begrüßungsassistent ist die perfekte Einführung in KDE Plasma. Er kann Ihnen helfen, sich mit dem Internet zu verbinden, Anwendungen zu installieren, das System an Ihre Bedürfnisse anzupassen und vieles mehr.</p>
+    <p xml:lang="de">Der Begrüßungsassistent ist die perfekte Einführung in KDE Plasma! Er kann Ihnen helfen, sich mit dem Internet zu verbinden, Anwendungen zu installieren, das System an Ihre Bedürfnisse anzupassen und vieles mehr.</p>
     <p xml:lang="en-GB">Welcome Centre is the perfect introduction to KDE Plasma! It can help you learn how to connect to the internet, install apps, customise the system, and more!</p>
     <p xml:lang="eo">Bonvencentro estas la perfekta enkonduko al KDE Plasma! Ĝi povas helpi vin lerni kiel konekti al la interreto, instali aplikojn, proprigi la sistemon kaj pli!</p>
     <p xml:lang="es">El centro de bienvenida es la introducción perfecta a KDE Plasma. Le puede ayudar a aprender a conectarse a Internet, instalar aplicaciones, personalizar el sistema, y mucho más.</p>
@@ -106,6 +120,7 @@
     <p xml:lang="fr">Le Centre de bienvenue est l'introduction parfaite à KDE Plasma ! Il peut vous aider à apprendre comment vous connecter à Internet, installer des applications, personnaliser le système, et plus encore !</p>
     <p xml:lang="gl">O centro de benvida é a introdución perfecta a KDE Plasma! Pode axudarlle a aprender a conectarse a Internet, instalar aplicacións, personalizar o sistema, e moito máis!</p>
     <p xml:lang="he">מרכז קבלת הפנים הוא צורת ההיכרות הטובה ביותר עם פלזמה מבית KDE! הוא יכול לסייע לך ללמוד איך להתחבר לאינטרנט, להתקין יישומים, לשנות את תצורת המערכת ועוד!</p>
+    <p xml:lang="hi">वेलकम सेंटर KDE प्लाज्मा का एकदम सही परिचय है! यह आपको इंटरनेट से कनेक्ट होने, ऐप्स इंस्टॉल करने, सिस्टम को कस्टमाइज़ करने और बहुत कुछ सीखने में मदद कर सकता है!</p>
     <p xml:lang="hu">Az Üdvözlőközpont a tökéletes bevezetés a KDE Plasmába! Segítségével megtanulhatja, hogyan csatlakozzon az internethez, telepítsen alkalmazásokat, szabja testre a rendszert, és még sok minden mást!</p>
     <p xml:lang="ia">Welcome Center (Centro de benvenite) es le perfecte introduction a KDE Plasma! Illo pote adjutar te a apprender como connecter a internet, installar apps, personalisar le systema e plus!</p>
     <p xml:lang="id">Welcome Center adalah pengenalan sempurna untuk KDE Plasma! Ini bisa membantu Anda mempelajari cara terkoneksi ke internet, menginstal aplikasi, menyesuaikan sistem, dan banyak lagi!</p>
@@ -115,6 +130,7 @@
     <p xml:lang="ko">환영 센터는 KDE Plasma를 소개합니다! 인터넷에 연결하기, 앱 설치하기, 시스템 사용자 정의 등을 소개합니다!</p>
     <p xml:lang="lt">Supažindinimas su sistema pateikia puikių patarimų apie KDE Plasma! Jis gali jus išmokyti, kaip prisijungti prie interneto, įdiegti programas, tinkinti sistemą ir kt.!</p>
     <p xml:lang="lv">Uzņemšanas centrs ir lielisks ievads darbam ar KDE „Plasma“! Tas var palīdzēt iemācīties, kā pieslēgties pie interneta, instalēt programmas, pielāgot sistēmu un daudz ko citu!</p>
+    <p xml:lang="nb">Velkomstsenteret gir en fin innføring i KDE Plasma for nye brukere. Det kan hjelpe deg å koble til Internett, installere program, tilpasse brukergrensesnittet etter egne behov og mye annet.</p>
     <p xml:lang="nl">Welkomcentrum is de perfecte introductie in KDE Plasma! Het kan u helpen te leren hoe u een verbinding maakt met het internet, toepassingen installeert, het systeem aanpast en meer!</p>
     <p xml:lang="nn">Velkomstsenteret gjev ei fin innføring i KDE Plasma for nye brukarar. Det kan hjelpa deg å kopla til Internett, installera program, tilpassa brukarflata etter eigne behov og mykje anna.</p>
     <p xml:lang="pa">ਜੀ ਆਇਆਂ ਨੂੰ KDE ਪਲਾਜ਼ਮਾ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਜਾਣ-ਪਛਾਣ ਹੈ! ਇਹ ਤੁਹਾਨੂੰ ਇੰਟਰਨੈੱਟ ਨਾਲ ਕਨੈਕਟ ਕਰਨ, ਐਪਾਂ ਇੰਸਟਾਲ ਕਰਨ, ਸਿਸਟਮ ਨੂੰ ਆਪਣੇ ਮੁਤਾਬਕ ਢਾਲਣ ਤੇ ਹੋਰ ਕਈ ਕੁਝ ਕਰਨ ਲਈ ਸਿੱਖਣ ਲਈ ਮਦਦ ਕਰਦਾ ਹੈ।</p>
@@ -130,7 +146,6 @@
     <p xml:lang="ta">வரவேற்பு மையம், உங்களுக்கு கே.டீ.யீ. பிளாஸ்மாவை அறிமுகப்படுத்தும். இணையத்தில் இணைவது, செயலிகளை நிறுவுவது, கணினியை மாற்றியமைப்பது போன்ற அடிப்படையானவற்றைக் நீங்கள் கற்றுகொள்ள உதவும்.</p>
     <p xml:lang="tr">Karşılama Merkezi, KDE Plasma için en iyi tanıtımı alabileceğiniz biricik yazılımdır. Size; internete bağlanmayı, uygulamalar kurmayı, sistemi özelleştirmeyi ve çok daha fazlasını gösterir!</p>
     <p xml:lang="uk">Вітальний центр є чудовим вступом до Плазми KDE! Він може допомогти вам дізнатися про те, як встановити з'єднання з інтернетом, встановити програми, налаштувати систему тощо!</p>
-    <p xml:lang="x-test">xxWelcome Center is the perfect introduction to KDE Plasma! It can help you learn how to connect to the internet, install apps, customize the system, and more!xx</p>
     <p xml:lang="zh-CN">欢迎中心是 KDE Plasma 的初次上手向导程序。它可以帮助您学习如何连接到互联网、安装应用、自定义系统以及使用其他功能。</p>
     <p xml:lang="zh-TW">歡迎中心是對 KDE Plasma 的完美初次簡介！它可以幫您學習如何連線到網際網路、安裝應用程式、自訂系統等等！</p>
   </description>
@@ -155,6 +170,7 @@
       <caption xml:lang="fr">La première page du « Centre de bienvenue » : présentation de KDE Plasma</caption>
       <caption xml:lang="gl">Primeira páxina do centro de benvida: introdución a KDE Plasma.</caption>
       <caption xml:lang="he">עמוד ראשון במרכז קבלת הפנים: היכרות עם פלזמה מבית KDE</caption>
+      <caption xml:lang="hi">स्वागत केंद्र का प्रथम पृष्ठ: केडीई प्लाज़्मा का परिचय</caption>
       <caption xml:lang="hu">Az Üdvözlőközpont első oldala: a KDE Plasma bemutatása</caption>
       <caption xml:lang="ia">Prime pagina de Welcome Center (Centro de Benvenite): introducer KDE Plasma</caption>
       <caption xml:lang="id">Halaman pertama Welcome Center: memperkenalkan KDE Plasma</caption>
@@ -164,6 +180,7 @@
       <caption xml:lang="ko">환영 센터 첫 페이지: KDE Plasma 소개</caption>
       <caption xml:lang="lt">Supažindinimas su sistema, pirmas puslapis: KDE Plasma pristatymas</caption>
       <caption xml:lang="lv">Uzņemšanas centra pirmā lapa: iepazīstināšana ar KDE „Plasma“</caption>
+      <caption xml:lang="nb">Velkomstsenter, første side: innføring i KDE Plasma</caption>
       <caption xml:lang="nl">Eerste pagina Welkomcentrum: introductie tot KDE Plasma</caption>
       <caption xml:lang="nn">Velkomstsenter, første side: innføring i KDE Plasma</caption>
       <caption xml:lang="pa">ਜੀ ਆਇਆਂ ਨੂੰ ਕੇਂਦਰ ਪਹਿਲਾਂ ਸਫ਼਼ਾ: ਕੇਡੀਈ ਪਲਾਜ਼ਮਾ ਨਾਲ ਜਾਣ-ਪਛਾਣ</caption>
@@ -179,7 +196,6 @@
       <caption xml:lang="ta">வரவேற்பு மையத்தின் முதற்பக்கம்: பிளாஸ்மாவிற்கான அறிமுகம்</caption>
       <caption xml:lang="tr">Karşılama Merkezi ilk sayfası: KDE Plasma’ya hoş geldiniz</caption>
       <caption xml:lang="uk">Перша сторінка «Вітального центру»: вступ до Плазми KDE</caption>
-      <caption xml:lang="x-test">xxWelcome Center first page: introducing KDE Plasmaxx</caption>
       <caption xml:lang="zh-CN">欢迎中心第一页：介绍 KDE Plasma</caption>
       <caption xml:lang="zh-TW">歡迎中心的第一頁：KDE Plasma 簡介</caption>
     </screenshot>
@@ -203,6 +219,7 @@
       <caption xml:lang="fr">La seconde page du « Centre de bienvenue » : comment installer des applications</caption>
       <caption xml:lang="gl">Segunda páxina do centro de benvida: como instalar aplicacións.</caption>
       <caption xml:lang="he">עמוד שני במרכז קבלת הפנים: איך להתקין יישומים</caption>
+      <caption xml:lang="hi">स्वागत केंद्र का दूसरा पेज: ऐप्स कैसे इंस्टॉल करें</caption>
       <caption xml:lang="hu">Az Üdvözlőközpont második oldala: hogyan telepíthetők alkalmazások</caption>
       <caption xml:lang="ia">Secunde pagina de Welcome Center (centro de Benvenite): como installar apps</caption>
       <caption xml:lang="id">Halaman kedua Welcome Center: cara memasang aplikasi</caption>
@@ -212,6 +229,7 @@
       <caption xml:lang="ko">환영 센터 두 번째 페이지: 앱 설치</caption>
       <caption xml:lang="lt">Supažindinimas su sistema, antras puslapis: kaip įdiegti programas</caption>
       <caption xml:lang="lv">Uzņemšanas centra otrā lapa: programmu instalēšanas pamācība</caption>
+      <caption xml:lang="nb">Velkomstsenter, andre side: hvordan installere program</caption>
       <caption xml:lang="nl">Tweede padina Welkomcentrum: hoe toepassingen installeren</caption>
       <caption xml:lang="nn">Velkomstsenter, andre side: korleis installera program</caption>
       <caption xml:lang="pa">ਜੀ ਆਇਆਂ ਨੂੰ ਕੇਂਦਰ ਦੂਜਾ ਸਫ਼ਾ: ਐਪਾਂ ਕਿਵੇਂ ਇੰਸਟਾਲ ਕਰੀਏ</caption>
@@ -227,7 +245,6 @@
       <caption xml:lang="ta">வரவேற்பு மையத்தின் இரண்டாம் பக்கம்: செயலிகளை நிறுவும் முறை</caption>
       <caption xml:lang="tr">Karşılama Merkezi ikinci sayfası: Uygulama kurma</caption>
       <caption xml:lang="uk">Друга сторінка «Вітального центру»: як встановлювати програми</caption>
-      <caption xml:lang="x-test">xxWelcome Center second page: how to install appsxx</caption>
       <caption xml:lang="zh-CN">欢迎中心第二页：如何安装应用</caption>
       <caption xml:lang="zh-TW">歡迎中心的第二頁：如何安裝應用程式</caption>
     </screenshot>
@@ -251,6 +268,7 @@
       <caption xml:lang="fr">La sixième page du « Centre de bienvenue » : comment contribuer</caption>
       <caption xml:lang="gl">Sexta páxina do centro de benvida: como colaborar.</caption>
       <caption xml:lang="he">עמוד שישי במרכז קבלת הפנים: איך לקחת חלק</caption>
+      <caption xml:lang="hi">स्वागत केंद्र छठा पृष्ठ: इसमें कैसे शामिल हों</caption>
       <caption xml:lang="hu">Az Üdvözlőközpont hatodik oldala: hogyan lehet bekapcsolódni</caption>
       <caption xml:lang="ia">Centro de Benvenite sexte pagina: como esser implicate</caption>
       <caption xml:lang="id">Halaman keenam Welcome Center: cara terlibat</caption>
@@ -260,12 +278,13 @@
       <caption xml:lang="ko">환영 센터 여섯 번째 페이지: 참여하기</caption>
       <caption xml:lang="lt">Supažindinimas su sistema, šeštas puslapis: kaip įsitraukti</caption>
       <caption xml:lang="lv">Uzņemšanas centra sestā lapa: kā iesaistīties</caption>
+      <caption xml:lang="nb">Velkomstsenter, sjette side: hvordan bidra selv</caption>
       <caption xml:lang="nl">Zesde pagina Welkomcentrum: hoe mee te doen</caption>
       <caption xml:lang="nn">Velkomstsenter, sjette side: korleis bidra sjølv</caption>
       <caption xml:lang="pa">ਜੀ ਆਇਆਂ ਨੂੰ ਕੇਂਦਰ ਛੇਵਾਂ ਸਫ਼ਾ: ਹਿੱਸਾ ਕਿਵੇਂ ਲਈਏ</caption>
-      <caption xml:lang="pl">Szósta strona powitalni: jak współtworzyć</caption>
+      <caption xml:lang="pl">Szósta strona powitalni: jak dołączyć do społeczności KDE</caption>
       <caption xml:lang="pt">Sexta página do Centro de Boas-Vidas: como se envolver no projecto</caption>
-      <caption xml:lang="pt-BR">Primeira página do centro de boas vindas: como se envolver</caption>
+      <caption xml:lang="pt-BR">Sexta página do centro de boas vindas: como se envolver</caption>
       <caption xml:lang="ro">Centru de întâmpinare, pagina șase: cum să vă implicați</caption>
       <caption xml:lang="ru">Шестая страница приложения: как присоединиться к разработке</caption>
       <caption xml:lang="sa">स्वागतकेन्द्रं षष्ठं पृष्ठम् : कथं सम्मिलितं भवितव्यम्</caption>
@@ -275,7 +294,6 @@
       <caption xml:lang="ta">வரவேற்பு மையத்தின் ஆறாவது பக்கம்: பங்களிக்கும் முறை</caption>
       <caption xml:lang="tr">Karşılama Merkezi altıncı sayfası: Nasıl katılabilirim</caption>
       <caption xml:lang="uk">Шоста сторінка «Вітального центру»: як взяти участь у проєкті</caption>
-      <caption xml:lang="x-test">xxWelcome Center sixth page: how to get involvedxx</caption>
       <caption xml:lang="zh-CN">欢迎中心第六页：如何参与贡献</caption>
       <caption xml:lang="zh-TW">歡迎中心的第六頁：如何參與</caption>
     </screenshot>
@@ -289,9 +307,9 @@
   <project_group>KDE</project_group>
   <compulsory_for_desktop>KDE</compulsory_for_desktop>
   <releases>
-    <release version="6.2.3" date="2024-11-05"/>
-    <release version="6.2.2" date="2024-10-22"/>
-    <release version="6.2.1" date="2024-10-15"/>
-    <release version="6.2.0" date="2024-10-08"/>
+    <release version="6.5.3" date="2025-11-18"/>
+    <release version="6.4.6" date="2025-11-11"/>
+    <release version="6.5.2" date="2025-11-04"/>
+    <release version="6.5.1" date="2025-10-28"/>
   </releases>
 </component>

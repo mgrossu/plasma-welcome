@@ -9,20 +9,20 @@ import QtQuick.Effects
 import Qt5Compat.GraphicalEffects
 
 import org.kde.kirigami as Kirigami
-import org.kde.plasma.core as PlasmaCore
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome.private as Private
 
 Kirigami.AbstractCard {
     id: root
 
     default property alias children: container.children
 
+    property bool applyPlasmaColors: true
     property int backgroundAlignment: Qt.AlignRight | Qt.AlignBottom
     property double backgroundScale: 1
     property int blurRadius: 32
 
-    readonly property string wallpaper: "file:" + Controller.installPrefix() + "/share/wallpapers/Next/contents/images/1920x1080.png"
+    readonly property string wallpaper: "file:" + Private.App.installPrefix + "/share/wallpapers/Next/contents/images/5120x2880.png"
     readonly property int desktopWidth: 1024 * backgroundScale
     readonly property int desktopHeight: 576 * backgroundScale
 
@@ -42,7 +42,7 @@ Kirigami.AbstractCard {
         anchors.fill: parent
         anchors.margins: root.background.borderWidth
 
-        layer.enabled: true
+        layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
         layer.effect: Kirigami.ShadowedTexture {
             radius: Kirigami.Units.cornerRadius - root.background.borderWidth
         }
@@ -50,11 +50,11 @@ Kirigami.AbstractCard {
         clip: true
 
         // Use Plasma theme colours, rather than Kirigami's
-        Kirigami.Theme.inherit: false
-        Kirigami.Theme.textColor: PlasmaCore.Theme.textColor
-        Kirigami.Theme.activeTextColor: PlasmaCore.Theme.activeTextColor
-        Kirigami.Theme.highlightColor: PlasmaCore.Theme.highlightColor
-        Kirigami.Theme.backgroundColor: PlasmaCore.Theme.backgroundColor
+        Kirigami.Theme.inherit: !root.applyPlasmaColors
+        Kirigami.Theme.textColor: root.applyPlasmaColors ? Private.PlasmaColors.textColor : undefined
+        Kirigami.Theme.activeTextColor: root.applyPlasmaColors ? Private.PlasmaColors.activeTextColor : undefined
+        Kirigami.Theme.highlightColor: root.applyPlasmaColors ? Private.PlasmaColors.highlightColor : undefined
+        Kirigami.Theme.backgroundColor: root.applyPlasmaColors ? Private.PlasmaColors.backgroundColor : undefined
 
         Image {
             id: wallpaperImage
@@ -65,7 +65,7 @@ Kirigami.AbstractCard {
             anchors.bottom: (root.backgroundAlignment & Qt.AlignBottom) ? parent.bottom : undefined
             anchors.verticalCenter: (root.backgroundAlignment & Qt.AlignVCenter) ? parent.verticalCenter : undefined
 
-            layer.enabled: true
+            layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
             layer.effect: MultiEffect {
                 autoPaddingEnabled: false
                 blurEnabled: blurMax > 0

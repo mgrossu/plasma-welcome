@@ -7,11 +7,12 @@
  */
 
 import QtQuick
-import QtQuick.Controls as QQC2
-import QtQuick.Layouts
+
+import org.kde.config as KConfig
 import org.kde.kirigami as Kirigami
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome as Welcome
+import org.kde.plasma.welcome.private as Private
 
 Kirigami.ApplicationWindow {
     id: app
@@ -21,19 +22,23 @@ Kirigami.ApplicationWindow {
     width: Kirigami.Units.gridUnit * 36
     height: Kirigami.Units.gridUnit * 32
 
+    KConfig.WindowStateSaver {
+        configGroupName: "MainWindow"
+    }
+
     pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.NoNavigationButtons
     pageStack.defaultColumnWidth: width
 
     footer: Footer {
         width: app.width
         contentSource: {
-            switch (Controller.mode) {
-                case Controller.Welcome:
-                case Controller.Live:
+            switch (Private.App.mode) {
+                case Private.App.Welcome:
+                case Private.App.Live:
                 default:
                     return "FooterDefault.qml";
-                case Controller.Update:
-                case Controller.Beta:
+                case Private.App.Update:
+                case Private.App.Beta:
                     return "FooterUpdate.qml";
             }
         }
@@ -52,13 +57,14 @@ Kirigami.ApplicationWindow {
         id: mouseNavHandler
         anchors.fill: parent
 
+        cursorShape: undefined // Fix LinkButton's cursor shape being overridden
         acceptedButtons: Qt.BackButton | Qt.ForwardButton
         onPressed: (mouse) => handlePressed(mouse.button)
 
         function handlePressed(button) {
-            if (button == Qt.BackButton) {
+            if (button === Qt.BackButton) {
                 pageStack.goBack();
-            } else if (button == Qt.ForwardButton) {
+            } else if (button === Qt.ForwardButton) {
                 pageStack.goForward();
             }
         }
@@ -92,66 +98,63 @@ Kirigami.ApplicationWindow {
         }
     }
 
-    function _pushPage(component) {
-        if (component !== null) {
+    function _pushPage(object) {
+        if (object !== null) {
+
+            // Don't push any pages that don't want to be shown
+            if ("show" in object) {
+                if (!object.show) {
+                    object.destroy();
+                    return;
+                }
+            }
+
             if (pageStack.currentIndex === -1) {
-                pageStack.push(component);
+                pageStack.push(object);
             } else {
                 // Insert to avoid changing the current page
-                pageStack.insertPage(pageStack.depth, component);
+                pageStack.insertPage(pageStack.depth, object);
             }
         }
     }
 
     Component.onCompleted: {
         // Push pages dynamically
-        switch (Controller.mode) {
-            case Controller.Update:
-            case Controller.Beta:
+        switch (Private.App.mode) {
+            case Private.App.Update:
                 _pushPage(_createPage("PlasmaUpdate.qml"));
 
                 break;
 
-            case Controller.Live:
+            case Private.App.Live:
                 _pushPage(_createPage("Live.qml"));
                 // Fallthrough
 
-            case Controller.Welcome:
+            case Private.App.Welcome:
                 _pushPage(_createPage("Welcome.qml"));
 
-                if (!Controller.networkAlreadyConnected() || Controller.patchVersion === 80) {
-                    _pushPage(_createPage("Network.qml"));
-                }
+                _pushPage(_createPage("Network.qml"));
 
                 _pushPage(_createPage("SimpleByDefault.qml"));
                 _pushPage(_createPage("PowerfulWhenNeeded.qml"));
 
-                let discover = _createPage("Discover.qml");
-                if (discover.application.exists) {
-                    _pushPage(discover);
-                } else {
-                    discover.destroy();
-                }
+                _pushPage(_createPage("Discover.qml"));
 
-                // KCMs
-                if (Controller.mode !== Controller.Live) {
-                    if (Controller.userFeedbackAvailable()) {
-                        _pushPage(_createPage("Feedback.qml"));
-                    }
+                if (Private.App.mode !== Private.App.Live) {
+                    _pushPage(_createPage("Feedback.qml"));
                 }
 
                 // Append any distro-specific pages that were found
-                let distroPages = Controller.distroPages();
-                for (let i in distroPages) {
-                    _pushPage(_createPage(distroPages[i], true));
+                for (let i in Private.App.distroPages) {
+                    _pushPage(_createPage(Private.App.distroPages[i], true));
                 }
 
                 _pushPage(_createPage("Enjoy.qml"));
 
                 break;
 
-            case Controller.Pages:
-                Controller.pages.forEach(page => {
+            case Private.App.Pages:
+                Private.App.pages.forEach(page => {
                     var error = "";
                     var warnStrings = "";
 
@@ -170,7 +173,7 @@ Kirigami.ApplicationWindow {
                     }
 
                     // Try as both a regular page and distro page
-                    if (!tryPage(page) && !tryPage("file://" + Controller.distroPagesDir() + page)) {
+                    if (!tryPage(page) && !tryPage("file://" + Private.App.distroPagesDir + page)) {
                         console.warn(warnStrings);
                         _pushPage(_createErrorPage(error, false, true));
                     }

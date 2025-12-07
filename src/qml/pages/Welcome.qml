@@ -12,43 +12,43 @@ import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome as Welcome
+import org.kde.plasma.welcome.private as Private
 
-GenericPage {
+Welcome.Page {
     id: root
 
-    heading: i18nc("@title", "Ahoy, this is openSUSE")
-    description: xi18nc("@info:usagetip", "We are a global community promoting and developing a Linux distribution and related tools. Our distribution focuses on stability and flexibility, providing you with a platform to Get Things Done.")
-    //xi18nc("@info:usagetip %1 is the name of the user's distro", "Welcome to the %1 operating system running KDE Plasma!", Controller.distroName())
+    heading: i18nc("@title", "Welcome")
+    description: Private.App.customIntroText.length > 0
+            ? xi18nc("@info:usagetip %1 is custom text supplied by the distro", "%1<nl/><nl/>This operating system is running Plasma, a free and open-source desktop environment created by KDE, an international software community of volunteers. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!", Private.App.customIntroText)
+            : xi18nc("@info:usagetip %1 is the name of the user's distro", "Welcome to the %1 operating system running KDE Plasma!<nl/><nl/>Plasma is a free and open-source desktop environment created by KDE, an international software community of volunteers. It is designed to be simple by default for a smooth experience, but powerful when needed to help you really get things done. We hope you love it!", Welcome.Distro.name)
 
-    ColumnLayout {
-        id: basicsLayout
-        Layout.topMargin: Kirigami.Units.largeSpacing
-        Layout.fillWidth: true
-        Layout.alignment: Qt.AlignHCenter
-        spacing: Kirigami.Units.largeSpacing
+    actions: [
+        Kirigami.Action {
+            text: i18nc("@action:inmenu", "About Welcome Center")
+            icon.name: "start-here-kde-plasma"
+            onTriggered: pageStack.layers.push(aboutAppPage)
+            displayHint: Kirigami.DisplayHint.AlwaysHide
+        },
+        Kirigami.Action {
+            text: i18nc("@action:inmenu", "About KDE")
+            icon.name: "kde"
+            onTriggered: pageStack.layers.push(aboutKDEPage)
+            displayHint: Kirigami.DisplayHint.AlwaysHide
+        }
+    ]
 
-        Kirigami.Heading {
-            id: basicsTitle
-            text: i18nc("@title", "Basics")
-            level: 2 // Adjusts the size of the heading
-            horizontalAlignment: Text.AlignHCenter
-            Layout.alignment: Qt.AlignHCenter
-        }
-        QQC2.Button {
-            id: opensuseDocsButton
-            Layout.alignment: Qt.AlignHCenter
-            text: i18nc("@action:button", "Documentation")
-            icon.name: "document-open"
-            onClicked: Qt.openUrlExternally("https://doc.opensuse.org/")
-        }
-        QQC2.Button {
-            id: getSoftware
-            Layout.topMargin: Kirigami.Units.largeSpacing
-            text: i18nc("@action:button", "Get Software")
-            icon.name: "document-open"
-            onClicked: Qt.openUrlExternally("https://software.opensuse.org/explore")
-        }
+    Component {
+        id: aboutKDEPage
+
+        FormCard.AboutKDEPage {}
+    }
+
+    Component {
+        id: aboutAppPage
+
+        FormCard.AboutPage {}
+    }
 
     },
     
@@ -63,80 +63,88 @@ GenericPage {
         Kirigami.UrlButton {
             id: distroUrl
             Layout.topMargin: Kirigami.Units.largeSpacing
-            text: i18nc("@action:button %1 is the name of the user's distro", "Learn more about %1", Controller.distroName())
-            url: Controller.distroUrl()
-            visible: Controller.distroUrl().length > 0
-        }*/
+            text: i18nc("@action:button %1 is the name of the user's distro", "Learn more about %1", Welcome.Distro.name)
+            url: Welcome.Distro.homeUrl
+            visible: Welcome.Distro.homeUrl.length > 0
+        }
+    ]
 
-    ColumnLayout {
+    QQC2.AbstractButton {
+        id: konqiButton
+
         anchors.centerIn: parent
-        height: Math.min(parent.height, Kirigami.Units.gridUnit * 17)
-        spacing: Kirigami.Units.smallSpacing
+        height: Math.min(root.height, Kirigami.Units.gridUnit * 17)
 
-        Loader {
-            id: imageContainer
+        property string url: Private.App.customIntroIconLink || plasmaLink.url
 
-            readonly property bool isImage:
-                // Image path in the file
-                //Controller.customIntroIcon.startsWith("file:/") ||
-                // Our default image
-                Controller.customIntroIcon.length === 0
+        text: Private.App.customIntroIconCaption || i18nc("@info", "The KDE mascot Konqi welcomes you to the KDE community!")
 
-            Layout.alignment: Qt.AlignHCenter
-            Layout.fillHeight: true
-            Layout.maximumWidth: root.width
+        onClicked: Qt.openUrlExternally(url)
 
-            sourceComponent: isImage ? imageComponent : iconComponent
+        contentItem: ColumnLayout {
+            spacing: Kirigami.Units.smallSpacing
 
-            Component {
-                id: imageComponent
+            Loader {
+                id: imageContainer
 
-                Image {
-                    id: image
-                    source: "sinking.png"
-                    fillMode: Image.PreserveAspectFit
+                readonly property bool isImage:
+                    // Image path in the file
+                    Private.App.customIntroIcon.startsWith("file:/") ||
+                    // Our default image
+                    Private.App.customIntroIcon.length === 0
 
-                    Kirigami.PlaceholderMessage {
-                        width: root.width - (Kirigami.Units.largeSpacing * 4)
-                        anchors.centerIn: parent
-                        text: i18nc("@title", "Image loading failed")
-                        explanation: xi18nc("@info:placeholder", "Could not load <filename>%1</filename>. Make sure it exists.", Controller.customIntroIcon)
-                        visible: image.status == Image.Error
+                Layout.alignment: Qt.AlignHCenter
+                Layout.fillHeight: true
+                Layout.maximumWidth: root.width
+
+                sourceComponent: isImage ? imageComponent : iconComponent
+
+                Component {
+                    id: imageComponent
+
+                    Image {
+                        id: image
+                        source: Private.App.customIntroIcon || "konqi-kde-hi.png"
+                        fillMode: Image.PreserveAspectFit
+
+                        Kirigami.PlaceholderMessage {
+                            width: root.width - (Kirigami.Units.largeSpacing * 4)
+                            anchors.centerIn: parent
+                            text: i18nc("@title", "Image loading failed")
+                            explanation: xi18nc("@info:placeholder", "Could not load <filename>%1</filename>. Make sure it exists.", Private.App.customIntroIcon)
+                            visible: image.status == Image.Error
+                        }
                     }
                 }
-            }
 
-            Component {
-                id: iconComponent
+                Component {
+                    id: iconComponent
 
-                Kirigami.Icon {
-                    implicitWidth: Kirigami.Units.iconSizes.enormous * 2
-                    implicitHeight: implicitWidth
-                    source: Controller.customIntroIcon || "kde"
+                    Kirigami.Icon {
+                        implicitWidth: Kirigami.Units.iconSizes.enormous * 2
+                        implicitHeight: implicitWidth
+                        source: Private.App.customIntroIcon || "kde"
+                    }
+                }
+
+                HoverHandler {
+                    id: hoverhandler
+                    cursorShape: Qt.PointingHandCursor
+                }
+
+                QQC2.ToolTip {
+                    visible: hoverhandler.hovered
+                    text: i18nc("@action:button clicking on this takes the user to a web page", "Visit %1", konqiButton.url)
                 }
             }
 
-            HoverHandler {
-                id: hoverhandler
-                cursorShape: Qt.PointingHandCursor
-            }
-            TapHandler {
-                id: tapHandler
-                property string url: Controller.customIntroIconLink || distroUrl.url
-                onTapped: Qt.openUrlExternally(url)
-            }
-            QQC2.ToolTip {
-                visible: hoverhandler.hovered
-                text: i18nc("@action:button clicking on this takes the user to a web page", "Visit %1", tapHandler.url)
+            QQC2.Label {
+                Layout.alignment: Qt.AlignHCenter
+                Layout.maximumWidth: Math.round(Math.max(root.width / 2, imageContainer.implicitWidth / 2))
+                text: konqiButton.text
+                wrapMode: Text.Wrap
+                horizontalAlignment: Text.AlignHCenter
             }
         }
-
-        /*QQC2.Label {
-            Layout.alignment: Qt.AlignHCenter
-            Layout.maximumWidth: Math.round(Math.max(root.width / 2, imageContainer.implicitWidth / 2))
-            text: Controller.customIntroIconCaption || i18nc("@info", "The is openSUSE!")
-            wrapMode: Text.Wrap
-            horizontalAlignment: Text.AlignHCenter
-        }*/
     }
 }

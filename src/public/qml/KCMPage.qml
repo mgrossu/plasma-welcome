@@ -7,11 +7,12 @@
 
 import QtQuick
 import QtQuick.Layouts
+
 import org.kde.kirigami as Kirigami
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome as Welcome
 
-GenericPage
+Welcome.Page
 {
     id: container
 
@@ -53,7 +54,7 @@ GenericPage
                 if (module.kcm.needsSave) {
                     module.kcm.save();
                 }
-                if (page == container) {
+                if (page === container) {
                     page.destroy();
                 }
             }
@@ -86,7 +87,7 @@ GenericPage
         anchors.bottom: parent.top
     }
 
-    Module {
+    Welcome.ConfigModule {
         id: module
     }
 

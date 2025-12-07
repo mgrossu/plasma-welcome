@@ -8,6 +8,7 @@
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
+
 import org.kde.kirigami as Kirigami
 
 Kirigami.Page {
@@ -15,6 +16,9 @@ Kirigami.Page {
 
     required property string heading
     required property string description
+
+    // This property can overridden to conditionally hide the page
+    property bool show: true
 
     property alias topContent: topContentLayout.children
 
@@ -30,6 +34,7 @@ Kirigami.Page {
             anchors.centerIn: parent
 
             QQC2.Label {
+                focusPolicy: Qt.StrongFocus
                 Layout.fillWidth: true
                 text: page.description
                 wrapMode: Text.WordWrap

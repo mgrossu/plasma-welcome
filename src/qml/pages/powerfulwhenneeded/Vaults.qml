@@ -13,34 +13,39 @@ import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.extras as PlasmaExtras
 
-import org.kde.plasma.welcome
+import org.kde.plasma.welcome as Welcome
+import org.kde.plasma.welcome.private as Private
 
-GenericPage {
+Welcome.Page {
     id: root
 
     heading: i18nc("@info:window", "Plasma Vaults")
     description: xi18nc("@info:usagetip", "Plasma Vaults allows you to create encrypted folders, called <interface>Vaults.</interface> Inside each Vault, you can securely store your passwords, files, pictures, and documents, safe from prying eyes. Vaults can live inside folders that are synced to cloud storage services too, providing extra privacy for that content.")
+
+    PlasmaNMLoader {
+        id: nmLoader
+    }
 
     ColumnLayout {
         anchors.fill: parent
 
         spacing: root.padding
 
-        MockCard {
+        Private.MockCard {
             id: mock
             Layout.fillWidth: true
             Layout.fillHeight: true
 
             backgroundAlignment: Qt.AlignRight | Qt.AlignBottom
 
-            MockPanel {
+            Private.MockPanel {
                 id: mockPanel
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
 
                 width: Math.max(mock.desktopWidth, parent.width)
 
-                MockKickoffApplet {
+                Private.MockKickoffApplet {
                     opacity: (mockPanel.x >= 0) ? 1 : 0
                     visible: opacity > 0
 
@@ -56,30 +61,30 @@ GenericPage {
                     Layout.fillWidth: true
                 }
 
-                MockSystemTrayApplet {
+                Private.MockSystemTrayApplet {
                     id: mockSystemTrayApplet
 
                     active: true
 
-                    MockSystemTrayIcon {
-                        source: "klipper-symbolic"
-                    }
-
-                    MockSystemTrayIcon {
+                    Private.MockSystemTrayIcon {
                         source: "audio-volume-high-symbolic"
                     }
 
-                    MockSystemTrayIcon {
-                        source: "network-wired-activated"
+                    Private.MockSystemTrayIcon {
+                        source: "brightness-high-symbolic"
+                    }
+
+                    Private.MockSystemTrayIcon {
+                        source: nmLoader.icon
                     }
                 }
 
-                MockDigitalClockApplet {}
+                Private.MockDigitalClockApplet {}
 
-                MockShowDesktopApplet {}
+                Private.MockShowDesktopApplet {}
             }
 
-            MockPlasmoid {
+            Private.MockPlasmoid {
                 id: mockVaults
                 anchors.right: mockPanel.right
                 anchors.rightMargin: floating ? Kirigami.Units.largeSpacing : 0

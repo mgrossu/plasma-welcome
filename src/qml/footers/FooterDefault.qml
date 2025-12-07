@@ -7,9 +7,8 @@
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
-import org.kde.kirigami as Kirigami
 
-import org.kde.plasma.welcome
+import org.kde.kirigami as Kirigami
 
 RowLayout {
     id: root
@@ -63,6 +62,8 @@ RowLayout {
     QQC2.Button {
         id: nextButton
         Layout.alignment: Qt.AlignRight
+        // Nicer to have the arrow on the side it's pointing to
+        LayoutMirroring.enabled: Qt.application.layoutDirection === Qt.LeftToRight ? !root.atEnd : root.atEnd
 
         enabled: !root.inLayer
 
