@@ -15,7 +15,7 @@ There are four mutually exclusive usage modes:
 ## Screenshots
 | Welcome to openSUSE! | Managing Software | Getting Involved |
 | ---                    | ---               | ---              |
-| ![Welcome to openSUSE!](src/assets/plasme-welcome-opensuse.png) | ![Managing Software](https://cdn.kde.org/screenshots/plasma-welcome/plasma-welcome-page-2.png) | ![Getting Involved](https://cdn.kde.org/screenshots/plasma-welcome/plasma-welcome-page-6.png) |
+| ![Welcome to openSUSE!](src/assets/plasma-welcome-opensuse.png) | ![Managing Software](src/assets/manage-software.png) | ![Getting Involved](src/assets/getting-involved.png) |
 
 # For live distributions
 When Welcome Center is ran in a live environment, it can show a reduced wizard with a page welcoming the user to the disibution and without any settings pages.
