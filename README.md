@@ -13,9 +13,9 @@ There are four mutually exclusive usage modes:
 - Run the app with the `--live-environment` argument to show a reduced wizard with the live installer page and no settings pages.
 
 ## Screenshots
-| Welcome to KDE Plasma! | Managing Software | Getting Involved |
+| Welcome to openSUSE! | Managing Software | Getting Involved |
 | ---                    | ---               | ---              |
-| ![Welcome to KDE Plasma!](https://cdn.kde.org/screenshots/plasma-welcome/plasma-welcome-page-1.png) | ![Managing Software](https://cdn.kde.org/screenshots/plasma-welcome/plasma-welcome-page-2.png) | ![Getting Involved](https://cdn.kde.org/screenshots/plasma-welcome/plasma-welcome-page-6.png) |
+| ![Welcome to openSUSE!](src/assets/plasme-welcome-opensuse.png) | ![Managing Software](https://cdn.kde.org/screenshots/plasma-welcome/plasma-welcome-page-2.png) | ![Getting Involved](https://cdn.kde.org/screenshots/plasma-welcome/plasma-welcome-page-6.png) |
 
 # For live distributions
 When Welcome Center is ran in a live environment, it can show a reduced wizard with a page welcoming the user to the disibution and without any settings pages.
